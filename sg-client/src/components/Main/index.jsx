@@ -23,6 +23,7 @@ const Main = () => {
           </div>
           <div class="section">
             <div class="section_in">
+              {/* 이부분 */}
               <div class="left">
                 <div class="l_top tit">
                   <h3>브랜드 검색 평판</h3>
@@ -62,6 +63,7 @@ const Main = () => {
                   <span>- TODAY -</span>
                 </div>
               </div>
+              {/* 이부분 */}
               <div class="right">
                 <div class="r_top claer" id="r_top_portals">
                   {/* <?php if (substr($PORTAL_G_FLAG, 1, 1)) : ?> */}

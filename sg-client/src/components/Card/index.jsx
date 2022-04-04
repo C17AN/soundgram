@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Card = (props) => {
-  let cardUI = { 
-    "graph" : <Graph/>,
-    "table" : <Table/>,
+  let cardUI = {
+    "graph": <Graph />,
+    "table": <Table />,
   }
   let arr = ["section", props.type[1]]
   return (
