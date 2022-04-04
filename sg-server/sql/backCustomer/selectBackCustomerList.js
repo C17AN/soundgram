@@ -1,0 +1,1 @@
+export const selectBackCustomerList = 'SELECT * FROM back_customer'

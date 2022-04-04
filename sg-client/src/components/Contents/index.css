@@ -1,0 +1,248 @@
+/* contents02 시작 */
+.con02 .section {
+  padding: 40px 30px 25px;
+}
+.con02 .section .left {
+  position: relative;
+  width: 350px;
+  height: 537px;
+}
+.con02 .section .left h3 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+.con02 .section .left h3 strong {
+  display: block;
+  font-size: 31px;
+  font-weight: 600;
+}
+.con02 .section .left > div {
+  position: absolute;
+  bottom: 55px;
+}
+.con02 .section > div > .left,
+.con02 .section > div > .right {
+  float: left;
+}
+.con02 .section .right .txt_box {
+  padding: 3px 0 45px 5px;
+}
+.con02 .section .right .txt_box > span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 23px;
+}
+.con02 .section .right .txt_box > span b {
+  color: #3a65f2;
+}
+.con02 .section .right .txt_box > span strong {
+  color: #ff7200;
+}
+.con02 .right ul .type_wrap {
+  width: 280px;
+  height: 185px;
+  float: left;
+  position: relative;
+}
+.con02 .right ul .type {
+  position: absolute;
+  font-family: "BAHNSCHRIFT", sans-serif;
+  width: 185px;
+  height: 48px;
+  line-height: 48px;
+  text-align: right;
+  transform: rotate(90deg);
+  border-radius: 2px;
+  top: 65px;
+  left: -68px;
+}
+.con02 .right ul li:first-child .type {
+  overflow: hidden;
+  color: #fff;
+  letter-spacing: 13px;
+  background: #3a65f2;
+  padding: 0 7px 0 0;
+}
+.con02 .right ul li:nth-child(2) .type {
+  color: #3a65f2;
+  letter-spacing: 10px;
+  background: #f6f6f6;
+  padding: 0 10px 0 0;
+}
+.con02 .right ul li:nth-child(3) .type {
+  color: #3a65f2;
+  letter-spacing: 3px;
+  background: #f6f6f6;
+  padding: 0 16px 0 0;
+}
+.con02 .right ul .type_check {
+  width: 280px;
+  padding: 5px 0 12px 60px;
+  box-sizing: border-box;
+}
+.con02 .right ul .type > span {
+  position: absolute;
+  background-image: url(../images/sprite.png);
+  transform: rotate(-90deg);
+}
+.con02 .right ul li:first-child .type span {
+  top: -2px;
+  left: 12px;
+  width: 43px;
+  height: 42px;
+  background-position: -142px 0;
+}
+.con02 .right ul li:nth-child(2) .type span {
+  top: 8px;
+  left: 12px;
+  width: 44px;
+  height: 29px;
+  background-position: -377px -150px;
+}
+.con02 .right ul li:last-child .type span {
+  top: 0;
+  left: 12px;
+  width: 40px;
+  height: 39px;
+  background-position: -455px -150px;
+}
+.con02 .right ul .type_check h4 {
+  font-size: 18px;
+  line-height: 100%;
+}
+.con02 .right ul .type_check p {
+  font-size: 13px;
+  margin: 8px 0 4px;
+}
+.con02 .right ul .type_check label {
+  font-family: "NotoSansKR", sans-serif;
+  font-size: 15px;
+}
+.con02 .right ul .type_check li {
+  margin: 22px 0 0;
+}
+.con02 .right .table_div {
+  padding: 16px 0 0;
+}
+.con02 .right tbody {
+  color: #333;
+  border-top: 1px solid #bfbfbf;
+}
+.con02 .right tbody th {
+  font-weight: 400;
+  width: 128px;
+  border-right: 1px dotted #d2d2d2;
+}
+.con02 .right tbody th,
+.con02 .right tbody td {
+  font-size: 13px;
+}
+.con02 .right tbody .th01 {
+  height: 60px;
+  text-align: center;
+}
+.con02 .right tbody tr:nth-child(2) {
+  border-bottom: 1px solid #bfbfbf;
+}
+.con02 .right tbody tr:nth-child(3),
+.con02 .right tbody tr:nth-child(4) {
+  background: #f6f6f6;
+}
+.con02 .right tbody tr:nth-child(3) {
+  border-bottom: 1px dotted #d2d2d2;
+}
+.con02 .right tbody tr:nth-child(4) {
+  border-bottom: 1px solid #bfbfbf;
+}
+.con02 .right tbody tr:nth-child(1) td {
+  border-bottom: 1px dotted #d2d2d2;
+}
+.con02 .right tbody tr td {
+  padding: 0 70px 0 0;
+}
+.con02 .right tbody tr:nth-child(4) td {
+  padding: 0;
+  text-align: center;
+}
+.con02 .right tbody tr:nth-child(4) td:last-child {
+  text-align: right;
+}
+.con02 .right tbody td {
+  text-align: right;
+}
+.con02 .right tbody tr:nth-child(2) td {
+  font-weight: 900;
+}
+.con02 .right tbody td:last-child {
+  width: 136px;
+}
+.con02 .right tbody tr:nth-child(1) td:last-child,
+.con02 .right tbody tr:nth-child(2) td:last-child {
+  border-bottom: 0;
+}
+.con02 .right tbody tr:nth-child(1) td:last-child,
+.con02 .right tbody tr:nth-child(2) td:last-child,
+.con02 .right tbody tr:nth-child(3) td:last-child,
+.con02 .right tbody tr:nth-child(4) td:last-child {
+  border-left: 1px dotted #d2d2d2;
+  padding: 0 10px 0 0;
+}
+.con02 .right tbody .th02 {
+  height: 32px;
+  text-align: center;
+}
+.con02 .right tbody .th03 {
+  height: 44px;
+  text-align: center;
+}
+.con02 .right tbody tr:nth-child(3) td,
+.con02 .right tbody tr:nth-child(4) td:last-child {
+  color: #3a65f2;
+  font-weight: 900;
+}
+.con02 .right tbody tr:nth-child(3) td > span {
+  color: #333;
+}
+.con02 .right tbody tr:nth-child(4) .td_3 {
+  color: #fff;
+}
+.con02 .right tbody tr:nth-child(4) .td_3 span {
+  display: inline-block;
+}
+.con02 .right tbody tr:nth-child(4) .td_3 .l_span {
+  position: relative;
+  width: 242px;
+  height: 22px;
+  line-height: 22px;
+  background: #ff7200;
+}
+.con02 .right tbody tr:nth-child(4) .td_3 .l_span::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: 3.5px;
+  width: 15px;
+  height: 15px;
+  background: #ff7200;
+  transform: rotate(45deg);
+}
+.con02 .right tbody tr:nth-child(4) .td_3 .l_span::after {
+  position: absolute;
+  content: "";
+  left: -2px;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+}
+.con02 .right tbody tr:nth-child(4) .td_3 .r_span {
+  height: 22px;
+  line-height: 20px;
+  color: #ff7200;
+  border: 1px solid #ff7200;
+  background: #fff;
+  padding: 0 15px 0 23px;
+}
