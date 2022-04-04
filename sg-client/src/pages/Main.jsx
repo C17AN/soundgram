@@ -1,8 +1,14 @@
 import React from 'react'
+import Contents from '../components/Contents'
+import Main from '../components/Main'
+import DefaultLayout from '../layouts/DefaultLayout'
 
 const MainPage = () => {
   return (
-    <div>MainPage</div>
+    <DefaultLayout>
+      <Main />
+      <Contents />
+    </DefaultLayout>
   )
 }
 

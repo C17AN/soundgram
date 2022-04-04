@@ -84,7 +84,7 @@
 }
 .con02 .right ul .type > span {
   position: absolute;
-  background-image: url(../images/sprite.png);
+  /* background-image: url(../images/sprite.png); */
   transform: rotate(-90deg);
 }
 .con02 .right ul li:first-child .type span {
