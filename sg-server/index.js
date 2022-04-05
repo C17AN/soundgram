@@ -14,7 +14,6 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 })
 // dkkkkkdkkkkkkkdfdf
-// fdfdf
 app.get("/", (req, res) => {
   res.send("Demo Home")
 })
