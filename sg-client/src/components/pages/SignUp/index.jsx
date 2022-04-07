@@ -1,9 +1,10 @@
 import React from 'react'
 import SignUpHeaderLogo from "assets/images/logo_blue.png"
+import style from "styles/pages/SignUp.module.css"
 
 const SignUp = () => {
   return (
-    <div class="sigup_wrap_div">
+    <div class={style.sigup_wrap_div}>
       <div class="sigup_wrap">
         <div class="tit">
           <h2> 회원가입 </h2>

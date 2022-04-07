@@ -1,0 +1,14 @@
+footer {
+  /* height: 108px; */
+  padding: 35px 0 55px 0;
+  text-align: center;
+  background: #fafbfc;
+  z-index: 1;
+}
+
+footer {
+  height: 108px;
+  padding: 105px 0 55px 0;
+  text-align: center;
+  background: #fafbfc;
+}
