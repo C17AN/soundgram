@@ -1,0 +1,480 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+@font-face {
+  font-family: "BAHNSCHRIFT";
+  src: url(assets/fonts/BAHNSCHRIFT.eot), url(assets/fonts/BAHNSCHRIFT.ttf.woff) format("woff"),
+    url(assets/fonts/BAHNSCHRIFT.ttf) format("truetype");
+}
+/* Reset */
+* {
+  outline: 0 !important;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+blockquote,
+pre,
+code,
+address,
+ul,
+ol,
+li,
+menu,
+nav,
+section,
+article,
+aside,
+dl,
+dt,
+dd,
+table,
+thead,
+tbody,
+tfoot,
+label,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+hr,
+input,
+button,
+textarea,
+object,
+figure,
+figcaption {
+  font-family: "NanumGothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+html,
+body {
+  width: 100%;
+  color: #333;
+}
+html {
+  /* -webkit-touch-callout: none;
+  -webkit-user-select: none; */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  width: 100%;
+  background: #fff;
+  min-width: 320px;
+  -webkit-text-size-adjust: none;
+  word-wrap: break-word;
+  word-break: break-all;
+  min-width: 1280px;
+}
+body,
+input,
+select,
+textarea,
+button {
+  border: none;
+  font-size: 20px;
+  font-family: "NanumGothic", sans-serif;
+  color: #333;
+}
+select[disabled] {
+  border: 1px solid #ddd;
+  background: #f6f6f6;
+}
+select {
+  position: relative;
+  /* 네이티브 외형 감추기 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* 화살표 모양의 이미지 */
+  width: 200px;
+  padding: 0.8em 0.5em;
+  border: 1px solid #999;
+  font-family: inherit;
+  background: url("assets/images/arrow01.png") no-repeat 95% 50%;
+  border-radius: 0px;
+}
+/* select::after{
+  position:absolute;
+  width:8px;
+  height: 5px;
+  background: url(assets/images/sprite.png) no-repeat 0 -41px;
+} */
+/* IE 10, 11의 네이티브 화살표 숨기기  */
+select::-ms-expand {
+  display: none;
+}
+/* select > option{
+  display: inline-block;
+  height: 30px;
+} */
+h2,
+h3 {
+  font-family: "NotoSansKR", sans-serif;
+}
+button {
+  font-size: 12px;
+  height: 40px;
+  background-color: #fff;
+  border: solid 1.5px #ddd;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+table {
+  width: 100% !important;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+img,
+fieldset {
+  border: 0;
+}
+address,
+cite,
+code,
+em {
+  font-style: normal;
+  font-weight: normal;
+}
+label,
+img,
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+}
+.hide,
+caption,
+legend {
+  line-height: 0;
+  font-size: 1px;
+  overflow: hidden;
+}
+hr {
+  display: none;
+}
+main,
+header,
+section,
+nav,
+footer,
+aside,
+article,
+figure {
+  display: block;
+}
+a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Form */
+textarea {
+  border: 1px solid #dbdbdb;
+}
+select {
+  height: 38px;
+  font-size: 12px;
+  color: #6c757d;
+  border: 1px solid #ddd;
+  /* background: #fff; */
+  border-radius: 0;
+  padding: 0.45rem 1.9rem 0.45rem 0.9rem;
+  /* -webkit-appearance: none; 
+  for chrome
+  -moz-appearance: none; 
+  for firefox
+  appearance: none; */
+}
+/* select::-ms-expand {
+  display: none; 
+  for IE10,11
+} */
+/* select:after {
+  width: 8px;
+  height: 5px;
+  background: url("assets/images/sprite.png") no-repeat 47px 94px;
+  background-size: cover;
+} */
+input[type="tel"],
+input[type="time"],
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="file"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input[type="month"],
+textarea {
+  width: 100%;
+  height: 38px;
+  font-size: 12px;
+  color: #6c757d;
+  border: 1px solid #ced4da;
+  background: #fff;
+  text-indent: 0;
+  border-radius: 0;
+  transition: all 0.5s;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.form_row input {
+  text-indent: 5px;
+}
+input::-webkit-input-placeholder {
+  color: #888;
+  font-size: 12px;
+  line-height: 100%;
+}
+textarea {
+  padding: 5px 0;
+}
+select:focus,
+textarea:focus,
+input:focus {
+  border: 1px solid #727272;
+}
+
+input[type="tel"][readonly],
+input[type="text"][readonly],
+input[type="password"][readonly],
+input[type="email"][readonly],
+input[type="search"][readonly],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="email"][disabled] {
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+  color: #666;
+  -webkit-appearance: none;
+  font-size: 12px;
+}
+textarea[readonly],
+textarea[disabled] {
+  padding: 11px;
+  font-size: 16px;
+  color: #666;
+  font-weight: normal;
+  line-height: 140%;
+  height: 78px;
+  background: #eaeaea;
+  border: 1px solid #c0c0c0;
+}
+
+.clear {
+  clear: both;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.hidden {
+  position: absolute;
+  left: -10000px;
+}
+.blind {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+/* 행 컨텐츠 세로 중앙 */
+.f_col_m {
+  display: flex;
+  align-items: center;
+}
+/* 초기화 추가 요소 */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* .btn:hover,
+.btn:active {
+  background-color: #f6f8fb;
+} */
+/* button 모음 */
+/* 초기화버튼 */
+.btn_rs {
+  position: relative;
+  color: #666;
+  width: 75px;
+  height: 22px;
+  border: 1px solid #dfdfdf;
+  border-radius: 20px;
+  padding: 0 0 0 21px;
+  text-align: left;
+  text-indent: 5px;
+}
+.btn_rs::before {
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url(assets/images/sprite.png) no-repeat -62px -71px;
+}
+.btn_big {
+  font-size: 14px;
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  background-color: #3a65f2;
+  border-radius: 40px;
+}
+input[type="date"]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input::placeholder {
+  font-size: 12px;
+  color: #888;
+  font-weight: 100px;
+  padding: 0 0 0 5px;
+}
+#skip {
+  position: relative;
+  z-index: 999;
+}
+#skip a {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 128px;
+  margin-left: -64px;
+  padding: 5px 0;
+  background: #000;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.9;
+  outline: none;
+  transition: all 0.3s;
+}
+#skip a:active,
+#skip a:focus {
+  top: 0;
+  text-decoration: none;
+  cursor: pointer;
+  zoom: 1;
+}
+/* 스크롤바 설정 */
+.slimscroll,
+.slimscroll_2 {
+  /* 정해진 높이값 있어야함 */
+  overflow-y: scroll;
+}
+#main-datatable_wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+/* .dataTables_scrollBody::-webkit-scrollbar, */
+select::-webkit-scrollbar,
+.slimscroll_3::-webkit-scrollbar,
+.slimscroll_2::-webkit-scrollbar,
+html::-webkit-scrollbar,
+.slimscroll::-webkit-scrollbar,
+.main-datatable_wrapper::-webkit-scrollbar {
+  width: 14px;
+  background-color: transparent;
+}
+html::-webkit-scrollbar {
+  background-color: #fafbfc;
+}
+/* .slimscroll_2::-webkit-scrollbar{
+  width: 12px;
+} */
+/* 스크롤바 막대 설정*/
+.slimscroll_3::-webkit-scrollbar-thumb,
+/* .dataTables_scrollBody::-webkit-scrollbar-thumb, */
+html::-webkit-scrollbar-thumb {
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 7px;
+  background-clip: padding-box;
+  background-color: rgba(80, 80, 80, 0.8);
+}
+select::-webkit-scrollbar-thumb,
+#main-datatable_wrapper::-webkit-scrollbar-thumb,
+.slimscroll_2:hover::-webkit-scrollbar-thumb,
+.slimscroll::-webkit-scrollbar-thumb,
+.main-datatable_wrapper::-webkit-scrollbar-thumb {
+  /* 스크롤바 막대 높이 설정 */
+  border: 4px solid rgba(0, 0, 0, 0);
+  border-radius: 7px;
+  background-clip: padding-box;
+  background-color: rgba(158, 165, 171, 0.4);
+}
+select::-webkit-scrollbar-track,
+.slimscroll_3::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track,
+/* .dataTables_scrollBody::-webkit-scrollbar-track , */
+#main-datatable_wrapper::-webkit-scrollbar-track ,
+.slimscroll::-webkit-scrollbar-track,
+.slimscroll_2:hover::-webkit-scrollbar-track,
+.main-datatable_wrapper::-webkit-scrollbar-track
+/* 스크롤바 뒷 배경 설정*/ {
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 2px;
+}
+/* #main-datatable_wrapper::-webkit-scrollbar-track ,
+.slimscroll::-webkit-scrollbar-track {
+  background-color: rgba(158, 165, 171, 0.1);
+} */
+/* .slimscroll_2:hover::-webkit-scrollbar-track {
+  background-color: rgba(158, 165, 171, 0.002);
+} */
+a:hover {
+  color: #3a65f2;
+  text-decoration: none;
+}
+/* input 달력 아이콘 수정 */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: #e9ecef url("assets/images/input01.png") no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 38px;
+  border-width: thin;
+  margin: 0 0 0 5px;
+  border-left: 1px solid #ddd;
+}

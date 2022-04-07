@@ -1,0 +1,137 @@
+@charset "utf-8";
+input {
+  height: 36px;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  min-width: 1280px;
+}
+.deco_line {
+  height: 7px;
+  background: #3a65f2;
+}
+.contents_wrap {
+  position: relative;
+  height: 88%;
+  background: url(assets/images/login_bg.jpg) no-repeat center top;
+  background-size: cover;
+}
+footer {
+  /* height: 108px; */
+  padding: 35px 0 55px 0;
+  text-align: center;
+  background: #fafbfc;
+  z-index: 1;
+}
+.login_wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-65%);
+  width: 840px;
+  height: 254px;
+  background-color: #fff;
+  margin: 0 0 0 -420px;
+}
+.login_wrap .left,
+.login_wrap .right {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.login_wrap .left {
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  background: #3a65f2;
+  padding: 18px 30px 30px;
+}
+.login_wrap .left img {
+  width: 322px;
+  margin: 0 0 12px 0;
+}
+.login_wrap .left .btn_wrap {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.login_wrap .left button {
+  position: relative;
+  font-size: 13px;
+  color: #fff;
+  /* width: 70px; */
+  height: 14px;
+  background: transparent;
+  border: 0;
+  padding: 0 0 0 20px;
+}
+.login_wrap .left button::before {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  content: "";
+  width: 15px;
+  height: 12px;
+  background: url(assets/images/sprite.png) no-repeat -267px -199px;
+}
+.login_wrap .right {
+  font-size: 13px;
+  padding: 30px 35px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.9rem + 2px);
+  padding: 0.45rem 0.9rem;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6c757d;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 3px !important;
+}
+.form-group {
+  margin: 0 0 16px 0;
+}
+.form-group:last-child {
+  margin: 0;
+}
+.form-group.line_txt {
+  padding: 14px 0 0;
+}
+.form-group.line_txt .save {
+  color: #888;
+}
+.form-group.line_txt .save > input {
+  height: 15px;
+}
+.form-group.line_txt .such {
+  float: right;
+}
+.form-group.line_txt .such a {
+  color: #3a65f2;
+}
+.form-group:last-child button {
+  font-size: 13px;
+  color: #fff;
+  width: 100%;
+  height: 36px;
+  background: #3a65f2;
+  border: 0;
+  border-radius: 3px;
+}
+header .gnb_menu .pc_logo button {
+  display: inline-block;
+  width: 185px;
+  height: 41px;
+  background: url(assets/images/sprite.png) no-repeat 0 0;
+  border: 0;
+  color: transparent;
+}
+header .gnb_menu .fold_logo button {
+  background-color: transparent;
+  border: 0;
+  color: transparent;
+}
