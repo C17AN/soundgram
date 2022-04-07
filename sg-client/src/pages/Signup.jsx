@@ -1,9 +1,13 @@
 import SignUp from 'components/pages/SignUp'
+import SignUpLayout from 'layouts/SignUpLayout'
 import React from 'react'
+import "styles/SignUp.css"
 
 const SignUpPage = () => {
   return (
-    <div><SignUp /></div>
+    <SignUpLayout>
+      <SignUp />
+    </SignUpLayout>
   )
 }
 

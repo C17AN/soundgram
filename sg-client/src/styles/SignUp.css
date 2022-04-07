@@ -1,0 +1,317 @@
+@charset "utf-8";
+.wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.contents_wrap {
+  height: auto;
+  padding: 0;
+}
+header .login_top {
+  line-height: 70px;
+  display: inline-block;
+  width: 186px;
+  height: 100%;
+  text-align: center;
+  border-left: 1px solid #ddd;
+}
+.gnb_lst .login {
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  width: 86px;
+  height: 24px;
+  background: #888;
+  border-radius: 20px;
+  padding: 0 0 0 33px;
+  border: 0;
+  line-height: 0;
+}
+.gnb_lst .login::before {
+  position: absolute;
+  left: 12px;
+  top: 6px;
+  content: "";
+  width: 15px;
+  height: 13px;
+  background: url(assets/images/sprite.png) no-repeat -267px -199px;
+}
+.contents_wrap {
+  position: relative;
+  background: #fafbfc;
+}
+/* 아이디, 비밀번호 찾기 */
+.sigup_wrap_div {
+  padding: 140px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.idpw_wrap,
+.sigup_wrap {
+  /* position: absolute;
+  left: 50%; */
+  width: 526px;
+  background: #fff;
+  border: 1px solid #ddd;
+  /* margin: 0 0 78px; */
+  padding: 30px 55px;
+}
+footer {
+  height: 108px;
+  padding: 105px 0 55px 0;
+  text-align: center;
+  background: #fafbfc;
+}
+.idpw_wrap .top {
+  padding: 0 0 35px 0;
+  border-bottom: 1px solid #ddd;
+}
+.idpw_wrap .s_pwbox {
+  padding: 30px 0 0;
+}
+.idpw_wrap h4 {
+  font-size: 17px;
+  color: #393939;
+  line-height: 100%;
+  margin: 0 0 7px 0;
+}
+.idpw_wrap p {
+  font-size: 13px;
+  letter-spacing: 0.05rem;
+  color: #747474;
+  margin: 0 0 25px 0;
+  line-height: 1.5rem;
+}
+.form-group > p {
+  display: none;
+}
+/* 회원가입 화면 */
+.sigup_wrap .tit {
+  position: relative;
+  margin: 0 0 30px 0;
+}
+.sigup_wrap .tit > img {
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
+.sigup_wrap h2,
+.keyword_wrap h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.form-group:last-child {
+  text-align: center;
+}
+.agree_terms {
+  font-size: 13px;
+}
+.agree_terms a {
+  color: #3a65f2;
+}
+.form-group:last-child .btn_big {
+  font-size: 14px;
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  background-color: #3a65f2;
+  border-radius: 40px;
+}
+#agree_terms {
+  height: 15px;
+}
+.sigup_wrap .form-group:nth-child(9) {
+  margin: 0 0 28px 0;
+}
+/* 키워드세팅 화면 */
+.keyword_wrap {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 1270px;
+  position: absolute;
+  left: 50%;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 140px 0 78px -635px;
+}
+.keyword_in {
+  padding: 30px 34px 0px;
+}
+.keyword_wrap .tit {
+  margin: 0 0 28px 0;
+}
+.keyword_wrap h2 {
+  float: left;
+}
+.keyword_wrap .tit > img {
+  float: right;
+}
+.keyword_wrap .form_row {
+  margin: 0 0 15px 0;
+}
+.keyword_wrap .form_row strong,
+.keyword_wrap .form_line > strong {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  width: 138px;
+}
+.keyword_wrap .top .form_row input {
+  color: #454545;
+  text-indent: 10px;
+  width: 274px;
+}
+.keyword_wrap select {
+  width: 154px;
+}
+.keyword_wrap .top .form_row:nth-child(2),
+.keyword_wrap .form_line {
+  display: inline-block;
+}
+.keyword_wrap .form_line > strong {
+  margin: 0 0 0 70px;
+}
+.keyword_wrap .form_line {
+  margin: 0 10px 0 0;
+}
+.keyword_wrap select,
+.keyword_wrap select option {
+  color: #000;
+}
+.keyword_wrap .top {
+  border-bottom: 1px solid #ddd;
+}
+.keyword_wrap .top .form_row:last-child input {
+  margin: 0 22px 0 0;
+}
+.keyword_wrap .form_row:last-child p {
+  color: #454545;
+  padding: 10px 0 0 150px;
+  line-height: 1.6rem;
+}
+.keyword_wrap .form_row:last-child span {
+  color: #999;
+  display: block;
+}
+.keyword_wrap .btm {
+  padding: 12px 0;
+}
+.keyword_wrap .btm input {
+  margin: 0 14px 0 0;
+}
+.keyword_wrap .btm .form_row strong {
+  float: left;
+  line-height: 38px;
+}
+.keyword_wrap .btm .form_row > div {
+  float: left;
+  display: inline-block;
+  width: 1062px;
+}
+.keyword_wrap .btm .form_row .row_in02 {
+  margin: 12px 0 12px 138px;
+}
+.keyword_wrap .btm .form_wrap {
+  display: flex;
+  width: 1062px;
+}
+.keyword_wrap .btm .form_wrap input {
+  flex: 1;
+  color: #454545;
+  text-indent: 10px;
+}
+.keyword_wrap .btm .form_wrap input:last-child {
+  margin: 0;
+}
+.keyword_wrap .submit_wrap,
+.keyword_wrap .final_check {
+  text-align: center;
+  padding: 12px 0 15px;
+  border-top: 1px solid #ddd;
+}
+.keyword_wrap .submit_wrap .btn_big,
+.keyword_wrap .final_check .btn_big {
+  position: relative;
+  text-align: left;
+  font-weight: 600;
+  border: 0;
+  padding: 0 0 0 60px;
+}
+.keyword_wrap .submit_wrap .btn_big::before,
+.keyword_wrap .final_check button.edit::before,
+.keyword_wrap .final_check button.start::before {
+  position: absolute;
+  content: "";
+  background-image: url(assets/images/sprite.png);
+}
+.keyword_wrap .submit_wrap .btn_big::before {
+  background-position: -293px -199px;
+}
+.keyword_wrap .submit_wrap .btn_big::before,
+.keyword_wrap .final_check button.edit::before {
+  top: 13px;
+  left: 39px;
+  background-position: -293px -199px;
+  width: 12px;
+  height: 14px;
+}
+.keyword_wrap .btn_big::after {
+  display: none;
+}
+/* 키워드세팅확인 화면 */
+.keyword_wrap .top .form_row p {
+  color: #454545;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+}
+.keyword_wrap .warning {
+  width: 100%;
+  text-align: center;
+}
+.keyword_wrap .warning > span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #3a65f2 url(assets/images/sprite.png) no-repeat -307px -193px;
+  border-radius: 50%;
+  margin: 0 auto 8px;
+}
+.keyword_wrap .warning > p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #454545;
+  line-height: 1.8rem;
+}
+.keyword_wrap .warning > p > span {
+  color: #3a65f2;
+}
+.keyword_wrap .final_check button {
+  font-weight: 900;
+}
+.keyword_wrap .final_check button.edit {
+  color: #3a65f2;
+  background: #fff;
+  border: 1px solid #3a65f2;
+  margin: 0 10px 0 0;
+}
+.keyword_wrap .final_check button.start {
+  text-align: right;
+  padding: 0 60px 0 0;
+}
+.keyword_wrap .final_check button.edit::before {
+  background-position: -293px -232px;
+}
+.keyword_wrap .final_check button.start::before {
+  top: 12px;
+  right: 29px;
+  width: 18px;
+  height: 16px;
+  background-position: -86px -71px;
+}
+footer {
+  position: inherit;
+}

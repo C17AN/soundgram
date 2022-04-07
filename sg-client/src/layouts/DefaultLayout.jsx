@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from 'components/common/Header'
 import Sidebar from 'components/common/Sidebar'
+import Footer from 'components/common/Footer'
 
 const DefaultLayout = ({ children }) => {
   return (
@@ -8,6 +9,7 @@ const DefaultLayout = ({ children }) => {
       <Header />
       <Sidebar />
       {children}
+      <Footer />
     </div>
   )
 }
