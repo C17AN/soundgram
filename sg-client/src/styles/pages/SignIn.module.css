@@ -17,13 +17,7 @@ input {
   background: url(assets/images/login_bg.jpg) no-repeat center top;
   background-size: cover;
 }
-footer {
-  /* height: 108px; */
-  padding: 35px 0 55px 0;
-  text-align: center;
-  background: #fafbfc;
-  z-index: 1;
-}
+
 .login_wrap {
   position: absolute;
   left: 50%;

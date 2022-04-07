@@ -1,4 +1,5 @@
 import React from 'react'
+import style from 'styles/pages/Main.module.css'
 import * as dateFns from "date-fns";
 
 const Main = () => {
@@ -6,7 +7,7 @@ const Main = () => {
 
   return (
     <>
-      <div class="contents con01">
+      <div class={style["contents con01"]}>
         <div class="con_in">
           <div class="main_tit">
             <div class="brand_name">

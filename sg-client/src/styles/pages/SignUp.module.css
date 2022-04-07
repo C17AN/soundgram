@@ -58,12 +58,7 @@ header .login_top {
   /* margin: 0 0 78px; */
   padding: 30px 55px;
 }
-footer {
-  height: 108px;
-  padding: 105px 0 55px 0;
-  text-align: center;
-  background: #fafbfc;
-}
+
 .idpw_wrap .top {
   padding: 0 0 35px 0;
   border-bottom: 1px solid #ddd;
