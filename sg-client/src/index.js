@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import "./styles/common.css"
 import "./styles/default.css"
 import "./styles/admin.css"
+import "./styles/bootstrap.css"
 import "./styles/SignIn.css"
 // import "./styles/SignUp.css"
 
