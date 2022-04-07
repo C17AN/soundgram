@@ -1,4 +1,5 @@
 import React from 'react'
+import HeaderLogo from "assets/images/logo.png"
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
         </h1>
         <h1 class="logo fold_logo">
           <button type="button" onclick="location.href='login.php'; ">
-            <img src="images/logo.png" alt="BrandCast CONSOLE" />
+            <img src={HeaderLogo} alt="BrandCast CONSOLE" />
           </button>
         </h1>
 
