@@ -5,12 +5,16 @@ import Footer from 'components/common/Footer'
 
 const DefaultLayout = ({ children }) => {
   return (
-    <div class="wrap">
-      <Header />
-      <Sidebar />
-      {children}
+    <>
+      <div className="wrap fold_lnb">
+        <Header />
+        <Sidebar />
+      </div>
+      <div className="contents_wrap">
+        {children}
+      </div>
       <Footer />
-    </div>
+    </>
   )
 }
 
