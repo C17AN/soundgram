@@ -13,16 +13,14 @@ import "./styles/SignIn.css"
 // import "./styles/SignUp.css"
 
 ReactDOM.render(
-  <div className="wrap fold_lnb">
-    <Router>
-      <Routes>
-        <Route path="/admin" element={<MainPage />} />
-        <Route path="/signIn" element={<SignInPage />} />
-        <Route path="/signUp" element={<SignUpPage />} />
-        <Route path="*" element={<NotFoundPage />}></Route>
-      </Routes>
-    </Router>
-  </div>,
+  <Router>
+    <Routes>
+      <Route path="/admin" element={<MainPage />} />
+      <Route path="/signIn" element={<SignInPage />} />
+      <Route path="/signUp" element={<SignUpPage />} />
+      <Route path="*" element={<NotFoundPage />}></Route>
+    </Routes>
+  </Router>,
   document.getElementById('root')
 );
 

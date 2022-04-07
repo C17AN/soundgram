@@ -5,10 +5,7 @@ const Main = () => {
   const today = dateFns.format(new Date(), "yyyy-MM-dd HH:mm")
 
   return (
-    <div>
-      <div id="skip">
-        <a href="#contents_wrap">본문으로 바로가기</a>
-      </div>
+    <>
       <div class="contents con01">
         <div class="con_in">
           <div class="main_tit">
@@ -87,7 +84,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
