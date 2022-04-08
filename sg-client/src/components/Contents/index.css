@@ -7,7 +7,7 @@
   width: 350px;
   height: 537px;
 }
-.con02 .section .left h3 {
+.con02 .section h3 { /*.con02 .section .left h3 {*/
   font-size: 25px;
   font-weight: 400;
   letter-spacing: -2px;
@@ -126,66 +126,66 @@
 .con02 .right .table_div {
   padding: 16px 0 0;
 }
-.con02 .right tbody {
+.con02 .section tbody {
   color: #333;
   border-top: 1px solid #bfbfbf;
 }
-.con02 .right tbody th {
+.con02 .section tbody th {
   font-weight: 400;
   width: 128px;
   border-right: 1px dotted #d2d2d2;
 }
-.con02 .right tbody th,
-.con02 .right tbody td {
+.con02 .section tbody th,
+.con02 .section tbody td {
   font-size: 13px;
 }
 .con02 .right tbody .th01 {
   height: 60px;
   text-align: center;
 }
-.con02 .right tbody tr:nth-child(2) {
+.con02 .section tbody tr:nth-child(2) {
   border-bottom: 1px solid #bfbfbf;
 }
-.con02 .right tbody tr:nth-child(3),
-.con02 .right tbody tr:nth-child(4) {
+.con02 .section tbody tr:nth-child(3),
+.con02 .section tbody tr:nth-child(4) {
   background: #f6f6f6;
 }
-.con02 .right tbody tr:nth-child(3) {
+.con02 .section tbody tr:nth-child(3) {
   border-bottom: 1px dotted #d2d2d2;
 }
-.con02 .right tbody tr:nth-child(4) {
+.con02 .section tbody tr:nth-child(4) {
   border-bottom: 1px solid #bfbfbf;
 }
-.con02 .right tbody tr:nth-child(1) td {
+.con02 .section tbody tr:nth-child(1) td {
   border-bottom: 1px dotted #d2d2d2;
 }
-.con02 .right tbody tr td {
+.con02 .section tbody tr td {
   padding: 0 70px 0 0;
 }
-.con02 .right tbody tr:nth-child(4) td {
+.con02 .section tbody tr:nth-child(4) td {
   padding: 0;
   text-align: center;
 }
-.con02 .right tbody tr:nth-child(4) td:last-child {
+.con02 .section tbody tr:nth-child(4) td:last-child {
   text-align: right;
 }
-.con02 .right tbody td {
+.con02 .section tbody td {
   text-align: right;
 }
-.con02 .right tbody tr:nth-child(2) td {
+.con02 .section tbody tr:nth-child(2) td {
   font-weight: 900;
 }
-.con02 .right tbody td:last-child {
+.con02 .section tbody td:last-child {
   width: 136px;
 }
-.con02 .right tbody tr:nth-child(1) td:last-child,
-.con02 .right tbody tr:nth-child(2) td:last-child {
+.con02 .section tbody tr:nth-child(1) td:last-child,
+.con02 .section tbody tr:nth-child(2) td:last-child {
   border-bottom: 0;
 }
-.con02 .right tbody tr:nth-child(1) td:last-child,
-.con02 .right tbody tr:nth-child(2) td:last-child,
-.con02 .right tbody tr:nth-child(3) td:last-child,
-.con02 .right tbody tr:nth-child(4) td:last-child {
+.con02 .section tbody tr:nth-child(1) td:last-child,
+.con02 .section tbody tr:nth-child(2) td:last-child,
+.con02 .section tbody tr:nth-child(3) td:last-child,
+.con02 .section tbody tr:nth-child(4) td:last-child {
   border-left: 1px dotted #d2d2d2;
   padding: 0 10px 0 0;
 }
@@ -197,12 +197,12 @@
   height: 44px;
   text-align: center;
 }
-.con02 .right tbody tr:nth-child(3) td,
-.con02 .right tbody tr:nth-child(4) td:last-child {
+.con02 .section tbody tr:nth-child(3) td,
+.con02 .section tbody tr:nth-child(4) td:last-child {
   color: #3a65f2;
   font-weight: 900;
 }
-.con02 .right tbody tr:nth-child(3) td > span {
+.con02 .section tbody tr:nth-child(3) td > span {
   color: #333;
 }
 .con02 .right tbody tr:nth-child(4) .td_3 {
