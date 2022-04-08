@@ -5,7 +5,6 @@ import SignInPage from './pages/SignIn';
 import SignUpPage from './pages/SignUp';
 import NotFoundPage from 'pages/404';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import "./styles/common.css"
 import "./styles/bootstrap.css"
 
 ReactDOM.render(
