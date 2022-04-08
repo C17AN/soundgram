@@ -8,7 +8,56 @@ footer {
 
 footer {
   height: 108px;
-  padding: 105px 0 55px 0;
+  padding: 55px 0 55px 70px;
   text-align: center;
   background: #fafbfc;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-width: 1350px;
+  /* padding: 100px 0 70px 240px; */
+  text-align: center;
+  background: #fafbfc;
+}
+footer strong,
+footer ul,
+footer li,
+footer a {
+  display: inline-block;
+}
+footer strong {
+  width: 85px;
+  height: 14px;
+  background: url(assets/images/sprite.png) no-repeat -195px 0;
+  margin: 0 12px 0 0;
+  vertical-align: -2px;
+}
+footer ul {
+  color: #888;
+}
+footer li {
+  position: relative;
+  margin: 0 6px;
+}
+footer li:after {
+  position: absolute;
+  top: 1px;
+  right: -8px;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #888;
+}
+footer li:last-child:after {
+  display: none;
+}
+footer li:nth-child(1) {
+  font-weight: 600;
+}
+footer a {
+  color: #487cdc;
 }
