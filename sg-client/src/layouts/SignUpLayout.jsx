@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from 'components/common/Header'
-import signUpStyle from "styles/pages/SignUp.module.css"
 import Footer from 'components/common/Footer'
+import signUpStyle from "styles/pages/SignUp.module.css"
 
 
 const SignUpLayout = ({ children }) => {
