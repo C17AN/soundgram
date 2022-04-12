@@ -1,30 +1,30 @@
 import React from 'react'
 import HeaderLogo from "assets/images/logo.png"
-import './style.css'
+import commonStyle from "styles/common.module.css"
 
 const Header = () => {
   return (
     <header>
-      <div class="gnb_menu">
-        <h1 class="logo pc_logo">
+      <div className={commonStyle.gnb_menu}>
+        <h1 className={`${commonStyle.logo} ${commonStyle.pc_logo}`}>
           <a>
-            {/* <button type="button" onclick="location.href='login.php'; ">메인페이지 이동</button> */}
+            {/* <button type="button" onClick="location.href='login.php'; ">메인페이지 이동</button> */}
           </a>
         </h1>
-        <h1 class="logo fold_logo">
-          <button type="button" onclick="location.href='login.php'; ">
+        <h1 className={`${commonStyle.logo} ${commonStyle.fold_logo}`}>
+          <a href="main_index.php">
             <img src={HeaderLogo} alt="BrandCast CONSOLE" />
-          </button>
+          </a>
         </h1>
 
-        <div class="gnb_lst">
-          <div class="gnb_txt">
-            <span class="gt_01">REALTIME BIG DATA SOLUTION</span>
-            <span class="gt_02">2021</span>
+        <div className={commonStyle.gnb_lst}>
+          <div className={commonStyle.gnb_txt}>
+            <span className={commonStyle.gt_01}>REALTIME BIG DATA SOLUTION</span>
+            <span className={commonStyle.gt_02}>2021</span>
           </div>
           <ul>
-            <li class="login_top">
-              <button type="button" class="login" onclick="location.href='login.php'; ">LOGIN</button>
+            <li className={commonStyle.login_top}>
+              <button type="button" className={commonStyle.login} onClick="location.href='login.php'; ">LOGIN</button>
             </li>
           </ul>
         </div>
