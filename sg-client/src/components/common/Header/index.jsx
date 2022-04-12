@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderLogo from "assets/images/logo.png"
-import commonStyle from "styles/common.module.css"
+import commonStyle from "styles/common.module.scss"
 
 const Header = () => {
   return (

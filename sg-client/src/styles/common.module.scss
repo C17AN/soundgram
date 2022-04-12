@@ -45,7 +45,7 @@ header .gnb_menu .pc_logo a {
   display: inline-block;
   width: 185px;
   height: 41px;
-  background: url(assets/images/sprite.png) no-repeat 0 0;
+  background: url(/assets/images/sprite.png) no-repeat 0 0;
 }
 .fold_lnb header .gnb_menu .pc_logo {
   display: none;
@@ -269,10 +269,10 @@ header .user_wrap a:hover i {
   position: relative;
   width: 20px;
   height: 22px;
-  background: url(assets/images/sprite.png) no-repeat -25px -69px;
+  background: url(/assets/images/sprite.png) no-repeat -25px -69px;
 }
 header .noti_wrap:hover span {
-  background: url(assets/images/sprite.png) no-repeat -46px -41px;
+  background: url(/assets/images/sprite.png) no-repeat -46px -41px;
 }
 .mdi-bell-ring-outline {
   color: #9c9c9c;
@@ -309,7 +309,7 @@ header .noti_wrap:hover span {
   content: "";
   width: 8px;
   height: 5px;
-  background: url(assets/images/sprite.png) no-repeat 0 -41px;
+  background: url(/assets/images/sprite.png) no-repeat 0 -41px;
 }
 .user_wrap {
   position: relative;
@@ -359,7 +359,7 @@ header .noti_wrap:hover span {
   content: "";
   width: 16px;
   height: 13px;
-  background-image: url(assets/images/sprite.png);
+  background-image: url(/assets/images/sprite.png);
 }
 .user_wrap ul li a .user_edit::before {
   background-position: -267px -179px;
@@ -376,27 +376,27 @@ header .noti_wrap:hover span {
   z-index: 1;
   background: #fafbfc;
 }
-.contents_wrap > button {
-  position: absolute;
-  left: 230px;
-  top: 100px;
-  z-index: 501;
-  width: 30px;
-  height: 40px;
-  background: #ddd;
-  border-radius: 0 4px 4px 0;
-  font-size: 0;
-  line-height: 0;
-  text-align: center;
-  cursor: pointer;
-}
+// .contents_wrap > button {
+//   position: absolute;
+//   left: 230px;
+//   top: 100px;
+//   z-index: 501;
+//   width: 30px;
+//   height: 40px;
+//   background: #ddd;
+//   border-radius: 0 4px 4px 0;
+//   font-size: 0;
+//   line-height: 0;
+//   text-align: center;
+//   cursor: pointer;
+// }
 .contents_wrap > button:hover {
   background: rgb(185, 185, 185);
 }
-.contents_wrap .lnb_menu_wrap {
+.lnb_menu_wrap {
   position: relative;
 }
-.contents_wrap .lnb_menu {
+.lnb_menu {
   position: relative;
   position: fixed;
   left: 0;
@@ -454,17 +454,30 @@ footer .help_button:hover {
 .fold_lnb footer {
   padding: 55px 0 55px 70px;
 }
-.fold_lnb #contents_wrap .lnb_fold_btn {
+.fold_lnb  .lnb_fold_btn {
   text-align: right;
   left: 50px;
   background: #fff;
   border: 1px solid #ddd;
 }
-.fold_lnb #contents_wrap .lnb_fold_btn span {
-  background: url(assets/images/sprite.png) no-repeat -267px -41px;
-  margin: 0 6px 0 0;
+.fold_lnb .lnb_fold_btn  {
+  span {
+    background: url(/assets/images/sprite.png) no-repeat -267px -41px;
+    margin: 0 6px 0 0;
+  }
 }
-#contents_wrap .lnb_fold_btn {
+// TODO: 이부분 CSS 다듬을것
+.lnb_fold_btn {
+  z-index: 501;
+  width: 30px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 0 4px 4px 0;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  cursor: pointer;
+
   text-align: left;
   position: fixed;
   top: 90px;
@@ -475,12 +488,14 @@ footer .help_button:hover {
   border: 0;
   transition: all 0.2s;
 }
-#contents_wrap .lnb_fold_btn span {
-  display: inline-block;
-  width: 15px;
-  height: 17px;
-  background: url(assets/images/sprite.png) no-repeat -293px -41px;
-  margin: 0 0 0 6px;
+.lnb_fold_btn {
+  span {
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    background: url(/assets/images/sprite.png) no-repeat -293px -41px;
+    margin: 0 0 0 6px;
+  }
 }
 .fold_lnb .contents_wrap .con01 {
   padding: 70px 0 0 70px;
@@ -545,7 +560,7 @@ footer .help_button:hover {
   content: "";
   width: 6px;
   height: 10px;
-  background-image: url(assets/images/sprite.png);
+  background-image: url(/assets/images/sprite.png);
   background-position: -18px -41px;
 }
 /* 중첩메뉴 접히는 기능과 버튼 */
@@ -565,7 +580,7 @@ footer .help_button:hover {
 .menu_icon {
   width: 22px;
   height: 22px;
-  background-image: url(assets/images/sprite.png);
+  background-image: url(/assets/images/sprite.png);
   vertical-align: middle;
   margin: 0 12px 0 6px;
 }
@@ -889,7 +904,7 @@ footer .help_button:hover {
   content: "";
   width: 20px;
   height: 20px;
-  background: url(assets/images/sprite.png) no-repeat -190px -74px;
+  background: url(/assets/images/sprite.png) no-repeat -190px -74px;
 }
 .section_in {
   padding: 30px 30px 0;
@@ -951,13 +966,13 @@ footer .help_button:hover {
   content: "";
   width: 18px;
   height: 18px;
-  background: #fff url(assets/images/sprite.png) no-repeat -115.5px -90px;
+  background: #fff url(/assets/images/sprite.png) no-repeat -115.5px -90px;
   border: 1px solid #3a65f2;
   border-radius: 50%;
   cursor: pointer;
 }
 .con02.fold .fold_toggle {
-  background: #fff url(assets/images/sprite.png) no-repeat -115.5px -75.5px;
+  background: #fff url(/assets/images/sprite.png) no-repeat -115.5px -75.5px;
 }
 .form_option .slced_line::after {
   top: 16px;
@@ -1046,7 +1061,7 @@ footer .help_button:hover {
   top: 9px;
   width: 14px;
   height: 14px;
-  background-image: url(assets/images/sprite.png);
+  background-image: url(/assets/images/sprite.png);
 }
 .form_group button.btn_i::before {
   display: none;
@@ -1115,7 +1130,7 @@ td.rp button::before {
   top: 3px;
   width: 17px;
   height: 17px;
-  background-image: url(assets/images/sprite.png);
+  background-image: url(/assets/images/sprite.png);
 }
 td.rp div {
   position: relative;
@@ -1157,7 +1172,7 @@ td.check button {
   width: 17px;
   height: 18px;
   border: 0;
-  background-image: url(assets/images/sprite.png);
+  background-image: url(/assets/images/sprite.png);
   margin: 14px 0 0;
 }
 /* 평판 버튼 선택되지 않은 경우 */

@@ -1,7 +1,7 @@
 import Footer from 'components/common/Footer'
 import React from 'react'
 import signInStyle from "styles/pages/SignIn.module.css"
-import commonStyle from "styles/common.module.css"
+import commonStyle from "styles/common.module.scss"
 
 const SignInLayout = ({ children }) => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import SidebarMenuList from './SidebarMenuList'
-import commonStyle from "styles/common.module.css"
+import commonStyle from "styles/common.module.scss"
 // import "styles/common.css"
 
 const Sidebar = () => {

@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import React from 'react'
-import commonStyle from "styles/common.module.css"
+import commonStyle from "styles/common.module.scss"
 
 const SidebarMenuList = ({ serviceName, serviceIcon, hasRealTimeData, hasSearchResult, hasNewcomerData, hasAnalysis }) => {
   return (

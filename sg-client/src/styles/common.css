@@ -482,7 +482,10 @@ footer .help_button:hover {
   background: url(assets/images/sprite.png) no-repeat -293px -41px;
   margin: 0 0 0 6px;
 }
-.fold_lnb .contents_wrap .con01 {
+/* .fold_lnb .contents_wrap .con01 {
+  padding: 70px 0 0 70px;
+} */
+.fold_lnb .con01 {
   padding: 70px 0 0 70px;
 }
 .fold_lnb .contents_wrap .con02,

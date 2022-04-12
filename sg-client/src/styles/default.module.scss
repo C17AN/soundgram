@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: "BAHNSCHRIFT";
-  src: url(assets/fonts/BAHNSCHRIFT.eot), url(assets/fonts/BAHNSCHRIFT.ttf.woff) format("woff"),
-    url(assets/fonts/BAHNSCHRIFT.ttf) format("truetype");
+  src: url(/assets/fonts/BAHNSCHRIFT.eot), url(/assets/fonts/BAHNSCHRIFT.ttf.woff) format("woff"),
+    url(/assets/fonts/BAHNSCHRIFT.ttf) format("truetype");
 }
 /* Reset */
 * {
@@ -104,14 +104,14 @@ select {
   padding: 0.8em 0.5em;
   border: 1px solid #999;
   font-family: inherit;
-  background: url("assets/images/arrow01.png") no-repeat 95% 50%;
+  background: url("/assets/images/arrow01.png") no-repeat 95% 50%;
   border-radius: 0px;
 }
 /* select::after{
   position:absolute;
   width:8px;
   height: 5px;
-  background: url(assets/images/sprite.png) no-repeat 0 -41px;
+  background: url(/assets/images/sprite.png) no-repeat 0 -41px;
 } */
 /* IE 10, 11의 네이티브 화살표 숨기기  */
 select::-ms-expand {
@@ -215,7 +215,7 @@ select {
 /* select:after {
   width: 8px;
   height: 5px;
-  background: url("assets/images/sprite.png") no-repeat 47px 94px;
+  background: url("/assets/images/sprite.png") no-repeat 47px 94px;
   background-size: cover;
 } */
 input[type="tel"],
@@ -350,7 +350,7 @@ textarea[disabled] {
   content: "";
   width: 12px;
   height: 12px;
-  background: url(assets/images/sprite.png) no-repeat -62px -71px;
+  background: url(/assets/images/sprite.png) no-repeat -62px -71px;
 }
 .btn_big {
   font-size: 14px;
@@ -470,7 +470,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: #e9ecef url("assets/images/input01.png") no-repeat;
+  background: #e9ecef url("/assets/images/input01.png") no-repeat;
   background-position: center;
   width: 40px;
   height: 38px;
