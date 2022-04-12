@@ -1,7 +1,6 @@
 import React from 'react'
 import loginLogo from "assets/images/login_logo.png"
 import signInStyle from "styles/pages/SignIn.module.css"
-import defaultStyle from "styles/default.module.css"
 import commonStyle from "styles/common.module.css"
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 import "styles/bootstrap.css"
@@ -28,7 +27,7 @@ const SignIn = () => {
       </div>
       <div className={signInStyle.right}>
         <div className={signInStyle["form-group"]}>
-          <label for="login_id" className={defaultStyle.blind}></label>
+          <label for="login_id" className={"blind"}></label>
           <input
             className={signInStyle["form-control"]}
             type="text"
@@ -38,7 +37,7 @@ const SignIn = () => {
           />
         </div>
         <div className={signInStyle["form-group"]}>
-          <label for="login_pw" className={defaultStyle.blind}></label>
+          <label for="login_pw" className={"blind"}></label>
           <input
             className={signInStyle["form-control"]}
             type="password"
