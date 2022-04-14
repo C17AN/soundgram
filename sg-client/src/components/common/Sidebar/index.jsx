@@ -1,15 +1,16 @@
 import React from 'react'
 import SidebarMenuList from './SidebarMenuList'
 import commonStyle from "styles/common.module.scss"
+import defaultStyle from "styles/default.module.scss"
 // import "styles/common.css"
 
-const Sidebar = () => {
+const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   return (
     <>
-      <button type="button" className={commonStyle.lnb_fold_btn}>
+      <button type="button" className={commonStyle.lnb_fold_btn} onClick={toggleSidebar}>
         <span></span>
       </button>
-      <div className={`${commonStyle.lnb_menu} ${commonStyle.slimscroll}`} style={{ height: "100vh" }}>
+      <div className={`${commonStyle.lnb_menu} ${defaultStyle.slimscroll}`} style={{ height: "100vh" }}>
         <div className={commonStyle.fold_scr}>
           <div className={commonStyle.lnb_wide}>
             <div className={commonStyle["issue-menu"]}>
@@ -26,9 +27,9 @@ const Sidebar = () => {
             <div className={commonStyle['portal-menu']} >
               <span>PORTAL</span>
               <ul className={commonStyle.m_potal}>
-                <SidebarMenuList serviceName={"네이버"} hasRealTimeData />
-                <SidebarMenuList serviceName={"다음"} />
-                <SidebarMenuList serviceName={"구글"} />
+                <SidebarMenuList serviceName={"네이버"} hasRealTimeData hasAnalysisMenu hasRealTimeDataMenu hasSearchResultMenu hasNewComingDataMenu />
+                <SidebarMenuList serviceName={"다음"} hasRealTimeData hasAnalysisMenu hasRealTimeDataMenu hasSearchResultMenu hasNewComingDataMenu />
+                <SidebarMenuList serviceName={"구글"} hasRealTimeData hasAnalysisMenu hasRealTimeDataMenu hasSearchResultMenu hasNewComingDataMenu />
               </ul>
             </div>
             <div className="SNS-menu">
