@@ -1,8 +1,15 @@
 import React from 'react'
 import HeaderLogo from "assets/images/logo.png"
 import commonStyle from "styles/common.module.scss"
+import { useLocation } from "react-router-dom"
+import AdminHeader from './AdminHeader'
+import LoginHeader from './LoginHeader'
 
 const Header = () => {
+  const { pathname } = useLocation();
+  console.log(pathname)
+  const isAdminPage = pathname === "/admin"
+
   return (
     <header>
       <div className={commonStyle.gnb_menu}>
@@ -22,13 +29,12 @@ const Header = () => {
             <span className={commonStyle.gt_01}>REALTIME BIG DATA SOLUTION</span>
             <span className={commonStyle.gt_02}>2021</span>
           </div>
-          <ul>
-            <li className={commonStyle.login_top}>
-              <button type="button" className={commonStyle.login} onClick="location.href='login.php'; ">LOGIN</button>
-            </li>
-          </ul>
+          <>
+            {!isAdminPage ? <LoginHeader /> : <AdminHeader />
+            }
+          </>
         </div>
-      </div>
+      </div >
     </header >
   )
 }

@@ -26,7 +26,7 @@ const Sidebar = () => {
             <div className={commonStyle['portal-menu']} >
               <span>PORTAL</span>
               <ul className={commonStyle.m_potal}>
-                <SidebarMenuList serviceName={"네이버"} />
+                <SidebarMenuList serviceName={"네이버"} hasRealTimeData />
                 <SidebarMenuList serviceName={"다음"} />
                 <SidebarMenuList serviceName={"구글"} />
               </ul>
