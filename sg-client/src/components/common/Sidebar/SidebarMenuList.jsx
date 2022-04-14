@@ -5,7 +5,7 @@ import commonStyle from "styles/common.module.scss"
 const SidebarMenuList = ({ serviceName, serviceIcon, hasRealTimeDataMenu, hasSearchResultMenu, hasNewComingDataMenu, hasAnalysisMenu }) => {
   return (
     <li className={`${commonStyle.menu_tit} ${commonStyle.m_fold}`}>
-      <a href="javascript:void(0);" class="m_tit">
+      <a href="javascript:void(0);" className={commonStyle.m_tit}>
         <span className={classNames(commonStyle.menu_icon, { [commonStyle[serviceIcon]]: serviceIcon })}></span>
         <span className={commonStyle.svc_name}>{serviceName}</span>
       </a>

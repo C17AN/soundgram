@@ -647,7 +647,7 @@ footer .help_button:hover {
   line-height: 35px;
   padding: 0 20px;
 }
-.wrap.fold_lnb .lnb_wide li .svc_name,
+.wrap.fold_lnb .lnb_wide .menu_tit .svc_name,
 .wrap.fold_lnb .lnb_wide .m_issue .svc_name,
 .wrap.fold_lnb .lnb_wide .sub2_tit .svc_name,
 .wrap.fold_lnb .lnb_wide .menu_tit .svc_name,
@@ -655,14 +655,16 @@ footer .help_button:hover {
 .wrap.fold_lnb .lnb_wide .menu_tit .sub_menu {
   display: none;
 }
+
+.wrap.fold_lnb .lnb_wide .menu_tit:hover .svc_name,
 .wrap.fold_lnb .lnb_wide .m_issue:hover .svc_name,
-.wrap.fold_lnb .lnb_wide li:hover .svc_name,
 .wrap.fold_lnb .lnb_wide .sub2_tit:hover .svc_name,
 .wrap.fold_lnb .lnb_wide .menu_tit:hover .svc_name,
 .wrap.fold_lnb .lnb_wide .sub2_tit:hover .sub2_menu,
 .wrap.fold_lnb .lnb_wide .menu_tit:hover .sub_menu {
   display: block;
 }
+
 .fold_lnb .lnb_wide .svc_name {
   position: absolute;
   left: 70px;

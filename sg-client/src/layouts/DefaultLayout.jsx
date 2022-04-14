@@ -16,7 +16,7 @@ const DefaultLayout = ({ children }) => {
 
   return (
     <>
-      <div className={classNames("wrap", { [commonStyle["fold_lnb"]]: !isSidebarOpen })}>
+      <div className={classNames(commonStyle.wrap, { [commonStyle["fold_lnb"]]: !isSidebarOpen })}>
         <div className={commonStyle.contents_wrap} id="contents_wrap">
           <Header />
           <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
