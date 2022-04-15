@@ -1,10 +1,17 @@
 import classNames from 'classnames'
 import React from 'react'
+import { useState } from 'react'
 import commonStyle from "styles/common.module.scss"
 
 const SidebarMenuList = ({ serviceName, serviceIcon, customIcon, hasRealTimeDataMenu, hasSearchResultMenu, hasNewComingDataMenu, hasAnalysisMenu }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpanded = () => {
+    setIsExpanded(!isExpanded);
+  }
+
   return (
-    <li className={`${commonStyle.menu_tit} ${commonStyle.m_fold}`}>
+    <li className={classNames(`${commonStyle.menu_tit} ${commonStyle.m_fold}`, { [commonStyle.active]: isExpanded })} onClick={toggleExpanded}>
       <a href="javascript:void(0);" className={commonStyle.m_tit}>
         <span className={classNames(commonStyle.menu_icon, { [commonStyle[customIcon]]: customIcon })}></span>
         {serviceIcon && serviceIcon}
