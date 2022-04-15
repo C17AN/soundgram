@@ -2,11 +2,12 @@ import classNames from 'classnames'
 import React from 'react'
 import commonStyle from "styles/common.module.scss"
 
-const SidebarMenuList = ({ serviceName, serviceIcon, hasRealTimeDataMenu, hasSearchResultMenu, hasNewComingDataMenu, hasAnalysisMenu }) => {
+const SidebarMenuList = ({ serviceName, serviceIcon, customIcon, hasRealTimeDataMenu, hasSearchResultMenu, hasNewComingDataMenu, hasAnalysisMenu }) => {
   return (
     <li className={`${commonStyle.menu_tit} ${commonStyle.m_fold}`}>
       <a href="javascript:void(0);" className={commonStyle.m_tit}>
-        <span className={classNames(commonStyle.menu_icon, { [commonStyle[serviceIcon]]: serviceIcon })}></span>
+        <span className={classNames(commonStyle.menu_icon, { [commonStyle[customIcon]]: customIcon })}></span>
+        {serviceIcon && serviceIcon}
         <span className={commonStyle.svc_name}>{serviceName}</span>
       </a>
       <ul className={commonStyle.sub_menu}>

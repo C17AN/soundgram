@@ -2,6 +2,7 @@ import React from 'react'
 import SidebarMenuList from './SidebarMenuList'
 import commonStyle from "styles/common.module.scss"
 import defaultStyle from "styles/default.module.scss"
+import { AiOutlineInstagram } from "react-icons/ai"
 // import "styles/common.css"
 
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
@@ -35,9 +36,38 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <div className="SNS-menu">
               <span>SNS</span>
               <ul className={commonStyle.m_sns}>
-                <SidebarMenuList serviceName={"인스타그램"} serviceIcon={"insta"} />
-                <SidebarMenuList serviceName={"트위터"} />
-                <SidebarMenuList serviceName={"유튜브"} />
+                <SidebarMenuList serviceName={"인스타그램"} customIcon={"insta"} />
+                <SidebarMenuList serviceName={"페이스북"} customIcon={"insta"} />
+                <SidebarMenuList serviceName={"트위터"} serviceIcon={AiOutlineInstagram} />
+                <SidebarMenuList serviceName={"유튜브"} serviceIcon={AiOutlineInstagram} />
+              </ul>
+            </div>
+            <div className="community-menu">
+              <span>COMMUNITY</span>
+              <ul className={commonStyle.m_sns}>
+                <SidebarMenuList serviceName={"커뮤니티"} />
+              </ul>
+            </div>
+            <div className="info-menu">
+              <span>INFO</span>
+              <ul className={commonStyle.m_sns}>
+                <SidebarMenuList serviceName={"키워드 검색 수"} customIcon={"insta"} />
+              </ul>
+            </div>
+            <div className="intense-menu">
+              <span>INTENSE</span>
+              <ul className={commonStyle.m_sns}>
+                <SidebarMenuList serviceName={"통합 검색"} customIcon={"insta"} />
+                <SidebarMenuList serviceName={"Report"} serviceIcon={AiOutlineInstagram} />
+                <SidebarMenuList serviceName={"트렌드 분석"} serviceIcon={AiOutlineInstagram} />
+                <SidebarMenuList serviceName={"기타"} serviceIcon={AiOutlineInstagram} />
+              </ul>
+            </div>
+            <div className="management-menu">
+              <span>관리</span>
+              <ul className={commonStyle.m_sns}>
+                <SidebarMenuList serviceName={"환경설정"} />
+                <SidebarMenuList serviceName={"ADMIN"} serviceIcon={AiOutlineInstagram} />
               </ul>
             </div>
           </div>

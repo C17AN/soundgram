@@ -14,7 +14,7 @@ ReactDOM.render(
       <Route path="/admin" element={<MainPage />} />
       <Route path="/signIn" element={<SignInPage />} />
       <Route path="/signUp" element={<SignUpPage />} />
-      <Route path="*" element={<NotFoundPage />}></Route>
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   </Router>,
   document.getElementById('root')
