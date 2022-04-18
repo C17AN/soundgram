@@ -10,7 +10,7 @@ import { useState } from 'react'
 const DefaultLayout = ({ children }) => {
   const isMobile = useIsMobile()
   const [isSidebarOpen, setIsSidebarOpen] = useState(!isMobile)
-  const toggleSidebar = () => {
+  const toggleSidebarOpen = () => {
     setIsSidebarOpen(!isSidebarOpen)
   }
 
@@ -19,7 +19,7 @@ const DefaultLayout = ({ children }) => {
       <div className={classNames(commonStyle.wrap, { [commonStyle["fold_lnb"]]: !isSidebarOpen })}>
         <div className={commonStyle.contents_wrap} id="contents_wrap">
           <Header />
-          <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+          <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebarOpen={toggleSidebarOpen} />
           <>{children}</>
         </div>
         <Footer />

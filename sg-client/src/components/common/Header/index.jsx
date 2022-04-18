@@ -1,7 +1,8 @@
 import React from 'react'
 import HeaderLogo from "assets/images/logo.png"
 import commonStyle from "styles/common.module.scss"
-import { useLocation } from "react-router-dom"
+import defaultStyle from "styles/default.module.scss"
+import { Link, useLocation } from "react-router-dom"
 import AdminHeader from './AdminHeader'
 import LoginHeader from './LoginHeader'
 
@@ -14,9 +15,11 @@ const Header = () => {
     <header>
       <div className={commonStyle.gnb_menu}>
         <h1 className={`${commonStyle.logo} ${commonStyle.pc_logo}`}>
-          <a>
-            {/* <button type="button" onClick="location.href='login.php'; ">메인페이지 이동</button> */}
-          </a>
+          <Link to="/admin">
+            <span className={defaultStyle.hidden}>
+              메인페이지 이동
+            </span>
+          </Link>
         </h1>
         <h1 className={`${commonStyle.logo} ${commonStyle.fold_logo}`}>
           <a href="main_index.php">

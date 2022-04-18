@@ -5,10 +5,10 @@ import defaultStyle from "styles/default.module.scss"
 import { AiOutlineInstagram } from "react-icons/ai"
 // import "styles/common.css"
 
-const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
+const Sidebar = ({ isSidebarOpen, toggleSidebarOpen }) => {
   return (
     <>
-      <button type="button" className={commonStyle.lnb_fold_btn} onClick={toggleSidebar}>
+      <button type="button" className={commonStyle.lnb_fold_btn} onClick={toggleSidebarOpen}>
         <span></span>
       </button>
       <div className={`${commonStyle.lnb_menu} ${defaultStyle.slimscroll}`} style={{ height: "100vh" }}>
@@ -36,16 +36,16 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <div className="SNS-menu">
               <span>SNS</span>
               <ul className={commonStyle.m_sns}>
-                <SidebarMenuList serviceName={"인스타그램"} customIcon={"insta"} />
-                <SidebarMenuList serviceName={"페이스북"} customIcon={"insta"} />
-                <SidebarMenuList serviceName={"트위터"} serviceIcon={AiOutlineInstagram} />
-                <SidebarMenuList serviceName={"유튜브"} serviceIcon={AiOutlineInstagram} />
+                <SidebarMenuList serviceName={"인스타그램"} customIcon={"insta"} hasRealTimeDataMenu hasAnalysisMenu />
+                <SidebarMenuList serviceName={"페이스북"} customIcon={"insta"} hasRealTimeDataMenu hasAnalysisMenu />
+                <SidebarMenuList serviceName={"트위터"} serviceIcon={AiOutlineInstagram} hasRealTimeDataMenu hasAnalysisMenu />
+                <SidebarMenuList serviceName={"유튜브"} serviceIcon={AiOutlineInstagram} hasRealTimeDataMenu hasAnalysisMenu />
               </ul>
             </div>
             <div className="community-menu">
               <span>COMMUNITY</span>
               <ul className={commonStyle.m_sns}>
-                <SidebarMenuList serviceName={"커뮤니티"} />
+                <SidebarMenuList serviceName={"커뮤니티"} hasRealTimeDataMenu hasAnalysisMenu />
               </ul>
             </div>
             <div className="info-menu">
