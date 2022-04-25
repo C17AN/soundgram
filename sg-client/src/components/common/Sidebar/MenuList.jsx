@@ -1,9 +1,10 @@
 import classNames from 'classnames'
 import React from 'react'
-import { useState } from 'react'
 import commonStyle from "styles/common.module.scss"
+import { useState } from 'react'
+import styled from '@emotion/styled'
 
-const SidebarMenuList = ({ serviceName, serviceIcon, customIcon, hasRealTimeDataMenu, hasSearchResultMenu, hasNewComingDataMenu, hasAnalysisMenu }) => {
+const MenuList = ({ serviceName, serviceIcon, customIcon, hasRealTimeDataMenu, hasSearchResultMenu, hasNewComingDataMenu, hasAnalysisMenu }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpanded = () => {
@@ -12,11 +13,11 @@ const SidebarMenuList = ({ serviceName, serviceIcon, customIcon, hasRealTimeData
 
   return (
     <li className={classNames(`${commonStyle.menu_tit} ${commonStyle.m_fold}`, { [commonStyle.active]: isExpanded })} onClick={toggleExpanded}>
-      <a href="javascript:void(0);" className={commonStyle.m_tit}>
-        <span className={classNames(commonStyle.menu_icon, { [commonStyle[customIcon]]: customIcon })}></span>
-        {serviceIcon && serviceIcon}
+      <MenuTitle className={commonStyle.m_tit}>
+        <span className={classNames({ [commonStyle[customIcon]]: customIcon, [commonStyle['menu_icon']]: !serviceIcon, })}></span>
+        {serviceIcon}
         <span className={commonStyle.svc_name}>{serviceName}</span>
-      </a>
+      </MenuTitle>
       <ul className={commonStyle.sub_menu}>
         {hasRealTimeDataMenu && <li><a href="common_lately.php?class=n">실시간 전체보기</a></li>}
         {hasSearchResultMenu && <li><a href="common_t100.php?class=n&page_type=all">브랜드 검색결과</a></li>}
@@ -27,4 +28,13 @@ const SidebarMenuList = ({ serviceName, serviceIcon, customIcon, hasRealTimeData
   )
 }
 
-export default SidebarMenuList
+const MenuTitle = styled.a`
+  display: flex !important;
+  align-items: center;
+  & > svg {
+    margin: 0 12px 0 6px;
+  }
+`
+
+
+export default MenuList

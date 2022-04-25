@@ -1,8 +1,9 @@
 import React from 'react'
-import SidebarMenuList from './SidebarMenuList'
+import MenuList from './MenuList'
 import commonStyle from "styles/common.module.scss"
 import defaultStyle from "styles/default.module.scss"
 import { AiOutlineInstagram } from "react-icons/ai"
+import MenuData from './MenuData'
 // import "styles/common.css"
 
 const Sidebar = ({ isSidebarOpen, toggleSidebarOpen }) => {
@@ -17,57 +18,71 @@ const Sidebar = ({ isSidebarOpen, toggleSidebarOpen }) => {
             <div className={commonStyle["issue-menu"]}>
               <span>ISSUE TREND</span>
               <ul className={commonStyle.m_issue}>
-                <li >
-                  <a href="main_index.php" >
-                    <i class="remixicon-slideshow-line"></i>
-                    <span className={commonStyle.svc_name}>Dashboard</span>
-                  </a>
-                </li>
+                {
+                  MenuData.ISSUE_TREND.map((item) => (
+                    <MenuList key={item.serviceName} {...item} />
+                  ))
+                }
               </ul>
             </div>
             <div className={commonStyle['portal-menu']} >
               <span>PORTAL</span>
               <ul className={commonStyle.m_potal}>
-                <SidebarMenuList serviceName={"네이버"} hasRealTimeData hasAnalysisMenu hasRealTimeDataMenu hasSearchResultMenu hasNewComingDataMenu />
-                <SidebarMenuList serviceName={"다음"} hasRealTimeData hasAnalysisMenu hasRealTimeDataMenu hasSearchResultMenu hasNewComingDataMenu />
-                <SidebarMenuList serviceName={"구글"} hasRealTimeData hasAnalysisMenu hasRealTimeDataMenu hasSearchResultMenu hasNewComingDataMenu />
+                {
+                  MenuData.PORTAL.map((item) => (
+                    <MenuList key={item.serviceName} {...item} />
+                  ))
+                }
               </ul>
             </div>
             <div className="SNS-menu">
               <span>SNS</span>
               <ul className={commonStyle.m_sns}>
-                <SidebarMenuList serviceName={"인스타그램"} customIcon={"insta"} hasRealTimeDataMenu hasAnalysisMenu />
-                <SidebarMenuList serviceName={"페이스북"} customIcon={"insta"} hasRealTimeDataMenu hasAnalysisMenu />
-                <SidebarMenuList serviceName={"트위터"} serviceIcon={AiOutlineInstagram} hasRealTimeDataMenu hasAnalysisMenu />
-                <SidebarMenuList serviceName={"유튜브"} serviceIcon={AiOutlineInstagram} hasRealTimeDataMenu hasAnalysisMenu />
+                {
+                  MenuData.SNS.map((item) => (
+                    <MenuList key={item.serviceName} {...item} />
+                  ))
+                }
               </ul>
             </div>
             <div className="community-menu">
               <span>COMMUNITY</span>
               <ul className={commonStyle.m_sns}>
-                <SidebarMenuList serviceName={"커뮤니티"} hasRealTimeDataMenu hasAnalysisMenu />
+                {
+                  MenuData.COMMUNITY.map((item) => (
+                    <MenuList key={item.serviceName} {...item} />
+                  ))
+                }
               </ul>
             </div>
             <div className="info-menu">
               <span>INFO</span>
               <ul className={commonStyle.m_sns}>
-                <SidebarMenuList serviceName={"키워드 검색 수"} customIcon={"insta"} />
+                {
+                  MenuData.INFO.map((item) => (
+                    <MenuList key={item.serviceName} {...item} />
+                  ))
+                }
               </ul>
             </div>
             <div className="intense-menu">
               <span>INTENSE</span>
               <ul className={commonStyle.m_sns}>
-                <SidebarMenuList serviceName={"통합 검색"} customIcon={"insta"} />
-                <SidebarMenuList serviceName={"Report"} serviceIcon={AiOutlineInstagram} />
-                <SidebarMenuList serviceName={"트렌드 분석"} serviceIcon={AiOutlineInstagram} />
-                <SidebarMenuList serviceName={"기타"} serviceIcon={AiOutlineInstagram} />
+                {
+                  MenuData.INTENSE.map((item) => (
+                    <MenuList key={item.serviceName} {...item} />
+                  ))
+                }
               </ul>
             </div>
             <div className="management-menu">
               <span>관리</span>
               <ul className={commonStyle.m_sns}>
-                <SidebarMenuList serviceName={"환경설정"} />
-                <SidebarMenuList serviceName={"ADMIN"} serviceIcon={AiOutlineInstagram} />
+                {
+                  MenuData.MANAGEMENT.map((item) => (
+                    <MenuList key={item.serviceName} {...item} />
+                  ))
+                }
               </ul>
             </div>
           </div>
