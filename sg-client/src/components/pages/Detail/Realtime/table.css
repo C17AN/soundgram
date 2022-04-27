@@ -1,0 +1,715 @@
+@charset "utf-8";
+.form_group strong > span {
+  color: #3a65f2;
+}
+/* 테이블 공통내용 */
+table {
+  color: #838383;
+  font-size: 11px;
+}
+thead {
+  background: #f6f6f6;
+
+  text-align: left;
+}
+thead th {
+  border: 1px solid #ddd;
+  height: 46px;
+}
+tbody {
+  color: #666;
+}
+.con02 tbody td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+}
+.zr_con02 tbody td:nth-child(1) {
+  width: 450px;
+  font-weight: 600;
+  background-color: #f6f6f6;
+}
+.zr_con02 tbody td:nth-child(2) {
+  font-size: 13px;
+  color: #333;
+}
+.con02 tbody td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: center;
+}
+.con03 tbody td {
+  border: 1px solid #ddd;
+  padding: 16px 12px;
+}
+/* 테이블 공통요소의 넓이및 속성 컨트롤 class */
+/* th요소 정리 */
+th.runtxt,
+td.runtxt,
+th.rankbtn,
+td.rankbtn,
+th.runnum,
+td.runnum,
+th.ranktxt,
+td.ranktxt,
+th.rankdata,
+td.rankdata,
+td.t94,
+th.idx,
+th.rgst,
+.con03 .num,
+th.kwd,
+td.kwd,
+th.in,
+th.wday,
+th.cname,
+td.cname,
+th.rp,
+th.negative,
+th.inspection,
+th.memo,
+th.xtr,
+th.delete,
+th.extra,
+th.copy,
+td.copy,
+th.detail,
+.con03 .trans,
+.con03 .check,
+.con03 .sstar,
+.con03 .day,
+th.t94,
+td.writer,
+td.detail,
+td.negative,
+th.day,
+td.inspection,
+td.channel,
+td.in,
+th.prvw,
+th.t120,
+td.t120,
+td.wday,
+td.rp,
+td.rgst,
+td.delete,
+td.memo,
+td.idx,
+th.writer,
+td.extra,
+th.channel {
+  text-align: center;
+}
+th.t157,
+th.t190,
+th.long_t,
+th.tit_sum,
+th.img_conts,
+th.tit,
+th.url,
+th.tit_sum,
+th.conts,
+th.cmt,
+th.rankdata_l {
+  padding: 0 0 0 16px;
+}
+th.rankdata_l {
+  min-width: 90px;
+}
+th.num {
+  width: 55px;
+}
+th.extra,
+th.trans,
+th.idx {
+  width: 52px;
+}
+th.check,
+th.memo,
+th.delete {
+  width: 65px;
+}
+th.negative {
+  width: 70px;
+}
+th.writer,
+th.kwd,
+th.inspection,
+th.long_t,
+th.t94,
+th.rp,
+th.rgst {
+  width: 80px;
+}
+th.detail,
+th.in,
+th.wday {
+  width: 92px;
+}
+th.cname,
+th.channel {
+  width: 100px;
+}
+th.copy,
+th.t120 {
+  width: 120px;
+}
+th.t157,
+th.prvw {
+  width: 157px;
+}
+th.t190 {
+  width: 190px;
+}
+th.extra {
+  padding: 0 12px;
+}
+/* td 요소 정리 */
+td.rankbtn button,
+td.detail button {
+  height: 26px;
+  padding: 0 5px;
+  background: #f6f6f6;
+}
+td.rankbtn button:hover,
+td.detail button:hover {
+  background: #fff;
+}
+td.rankbtn i,
+td.detail i {
+  font-size: 14px;
+  vertical-align: middle;
+  margin: 0 2px 0 0;
+}
+.img_con_wrap {
+  display: flex;
+}
+.tit_sum .img_con_left,
+.img_conts .img_con_left {
+  width: 15%;
+  min-width: 150px;
+  margin: 0 12px 0 0;
+  align-self: center;
+}
+.tit_sum .img_con_right,
+.img_conts .img_con_right {
+  float: left;
+  width: auto;
+}
+.tit_sum .img_con_left img,
+.img_conts .img_con_left img {
+  width: 100%;
+}
+td.memo a {
+  display: inline-block;
+  font-size: 10px;
+  color: #3a65f2;
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #3a65f2;
+  border-radius: 20px;
+  transition: all 0.5s;
+  background: #fff;
+}
+td.memo a:hover {
+  color: #fff;
+  background: #3a65f2;
+}
+.con03 tbody td.memo {
+  text-align: center;
+  padding: 0;
+}
+td.memo button {
+  font-size: 10px;
+  text-align: left;
+  width: 100%;
+  border: 0;
+  height: auto;
+  padding: 8px 5px;
+  border-top: 1px solid #ddd;
+}
+td.memo button:first-child {
+  border: 0;
+}
+td.memo button:hover {
+  color: #3a65f2;
+  background: #f6f6f6;
+}
+td.copy button {
+  height: 26px;
+  padding: 0 5px;
+  background: #f6f6f6;
+}
+td.copy i {
+  font-size: 13px;
+  vertical-align: middle;
+}
+td.copy button:hover {
+  background: #fff;
+}
+td.extra select {
+  width: 50px;
+  height: 30px;
+}
+td.long_t {
+  word-break: keep-all;
+}
+td.kwd {
+  font-size: 12px;
+  color: #000;
+}
+td.cname,
+td.conts {
+  font-weight: 600;
+}
+td.conts input,
+td.cname input,
+td.kwd input,
+td.wday input {
+  height: 24px;
+  text-indent: 5px;
+}
+td.wday input {
+  font-size: 11px;
+  border: 1px solid #ddd;
+  text-indent: 3px;
+  width: 170px;
+}
+td.rgst span {
+  width: 70px;
+  line-height: 1.5em;
+  color: #888;
+  display: inline-block;
+  text-align: center;
+}
+td.delete a,
+td.delete button,
+td.delete input {
+  font-size: 10px;
+  color: #f64f69;
+  width: 40px;
+  height: 22px;
+  border: 1px solid #f64f69;
+  border-radius: 20px;
+  transition: all 0.5s;
+  background: #fff;
+}
+td.delete a {
+  line-height: 22px;
+}
+td.delete a:hover,
+td.delete button:hover,
+td.delete input:hover {
+  color: #fff;
+  background: #f64f69;
+}
+td.in strong {
+  display: block;
+  line-height: 100%;
+  margin: 0 0 6px 0;
+}
+td.img_conts h4,
+td.tit_sum h4 {
+  display: inline-block;
+  line-height: 150%;
+}
+td.img_conts h4 {
+  display: flex;
+  height: 100%;
+}
+td.tit_sum span {
+  display: inline-block;
+  margin: 0 0 0 8px;
+}
+td.tit_sum span > a,
+td.tit_sum button {
+  font-size: 8px;
+  color: #3a65f2;
+  height: 16px;
+  line-height: 13px;
+  background: #fff;
+  border: 1px solid #3a65f2;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+td.tit_sum button:hover {
+  color: #fff;
+  background: #3a65f2;
+}
+td.tit_sum span > a {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  padding: 0 0 0 15px;
+}
+td.tit_sum button {
+  width: 26px;
+  text-align: left;
+  padding: 0 0 0 7px;
+}
+td.tit_sum span > a::before {
+  position: absolute;
+  left: 5.5px;
+  top: 2.75px;
+  content: "";
+  width: 8px;
+  height: 9px;
+  background: url(assets/images/sprite.png) no-repeat -133px -114px;
+}
+td.tit_sum p {
+  width: 100%;
+  margin: 5px 0 12px;
+}
+td.img_conts p {
+  margin: 5px 0 0;
+}
+td.img_conts p,
+td.tit_sum p {
+  font-size: 12px;
+  color: #000;
+  line-height: 150%;
+  letter-spacing: 0.005rem;
+  /* 4줄로 숨긴부분 */
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  text-align: left;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+td.img_conts h4 > a {
+  align-self: center;
+}
+td.img_conts h4 > a,
+td.tit_sum h4 > a {
+  font-size: 13px;
+  max-width: 700px;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+td.tit_sum ul li {
+  color: #888;
+  float: left;
+  margin: 0 6px 0 0;
+}
+td.negative strong,
+td.negative {
+  color: #f64f69;
+  font-weight: 900;
+}
+td.wday span {
+  color: #888;
+  display: inline-block;
+  width: 67px;
+  line-height: 100%;
+}
+td.wday span:first-child {
+  margin: 0 0 6px 0;
+}
+td.trans button {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-image: url(assets/images/sprite.png);
+}
+td.inspection select,
+td.inspection button {
+  font-size: 11px;
+  width: 65px;
+  line-height: 20px;
+}
+td.inspection select {
+  height: 24px;
+  text-indent: 5px;
+  padding: 0;
+}
+td.inspection button {
+  height: 22px;
+  line-height: 18px;
+  margin: 6px 0 0;
+  background: #f6f6f6;
+}
+td.inspection button:hover {
+  margin: 6px 0 0;
+  background: #fff;
+}
+td.rp button.btn_none {
+  text-align: center;
+  text-indent: 0;
+  padding: 0;
+}
+td.rp button.btn_none::before {
+  background: none;
+}
+.btn_nut.on::before {
+  background-position: -351px -102px;
+}
+td.ranktxt button {
+  border: 0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+td.url button:hover,
+td.ranktxt button:hover {
+  color: #3a65f2;
+}
+td.rankdata:hover,
+td.rankdata_l:hover {
+  background-color: #e9ecef;
+}
+td.rankdata button,
+td.rankdata_l button {
+  border: 0;
+  background: transparent;
+  height: auto;
+}
+td.rankdata button:hover li span,
+td.rankdata_l button:hover li span {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+td.url button {
+  width: 400px;
+  overflow-y: scroll;
+}
+/* pick 될경우 넘버 td 부분 */
+td.num span.pick {
+  display: inline-block;
+  color: transparent;
+  width: 30px;
+  height: 28px;
+  background: url(assets/images/sprite.png) no-repeat -150px -75px;
+}
+/* 추이 동그란버튼 */
+.btn_pop01 {
+  background-position: -237px -74px;
+}
+.btn_pop02 {
+  background-position: -267px -74px;
+}
+/* 체크 버튼 */
+.btn_pick {
+  background-position: -23px -112px;
+}
+.btn_alert {
+  background-position: -46px -112px;
+}
+.btn_pick.active {
+  background-position: -22px -134px;
+}
+.btn_alert.active {
+  background-position: -46px -134px;
+}
+/* 한 줄로 보기 */
+.con03 tbody.line_one td.wday span.time,
+.con03 tbody.line_one td.channel span,
+.con03 tbody.line_one td.in span,
+.con03 tbody.line_one td.tit_sum img,
+.con03 tbody.line_one td.tit_sum p,
+.con03 tbody.line_one td.tit_sum ul,
+.con03 tbody.line_one td.rp span:last-child,
+.con03 tbody.line_one td.check li:nth-child(2),
+.con03 tbody.line_one td.check li:nth-child(3) {
+  display: none;
+}
+/* 전체 확인 미확인 */
+.table_chk_wrap {
+  width: 100%;
+}
+.table_chk {
+  float: right;
+  padding: 14px 0 0;
+}
+.table_chk div {
+  display: inline-block;
+  font-size: 0;
+  height: 34px;
+  line-height: 30px;
+  padding: 0 22px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+/* .table_chk label {
+  margin: 0 0 0 6px;
+} */
+/* pagenation  */
+.pagenation {
+  width: 100%;
+  text-align: center;
+  padding: 45px 0 0;
+}
+.pagenation nav {
+  text-align: center;
+}
+.pagenation nav ul {
+  display: inline-block;
+}
+.page-item {
+  float: left;
+  border-left: 1px solid #ddd;
+}
+.page-item:nth-of-type(1) {
+  border-left: 0;
+}
+.page-item button {
+  width: 34px;
+  height: 34px;
+}
+.page-link {
+  border-right: 0;
+  border-left: 0;
+}
+.page-link.active {
+  color: #fff;
+  border: 0;
+  background-color: #3a65f2;
+}
+/* 통계분석 안에 테이블 */
+th.total {
+  max-width: 160px;
+  color: #333;
+}
+th.srt_posi,
+th.srt_ngtv,
+th.srt_tabu,
+th.srt_nut,
+th.srt_irr {
+  width: 120px;
+}
+td.total {
+  font-size: 13px;
+  font-weight: 900;
+}
+th.srt_posi,
+td.srt_posi {
+  color: #37cde8;
+}
+th.srt_ngtv,
+td.srt_ngtv {
+  color: #f64f69;
+}
+th.srt_nut,
+td.srt_nut {
+  color: #fce382;
+}
+th.srt_tabu,
+td.srt_tabu {
+  color: #f672a7;
+}
+th.srt_irr,
+td.srt_irr {
+  color: #888;
+}
+/* 네이버플레이스 */
+th.sstar {
+  width: 152px;
+}
+th.day {
+  width: 104px;
+}
+td.conts {
+  color: #000;
+}
+td.conts a {
+  font-size: 13px;
+  line-height: 1.5rem;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+/* 별점 컨트롤 작은것 */
+.con03 tbody .sstar_wrap {
+  position: relative;
+  width: 74px;
+  height: 13px;
+}
+.con03 tbody .sstar_wrap.none,
+.con03 tbody .sstar_wrap.text {
+  width: 100%;
+}
+.con03 tbody .sstar_wrap p,
+.con03 tbody .sstar_wrap.none span,
+.con03 tbody .sstar_wrap.none strong,
+.con03 tbody .sstar_wrap.text span,
+.con03 tbody .sstar_wrap.text strong {
+  display: none;
+}
+.con03 tbody .sstar_wrap.none p {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f64f69;
+}
+.con03 tbody .sstar_wrap.text p {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+}
+.con03 .sstar_blnk,
+.con03 .sstar_b,
+.con03 .sstar_r {
+  position: absolute;
+  display: inline-block;
+  left: 16px;
+  width: 100%;
+  height: 13px;
+  background-image: url(assets/images/sprite.png);
+}
+/* 평균 별점 컨트롤 */
+.con03 .sstar_blnk {
+  background-position: -173px -112px;
+}
+.con03 .sstar_b,
+.con03 .sstar_r {
+  display: none;
+}
+.con03 .sstar_b.star3,
+.con03 .sstar_b.active,
+.con03 .sstar_r.active {
+  display: inline-block;
+}
+td.sstar strong {
+  font-size: 13px;
+  position: absolute;
+  right: -42px;
+  top: -2.5px;
+}
+.star_red_name {
+  color: #f64f69;
+}
+.star_blue_name {
+  color: #3a65f2;
+}
+.sstar_b.active {
+  background-position: -173px -131px;
+  min-width: 51%;
+}
+.sstar_b.star3 {
+  background-position: -173px -131px;
+  min-width: 51%;
+}
+.sstar_r.active {
+  background-position: -173px -150px;
+  max-width: 50%;
+}
+#main-datatable-member.th {
+  min-width: 150px;
+}
+
+.Flipped,
+.Flipped .Content {
+  transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  /* IE 9 */
+  -webkit-transform: rotateX(180deg);
+  /* Safari and Chrome */
+}
