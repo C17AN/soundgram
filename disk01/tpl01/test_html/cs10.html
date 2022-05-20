@@ -1,0 +1,229 @@
+<html
+  lang="ko"
+  class="os_windows chrome pc version_75_0_3770_100 effect_enabled"
+>
+  <head>
+    <link rel="stylesheet" href="css/common_tot.css" />
+    <link rel="stylesheet" type="text/css" href="css/nfc_main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/media_query.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/album.css" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="always" />
+    <title>SoundGram</title>
+
+    <link rel="shortcut icon" href="#" />
+
+    <link rel="stylesheet" type="text/css" href="css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-comm.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/nfc_payment.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/toast.css" />
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/swiper/swiper-bundle.min.js"
+    ></script>
+    <script type="text/javascript" src="js/swiper-setting.js"></script>
+    <script type="text/javascript" src="js/SoundgramApi.js"></script>
+    <script type="text/javascript" src="js/Soundgram.js"></script>
+    <script type="text/javascript" src="js/loadingView.js"></script>
+    <script type="text/javascript" src="js/EventGather.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/common_pages.js"></script>
+    <script type="text/javascript" src="js/component.js"></script>
+    <script type="text/javascript" src="js/sha256.min.js"></script>
+    <!-- <script type="text/javascript" src="js/YTPlayer.js"></script> -->
+    <!-- <script type="text/javascript" src="js/directive.js?v=1"></script> -->
+    <script
+      type="text/javascript"
+      src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://developers.kakao.com/sdk/js/kakao.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
+    ></script>
+    <!-- <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script> -->
+  </head>
+  <body>
+    <div data-include-path="ct10.html"></div>
+    <div class="container">
+      <div id="cs10" class="swiper-slide chip tot_wrap">
+        <!-- 210826 S 메뉴에 따라 달라지는 부분  -->
+        <div class="con_option">
+          <select name="" id="" class="select">
+            <option value="">&nbsp;Recent Releases&nbsp;</option>
+            <option value="">&nbsp;Artist Name&nbsp;</option>
+          </select>
+        </div>
+        <!-- 210826 E 메뉴에 따라 달라지는 부분  -->
+        <div class="chip_recent_scr">
+          <div class="chip_recent_wrap">
+            <ul class="chip_recent">
+              <li class="chip_recent_li">
+                <div class="chip_recent_left">
+                  <span class="chip_r_info">
+                    [<span class="ch_info">싱글</span>]
+                  </span>
+                  <h3 class="chip_r_tit">칩디스크 제목</h3>
+                  <h4 class="chip_r_artist">가수명</h4>
+                  <div class="chip_r_bt">
+                    <span class="chip_r_rday">2021.08.12</span>
+                    <a href="">Buy</a>
+                  </div>
+                </div>
+                <div class="chip_recent_right">
+                  <img src="images/intro_chipdisc01.png" />
+                </div>
+              </li>
+              <li class="chip_recent_li">
+                <div class="chip_recent_left">
+                  <span class="chip_r_info">
+                    [<span class="ch_info">EP</span>]
+                  </span>
+                  <h3 class="chip_r_tit">Butter</h3>
+                  <h4 class="chip_r_artist">BTS(방탄소년단)</h4>
+                  <div class="chip_r_bt">
+                    <span class="chip_r_rday">2021.08.12</span>
+                    <a href="">Buy</a>
+                  </div>
+                </div>
+                <div class="chip_recent_right">
+                  <img src="images/intro_chipdisc02.png" />
+                </div>
+              </li>
+              <li class="chip_recent_li">
+                <div class="chip_recent_left">
+                  <span class="chip_r_info">
+                    [<span class="ch_info">싱글</span>]
+                  </span>
+                  <h3 class="chip_r_tit">사랑의 불시착</h3>
+                  <h4 class="chip_r_artist">가수명</h4>
+                  <div class="chip_r_bt">
+                    <span class="chip_r_rday">2021.08.12</span>
+                    <a href="">Buy</a>
+                  </div>
+                </div>
+                <div class="chip_recent_right">
+                  <img src="images/intro_chipdisc03.png" />
+                </div>
+              </li>
+              </li>
+              <li class="chip_recent_li">
+                <div class="chip_recent_left">
+                  <span class="chip_r_info">
+                    [<span class="ch_info">정규</span>]
+                  </span>
+                  <h3 class="chip_r_tit">Adventure</h3>
+                  <h4 class="chip_r_artist">우효</h4>
+                  <div class="chip_r_bt">
+                    <span class="chip_r_rday">2021.03</span>
+                    <a href="">Buy</a>
+                  </div>
+                </div>
+                <div class="chip_recent_right">
+                  <img src="images/intro_chipdisc04.png" />
+                </div>
+              </li>
+              <li class="chip_recent_li">
+                <div class="chip_recent_left">
+                  <span class="chip_r_info">
+                    [<span class="ch_info">EP</span>]
+                  </span>
+                  <h3 class="chip_r_tit">Cellophane</h3>
+                  <h4 class="chip_r_artist">Fromm</h4>
+                  <div class="chip_r_bt">
+                    <span class="chip_r_rday">2021.03</span>
+                    <a href="">Buy</a>
+                  </div>
+                </div>
+                <div class="chip_recent_right">
+                  <img src="images/intro_chipdisc05.png" />
+                </div>
+              </li>
+              <li class="chip_recent_li">
+                <div class="chip_recent_left">
+                  <span class="chip_r_info">
+                    [<span class="ch_info">BEST</span>]
+                  </span>
+                  <h3 class="chip_r_tit">CRYING NUT BEST</h3>
+                  <h4 class="chip_r_artist">크라잉넛</h4>
+                  <div class="chip_r_bt">
+                    <span class="chip_r_rday">2021.03</span>
+                    <a href="">Buy</a>
+                  </div>
+                </div>
+                <div class="chip_recent_right">
+                  <img src="images/intro_chipdisc06.png" />
+                </div>
+              </li>
+              <li class="chip_recent_li">
+                <div class="chip_recent_left">
+                  <span class="chip_r_info">
+                    [<span class="ch_info">EP</span>]
+                  </span>
+                  <h3 class="chip_r_tit">넌 나에게</h3>
+                  <h4 class="chip_r_artist">기프트</h4>
+                  <div class="chip_r_bt">
+                    <span class="chip_r_rday">2021.03</span>
+                    <a href="">Buy</a>
+                  </div>
+                </div>
+                <div class="chip_recent_right">
+                  <img src="images/intro_chipdisc07.png" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div data-include-path="cb10.html"></div>
+    <!-- ct10.html, cb10.html 공통부분 불러오기 -->
+    <script>
+      window.addEventListener('load', function() {
+          var allElements = document.getElementsByTagName('*');
+          Array.prototype.forEach.call(allElements, function(el) {
+              var includePath = el.dataset.includePath;
+              if (includePath) {
+                  var xhttp = new XMLHttpRequest();
+                  xhttp.onreadystatechange = function () {
+                      if (this.readyState == 4 && this.status == 200) {
+                          el.outerHTML = this.responseText;
+                      }
+                  };
+                  xhttp.open('GET', includePath, true);
+                  xhttp.send();
+              }
+          });
+      });
+
+  </script> 
+  </body>
+</html>

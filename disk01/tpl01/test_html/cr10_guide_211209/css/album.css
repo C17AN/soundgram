@@ -1,0 +1,663 @@
+@charset "utf-8";
+/* 템플릿 vol.01 */
+/* Body  크라잉넛 - 25주년 베스트 앨범  CSS */
+/* 인트로 배경색 */
+.intro_bg {
+  background-color: #082656;
+  color: #fff;
+}
+/* 타이틀 배경이미지의 크기 및 높이를 변경하고 싶을때 */
+.scroll .booklet_img,
+.scroll .video,
+.scroll .thanks {
+  margin-top: 0;
+}
+.scroll .page_title {
+  background-size: cover !important;
+  background-position: bottom;
+  height: 160px !important;
+  position: fixed;
+  top: 0;
+}
+#al02 .page_title {
+  background-image: url("../images/al02_bg_title.png");
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+#bo02 .page_title,
+#th02 .page_title,
+#vi02 .page_title {
+  background-size: 100% auto;
+  width: 100%; /* 수정 */
+  height: 140px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+#sc02 .page_title {
+  background-position: center top;
+}
+#sn02 .page_title {
+  background-position: center bottom;
+}
+#vd02 .page_title,
+#rv02 .page_title,
+#review_txt .page_title {
+  background-position: center top;
+}
+/* 좌측메뉴 */
+#me02 nav {
+  background-color: /* 메인컬러 pM */ #082656;
+}
+.menu_main {
+  background-color: #0b2245;
+}
+.menu_player a {
+  background-color: #001639;
+}
+.menu_main li,
+.menu_player li {
+  font-weight: 100;
+}
+.menu_main .over,
+.menu_main .over a,
+.menu_player .over,
+.menu_player .over a {
+  color: #ffd24d;
+  font-weight: 300;
+}
+.menu_sub .over_s,
+.menu_sub .over_s a {
+  color: #ffd24d;
+  font-weight: 300;
+}
+/* 네비 메뉴 축소 */
+.menu_player a {
+  height: 2px;
+}
+.menu_player li {
+  display: none;
+}
+/* track list */
+#ho02 {
+  background-color: /* 메인컬러 pM */ #082656;
+}
+.list_albumcover {
+  border-bottom: thin solid #082656;
+}
+.list_albuminfo h2 {
+  color: #fff;
+}
+.list_info span {
+  background:/* 서브컬러 */ #fff;
+  border: thin solid /* 서브컬러 */ #fff;
+  color: #222;
+}
+.list_info strong {
+  background: #222;
+  border: thin solid /* 서브컬러 */ #fff;
+  color:/* 서브컬러 */ #fff;
+}
+.list_artist {
+  font-weight: 100;
+}
+/* 플레이 화면 */
+#pl02 h1 {
+  color: /* 서브컬러 */ #082656;
+}
+/* sub menu 상단색 */
+#sc02 h1,
+#sn02 h1,
+#sn03 h1,
+#vd02 h1,
+#rv02 h1,
+#review_txt h1 {
+  background-color:/* 메인컬러 pM */ #082656;
+}
+/* sns */
+.sns h2 strong {
+  color: /* 메인컬러 pM */ #eeb301;
+}
+
+/* 크라잉넛 25주년 베스트  앱에서 안보이게 설정 한 것들 */
+.cover_txt {
+  display: none;
+}
+.review_info_btnbox {
+  display: none;
+}
+.review_content3 {
+  display: none;
+}
+.all_review_pop {
+  display: none;
+}
+/* 커버화면 */
+.cover_img2 {
+  position: absolute;
+  bottom: 0;
+}
+/* 210429 추가된 화면 3개 앨범별로 들어감 */
+/* credit */
+/* 기본 reset기능 서버 적용 후 삭제 할 수 있음*/
+.credit {
+  margin: 0 0 100px;
+}
+#ac587,
+#aa587 {
+  background-color: #fff;
+}
+.credit_txt_wrap {
+  text-align: center;
+}
+.credit_tit_b > b,
+.credit_wrap_in li > b,
+.credit_wrap_in p > b {
+  color: #333;
+  font-weight: 300;
+}
+.thin,
+.credit_wrap_in li,
+.credit_wrap_in p {
+  font-weight: 200;
+}
+.credit_wrap_in li,
+.credit_wrap_in p {
+  color: #454545;
+  font-size: 0.9em;
+}
+.credit_wrap_in {
+  margin-top: 24px;
+  line-height: 1.5rem;
+}
+.credit_txt_wrap div:nth-child(2) {
+  margin-top: 5px;
+}
+#ac587 .page_title {
+  background-image: url("../images/ac_bg_title.png");
+  background-size: 100% auto;
+  width: 100%;
+  height: 140px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+#ac587 .page_title_wrap {
+  height: 140px;
+}
+#ab587 .page_title_wrap {
+  height: auto;
+}
+.credit_tit_b {
+  display: block;
+  color: #082656;
+}
+.credit_wrap_in:last-child {
+  margin-bottom: 40px;
+}
+.cr_top_img img {
+  width: 120px;
+}
+/* album 소개*/
+.ab587_title {
+  background-image: url("../images/ab_bg_title.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#ab587 {
+  background-image: url("../images/ab_bg_title02.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.album_title h2 {
+  color: #082656;
+}
+.album_title h3 {
+  color: #717171;
+  font-weight: 300;
+}
+#ab02 .page_title {
+  height: 420px;
+}
+.album_txt {
+  margin-bottom: 40px;
+}
+.album_txt_img {
+  padding-top: 25px;
+  width: 240px;
+}
+.album_title {
+  text-align: left;
+  position: inherit;
+}
+.intro_albumcover {
+  background-image: url(../images/al02_img_title.jpg);
+  border-radius: 300px;
+  width: 240px;
+  height: 240px;
+  margin: 20px auto 0px;
+  background-size: cover;
+  border: 4px solid #fff;
+}
+.album_contants {
+  text-align: left;
+}
+.album_title {
+  margin: 10px 0 20px;
+}
+/* artist */
+.artist {
+  margin: 0 0 100px;
+}
+#al01 .page_title {
+  height: auto;
+}
+.aa587_title {
+  background-color: #082656;
+  height: 66px;
+}
+.artist_contants p {
+  margin: 24px 20px;
+}
+.artist_inbox p {
+  margin: 24px 0;
+}
+.artist_img00 img,
+.artist_img01 img,
+.artist_img04 img {
+  width: 100%;
+}
+.artist_img02 {
+  float: left;
+  width: 100px;
+  margin: 0 15px 0 20px;
+  padding-top: 10px;
+}
+.artist_img02 img:first-child {
+  margin-bottom: 5px;
+}
+.artist_img02 img {
+  width: 100%;
+}
+.aa_title {
+  z-index: 1111;
+}
+.artist_img04 {
+  margin: 24px 20px;
+}
+/* artist 화면 애니메이션 */
+.aa_con00 {
+  animation: 1s ease 0.3s 1 normal both running rightFadeIn;
+}
+.aa_con01 {
+  animation: 1.2s ease 0.6s 1 normal both running rightFadeIn;
+}
+.aa_con02 {
+  animation: 1.4s ease 0.9s 1 normal both running rightFadeIn;
+}
+.aa_con03 {
+  animation: 1.6s ease 1.2s 1 normal both running rightFadeIn;
+}
+.aa_con04 {
+  animation: 1.8s ease 1.5s 1 normal both running rightFadeIn;
+}
+.aa_con05 {
+  animation: 2s ease 1.8s 1 normal both running rightFadeIn;
+}
+.aa_con06 {
+  animation: 2.2s ease 2.1s 1 normal both running rightFadeIn;
+}
+/* cradit화면 애니메이션 */
+.cr_top_img {
+  animation: 0.6s ease 0.4s 1 normal both running rightFadeIn;
+}
+.ac_con00 {
+  animation: 0.4s ease 0.2s 1 normal both running rightFadeIn;
+}
+.ac_con01 {
+  animation: 0.5s ease 0.3s 1 normal both running rightFadeIn;
+}
+.ac_con02 {
+  animation: 0.6s ease 0.4s 1 normal both running rightFadeIn;
+}
+.ac_con03 {
+  animation: 0.7s ease 0.5s 1 normal both running rightFadeIn;
+}
+.ac_con04 {
+  animation: 0.8s ease 0.6s 1 normal both running rightFadeIn;
+}
+.ac_con05 {
+  animation: 0.9s ease 0.7s 1 normal both running rightFadeIn;
+}
+.ac_con06 {
+  animation: 1s ease 0.8s 1 normal both running rightFadeIn;
+}
+/* album화면 애니메이션 */
+.intro_albumcover_wrap {
+  animation: 0.4s ease 0.3s 1 normal both running rightFadeIn;
+}
+.intro_albumcover {
+  -webkit-animation: shadow-drop-2-bottom 0.6s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+  animation: shadow-drop-2-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s
+    both;
+}
+.album_title {
+  animation: 0.6s ease 0.6s 1 normal both running rightFadeIn;
+}
+.album_txt {
+  animation: 1s ease 0.9s 1 normal both running rightFadeIn;
+}
+@-webkit-keyframes shadow-drop-2-bottom {
+  0% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateY(-12px);
+    transform: translateZ(50px) translateY(-12px);
+    -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-bottom {
+  0% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateY(-10px);
+    transform: translateZ(50px) translateY(-10px);
+    -webkit-box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.35);
+  }
+}
+/* 1차 추가 기프트 앨범 추가건으로 임시확인용 */
+.album_title h2 {
+  color: #082656;
+}
+.album_title h3 {
+  color: #717171;
+  font-weight: 300;
+}
+.schedule,
+.review_toolbar {
+  background-color: #eeb301;
+  color: #fff;
+  font-weight: 100;
+}
+.toolbar_select {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  color: #fff;
+  font-weight: 400;
+}
+.toolbar_write {
+  color: #fff;
+}
+#sc02 .page_title {
+  background-size: 100%;
+  background-position: center 60px;
+}
+/* thanks to */
+.btn_tmf {
+  display: none;
+}
+/* talk화면 상단수정 */
+#vd02 .page_title,
+#rv02 .page_title,
+#review_txt .page_title {
+  background-size: 100%;
+}
+/* 210513 sns 트위터 있는 경우 */
+#sn03 .page_title {
+  background: url(../images/server/bo02_img_03.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.sns_bar {
+  background-color: #eeb301;
+  color: #fff;
+  font-weight: 100;
+}
+#sn03 .page_title {
+  overflow-x: hidden;
+}
+.sns {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  text-align: right;
+}
+.sns .arrow_right {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  width: 120px;
+  height: 24px;
+  border-radius: 35px;
+  background: rgba(238, 179, 1, 0.85) url(../images/sn02_btn_homepage.png)
+    no-repeat 98px;
+  background-size: 12px;
+  margin: 10px 10px 5px 0;
+  float: right;
+}
+.sns .arrow_right::before {
+  position: absolute;
+  left: 10px;
+  top: 55%;
+  transform: translateY(-50%);
+  content: "공식 홈페이지";
+  line-height: 24px;
+}
+.sns_list {
+  width: 400px;
+  margin: 0;
+  /* padding: 0 0 0 20px; */
+  box-sizing: border-box;
+}
+.sns_bar {
+  position: relative;
+  z-index: 100;
+}
+.sns_list,
+.sns_bar {
+  height: 66px;
+  line-height: 66px;
+}
+.sn_icon {
+  width: 60px !important;
+  margin-right: 18px;
+}
+.sn_icon img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 13px 18px 0 0;
+}
+.sns_bar {
+  padding: 0 22px;
+}
+.sns_bar_icon {
+  height: 100%;
+}
+.sns_bar_icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 13px 10px 0 0;
+}
+.sns_bar_icon,
+.sns_bar h3 {
+  display: inline-block;
+  float: left;
+}
+.sns_bar h3 {
+  font-weight: 400;
+  margin: 15px 0;
+}
+.sns_bar h3,
+.sns_bar h3 > span {
+  font-family: "Noto Sans KR";
+  color: #fff;
+  line-height: 1.2;
+}
+.sns_bar h3 > span {
+  font-weight: 100;
+}
+.sns_embed_wrap {
+  height: 100%;
+  background: #fff;
+}
+#sns_embed {
+  margin-top: -54px;
+}
+#sn03 .profile {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  margin: 0;
+  margin-right: 6px;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url(https://pbs.twimg.com/profile_images/1367400596773294084/MSZJ6DRg_200x200.jpg);
+  background-size: cover;
+  vertical-align: middle;
+}
+#sns_embed li {
+  position: relative;
+  width: calc(100% - 44px);
+  margin: 0 auto;
+}
+.sn_block {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  padding: 10px 0 0 0;
+}
+.sns_content_left {
+  position: absolute;
+  width: 45px;
+  padding: 10px 0;
+  z-index: 999;
+}
+.sns_content_right {
+  width: auto;
+  padding: 5px 0 12px 58px;
+  z-index: 0;
+}
+.sn_content_time {
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+.sn_content {
+  font-size: 0.9em;
+  margin: 4px 0;
+  letter-spacing: -0.5px;
+  width: 85%;
+}
+blockquote.timeline-Header {
+  display: none !important;
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .aa587_title {
+    height: 90px;
+  }
+  .sns {
+    height: 80px;
+  }
+  #rv02 .page_title {
+    height: 240px;
+  }
+}
+@media (min-height: 812px) and (max-height: 926px) {
+  /* 타이틀 배경이미지의 크기 및 높이를 변경하고 싶을때 */
+  #al02 .page_title {
+    height: 265px;
+  }
+  #ac587 .page_title,
+  #bo02 .page_title,
+  #th02 .page_title,
+  #vi02 .page_title {
+    height: 155px;
+  }
+  #rv02 .page_title {
+    background-position: center top 10px;
+  }
+}
+@media (min-height: 846px) and (max-height: 850px) {
+  /* .cover_img2 {
+    background: url(../images/ho02_img_effect_1.png) no-repeat 0 120px;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+  } */
+  #rv02 .page_title {
+    background-position: center top 0px;
+  }
+}
+/* @media (min-height: 850px) and (max-height: 860px) {
+  .cover_img2 {
+    background: url(../images/ho02_img_effect_1.png) no-repeat 0 140px;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-height: 860px) and (max-height: 870px) {
+  .cover_img2 {
+    background: url(../images/ho02_img_effect_1.png) no-repeat 0 150px;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+  }
+} */
+@media only screen and (max-height: 667px) {
+  /* 커버 */
+  .cover_title {
+    bottom: 150px;
+  }
+  .cover_artist {
+    bottom: 90px;
+  }
+  .cover_img2 {
+    bottom: -80px;
+  }
+  /* .cover_img2 {
+    background: url(../images/ho02_img_effect_1.png) no-repeat 0 80px;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+  } */
+}
+@media only screen and (max-width: 330px) {
+  /* .cover_img2 {
+    background-position: bottom;
+  } */
+}
+@media only screen and (max-width: 325px) {
+  #al02 .page_title {
+    height: 220px;
+  }
+  #ac587 .page_title,
+  #bo02 .page_title,
+  #th02 .page_title,
+  #vi02 .page_title {
+    height: 120px;
+  }
+}

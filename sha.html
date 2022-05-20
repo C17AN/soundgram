@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko" class="os_windows chrome pc version_75_0_3770_100 effect_enabled">
+<head>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="always">
+    <title>SoundGram</title>
+
+	<style>
+		.li_table {width: 100%; border:1 solid red;border-top:none;border-right:none}
+		.li_table ul {clear: left;margin: 0;padding: 0;list-style-type: none;border-top:1 solid red;} 
+		/* list-style-type 블릿표시 padding: 0; 들여쓰기*/
+		.li_table .subject {font-weight: bold;text-align: center;}
+		.li_table ul li {text-align: center;float: left;margin: 0;padding: 2px, 1px;border-right:1 solid red;width: 300px;}
+		.li_table ul .col {width: 100px;} /* 표 라인 맞추기기 위해*/
+	</style>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/sha256.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+        	// $("#uuid").val(guid());
+
+			$.ajax({
+				type : "POST",
+				url : "api/getAlbumid.php",
+				dataType: "json",
+		        success: function(data) {
+					$.each(data, function(al) {
+						var makeListHTML 
+						= "<ul>"
+						+ "<li class='col'>"+data[al].id+"</li>"
+						// + "<li>"+sha256(data[al].id)+"</li>"
+						+ "<li> update APIServer_album set album_id_enc='"+sha256(data[al].id)+" where id='"+data[al].id+"' </li>"
+						+ "</ul>"
+						; 
+                        $("div#enc_table").append(makeListHTML);
+					});
+				}, 
+		        error: function(xhr, textStatus, errorThrown) {
+		        	console.log(errorThrown);
+		        }
+			});
+        });
+    </script>
+</head>
+<body>
+	<div id="enc_table" class="li_table">
+		<ul class="subject">
+			<li class="col">Album ID</li>
+			<!-- <li>SHA256</li> -->
+			<li>SQL</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html, body, div {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        }
+        body {
+        overflow: hidden;
+        background-color:#000;
+        }
+        .bt {
+            -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+            box-shadow:inset 0px 1px 0px 0px #54a3f7;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+            background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+            background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+            background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+            background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+            background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+            background-color:#007dc1;
+            -moz-border-radius:3px;
+            -webkit-border-radius:3px;
+            border-radius:3px;
+            border:1px solid #124d77;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:13px;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #154682;
+        }
+        .bt:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+            background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+            background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+            background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+            background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+            background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+            background-color:#0061a7;
+        }
+        .bt:active {
+            position:relative;
+            top:1px;
+        }
+        #btStartAudioVisualization {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        }
+    </style>
+
+</head>
+
+<body translate="no">
+    <a id="btStartAudioVisualization" class="bt">Start Audio Visualization</a>
+
+    <script id="rendered-js">
+        /*
+Atlantis by Audionautix (http://audionautix.com) is part of the YouTube Audio Library (https://www.youtube.com/audiolibrary/music) and it's licensed under a Creative Commons license (https://creativecommons.org/licenses/by/3.0/deed.en_US).
+*/
+//---
+
+var audio, audioContext, audioSrc;
+var analyser, analyserBufferLength;
+
+//---
+
+var w;
+var h;
+
+var center2D;
+
+var btStart;
+var canvas;
+var context;
+
+var imageData;
+var data;
+
+var circleSegments = 512;
+var circleHolder = [
+	
+  { radius:100, segments:circleSegments, points:[], color:{ r:237, g:254, b:255, a:255 }, thetaStart:0, thetaLength:Math.PI * 2, frequencyFactor: 1.00 },
+	{ radius:95,  segments:circleSegments, points:[], color:{ r:217, g:254, b:255, a:255 }, thetaStart:0, thetaLength:Math.PI * 2, frequencyFactor: 2.00 },
+  { radius:90,  segments:circleSegments, points:[], color:{ r:118, g:164, b:179, a:255 }, thetaStart:0, thetaLength:Math.PI * 2, frequencyFactor: 4.00 },
+  { radius:85,  segments:circleSegments, points:[], color:{ r:58, g:105, b:121, a:255 },  thetaStart:0, thetaLength:Math.PI * 2, frequencyFactor: 8.00 },
+  { radius:80,  segments:circleSegments, points:[], color:{ r:41, g:79, b:90, a:255 },    thetaStart:0, thetaLength:Math.PI * 2, frequencyFactor: 10.00 },
+  { radius:75,  segments:circleSegments, points:[], color:{ r:24, g:50, b:63, a:255 },    thetaStart:0, thetaLength:Math.PI * 2, frequencyFactor: 12.00 },
+  { radius:70,  segments:circleSegments, points:[], color:{ r:12, g:25, b:31, a:255 },    thetaStart:0, thetaLength:Math.PI * 2, frequencyFactor: 14.00 }
+  
+];
+
+//---
+
+function init() {
+
+  canvas = document.createElement( 'canvas' );
+  canvas.addEventListener( 'mousedown', mouseDownHandler, false );
+
+  document.body.appendChild( canvas );
+
+  context = canvas.getContext( '2d' );
+
+	window.addEventListener( 'resize', onResize );
+  onResize();
+  
+  for ( var i = 0, l = circleHolder.length; i < l; i++ ) {
+  
+    drawCircle( center2D, circleHolder[ i ] );
+  
+  }
+  
+  context.putImageData( imageData, 0, 0 );
+
+	btStart = document.getElementById( 'btStartAudioVisualization' );
+  btStart.addEventListener( 'mousedown', userStart, false );
+
+};
+
+//---
+
+function userStart() {
+
+	btStart.removeEventListener( 'mousedown', userStart );
+  btStart.style.display = 'none';
+
+	audioSetup();
+	animate();
+
+};
+
+//---
+
+function audioSetup() {
+
+	audio = new Audio();
+  audio.src = 'http://disk.soundgram.co.kr:10080/media/song/587/1.mp3';
+  audio.controls = false;
+  audio.loop = true;
+  audio.autoplay = true;
+  audio.crossOrigin = 'anonymous';
+
+  audioContext = new ( window.AudioContext || window.webkitAudioContext )();
+
+  analyser = audioContext.createAnalyser();
+  analyser.connect( audioContext.destination );
+  analyser.smoothingTimeConstant = 0.75;
+  analyser.fftSize = circleSegments * 32;
+  analyserBufferLength = analyser.frequencyBinCount;
+
+  audioSrc = audioContext.createMediaElementSource( audio ); 
+  audioSrc.connect( analyser );
+
+};
+
+//---
+
+function clearImageData() {
+
+    for ( var i = 0, l = data.length; i < l; i += 4 ) {
+
+        data[ i ] = 0;
+        data[ i + 1 ] = 0;
+        data[ i + 2 ] = 0;
+        data[ i + 3 ] = 255;
+
+    }
+
+};
+
+function setPixel( x, y, r, g, b, a ) {
+
+    var i = ( x + y * imageData.width ) * 4;
+
+    data[ i ] = r;
+    data[ i + 1 ] = g;
+    data[ i + 2 ] = b;
+    data[ i + 3 ] = a;
+
+};
+
+//---
+
+function drawCircle( position, circle ) {
+
+	for ( var i = 0, l = circle.segments; i <= l; i++ ) {
+
+    drawCircleElement( i, position, circle );
+    
+  }
+
+};
+
+function drawAudioCircle( position, circle ) {
+  
+	var frequencySource = new Uint8Array( analyser.frequencyBinCount );
+
+  analyser.getByteFrequencyData( frequencySource );
+
+  var audioBufferIndex = 8;
+
+  for ( var i = 0, l = circle.segments; i <= l; i++ ) {
+
+  	var frequency = frequencySource[ audioBufferIndex ];
+    var frequencyAdd = frequency / circle.frequencyFactor;
+    	
+    if ( i < circle.segments / 2 ) {
+    
+    	audioBufferIndex++;
+    
+    } else {
+    
+    	audioBufferIndex--;
+    
+    }
+
+    if ( audioBufferIndex > circle.segments - 1 ) {
+    
+    	audioBufferIndex = circle.segments;
+      
+    }
+
+    drawCircleElement( i, position, circle, frequencyAdd );
+
+  }
+    
+};
+
+function drawCircleElement( index, position, circle, extraRadius = 0 ) {
+
+	var segment = circle.thetaStart + index / circle.segments * circle.thetaLength;
+    
+  var x = position.x + ( circle.radius + extraRadius ) * Math.cos( segment );
+  var y = position.y + ( circle.radius + extraRadius ) * Math.sin( segment );
+
+  var point = circle.points[ index ] = { x:x, y:y };
+
+  if ( x > 0 && x < w && y > 0 && y < h ) {
+
+    if ( index > 0 ) {
+
+      drawLine( x | 0, y | 0, circle.points[ index - 1 ].x | 0, circle.points[ index - 1 ].y | 0, circle.color.r, circle.color.g, circle.color.b, circle.color.a );
+
+    } 
+
+  }
+
+};
+
+//---
+
+function drawLine( x1, y1, x2, y2, r, g, b, a ) {
+
+  var dx = Math.abs( x2 - x1 );
+  var dy = Math.abs( y2 - y1 );
+
+  var sx = ( x1 < x2 ) ? 1 : -1;
+  var sy = ( y1 < y2 ) ? 1 : -1;
+
+  var err = dx - dy;
+
+  var lx = x1;
+  var ly = y1;    
+
+  while ( true ) {
+
+    if ( lx > 0 && lx < w && ly > 0 && ly < h ) {
+
+      setPixel( lx, ly, r, g, b, a );
+
+    }
+
+    if ( ( lx === x2 ) && ( ly === y2 ) )
+      break;
+
+    var e2 = 2 * err;
+
+    if ( e2 > -dx ) { 
+
+      err -= dy; 
+      lx += sx; 
+
+    }
+
+    if ( e2 < dy ) { 
+
+      err += dx; 
+      ly += sy; 
+
+    }
+
+  }
+
+};
+
+//---
+
+function onResize(){
+  	
+  w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+	center2D = { x:w / 2, y:h / 2 };
+
+  canvas.width = w;
+  canvas.height = h;
+
+  context.fillStyle = '#000000';
+  context.fillRect( 0, 0, w, h );
+
+  imageData = context.getImageData( 0, 0, w, h );
+  data = imageData.data;
+
+};
+
+//---
+
+function mouseDownHandler( event ) {
+
+  if ( audio.paused ) {
+
+    audio.play();
+
+  } else {
+
+    audio.pause();
+
+  }
+
+};
+
+//---
+
+function animate() {
+
+  clearImageData();
+
+  for ( var i = 0, l = circleHolder.length; i < l; i++ ) {
+  
+    drawAudioCircle( center2D, circleHolder[ i ] );
+  
+  }
+  
+  context.putImageData( imageData, 0, 0 );
+
+  requestAnimationFrame( animate );
+
+};
+
+window.requestAnimFrame = ( function() {
+
+    return  window.requestAnimationFrame       ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame    ||
+            function( callback ) {
+                window.setTimeout( callback, 1000 / 60 );
+            };
+
+} )();
+
+//---
+
+init();
+    </script>
+</body>
+
+</html>

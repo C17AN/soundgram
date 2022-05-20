@@ -1,0 +1,22 @@
+/* CSS Document */
+#nc01_a, #nc01_b, #nc01_c, #nc01_d {position:relative; width:100%; height:100%}
+.nfc_toparea{position:relative; width:100%; height:40%;}
+.nfc_imgarea{position:absolute; left:50%; top:50%; margin:-60px 0 0 -105px; bottom: 0; width:210px; height:210px; text-align: center}
+.nfc_textarea{width:100%;}
+.nfc_btnarea{text-align:center; margin:40px 40px 0 40px;}
+.nfc_footer{position:absolute; bottom:20px; width:100%; text-align:center;}
+
+.nfc_title{font-size:48px; color:#333; text-align:center; margin:20px 0; font-family: "Noto Sans KR Thin", Arial; font-weight: 100}
+.nfc_titlehan{font-size:24px; color:#333; text-align:center; margin:20px 0; font-family: "Noto Sans KR Medium", Arial; font-weight: 500}
+
+.nfc_textarea > p{color:#666; font-size:13px; text-align:center; padding:5px 12px;}
+.nfc_textarea > p > strong {color: #8A23A0; font-weight: 600}
+.nfc_submit_btn{border:1px solid #ccc; background-color:#DAE3F3; color:#000; cursor:pointer; box-sizing:border-box; font-size:14px; text-align:center; padding:8px 21px; margin:5px 60px;}
+.nfc_login_btn{border:1px solid #ccc; background-color:#DAE3F3; color:#000; cursor:pointer; box-sizing:border-box; font-size:14px; text-align:center; padding:8px 21px; margin:5px 60px;}
+.nfc_find_btn{border:1px solid #ccc; background-color:#fff; color:#000; cursor:pointer; box-sizing:border-box; font-size:14px; text-align:center; padding:8px 21px; margin:5px 60px;}
+.nfc_footer_logo{height:2rem; margin-bottom:8px;}
+.nfc_footer > p{color:#999; font-size:10px; text-align:center;} 
+
+.nfc_btnarea button {width: 48%; margin:0 auto;}
+
+

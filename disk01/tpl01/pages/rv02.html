@@ -1,0 +1,66 @@
+<div id="rv02" class="swiper-slide">
+  <div class="page_title">
+    <h1><img src="" alt="페이지타이틀" width="100%" /></h1>
+    <div class="review">
+      <!-- 1차 수정건으로 안보이게 함(운아_210608) -->
+      <!-- <div class="rv_deco">
+			
+		</div> -->
+    </div>
+  </div>
+  <div class="review_info_btnbox">
+    <div class="review_info">
+      <img src="" class="review_info_btn" />
+    </div>
+  </div>
+  <div class="review_content3" style="bottom: 0%">
+    <div
+      class="swiper-container review_swiper"
+      style="width: 100%; height: 70%"
+    >
+      <div id="_review" class="swiper-wrapper"></div>
+      <div class="swiper-scrollbar review_scollbar hidden"></div>
+    </div>
+  </div>
+  <div class="rv_write_snb hidden" style="margin-top: 66px">
+    <a href="#"><img src="" style="height: 42px" /></a>
+  </div>
+  <div class="review_content4 hidden">
+    <textarea
+      placeholder="앨범에 대한 리뷰를 써 주세요"
+      class="rv_writebox"
+    ></textarea>
+  </div>
+  <h5 id="r_toolbar" class="review_toolbar">
+    <span id="recomm" class="toolbar_select">추천순</span>
+    <span id="newest">최신순</span>
+    <!-- 220422 Start01 덧글 추가 변경되는 부분 -->
+    <span class="toolbar_write">
+      <!--삭제 <img src="" class="toolbar_write_icon" /> -->
+      내글보기
+    </span>
+  </h5>
+  <div class="review_write">
+    <button class="btn_photo"></button>
+    <input
+      id="rv_uploadImage"
+      name="rv_uploadImage"
+      type="file"
+      style="display: none"
+    />
+    <input id="contents" placeholder="댓글을 입력해 주세요." />
+    <button id="rvInputComment" class="btn_write" onclick="">등록</button>
+  </div>
+  <!-- 220422 End01 덧글 추가 변경되는 부분 -->
+  <div class="review_content2">
+    <div
+      class="swiper-container reviewcomment_swiper"
+      style="width: 100%; height: 80%"
+    >
+      <div id="rclist" class="swiper-wrapper"></div>
+      <!-- 220422 Start02 덧글 추가 변경되는 부분 -->
+      <div class="swiper-scrollbar reviewcomment_scollbar hidden"></div>
+      <!-- 220422 Start02 덧글 추가 변경되는 부분 -->
+    </div>
+  </div>
+</div>

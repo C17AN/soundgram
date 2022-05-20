@@ -1,0 +1,692 @@
+@charset "utf-8";
+/* 템플릿 vol.02 */
+/* 인트로 배경색 */
+.intro_bg {
+  background-color: #000;
+  color: #fff;
+}
+/* 타이틀 배경이미지의 크기 및 높이를 변경하고 싶을때 */
+.scroll .booklet_img,
+.scroll .video,
+.scroll .thanks {
+  margin-top: 0;
+}
+.scroll .page_title {
+  background-size: cover !important;
+  background-position: bottom;
+  height: 160px !important;
+  position: fixed;
+  top: 0;
+}
+#review_txt .page_title {
+  background-position: center top;
+}
+/* 211103 통합 버전으로 디자인 변경되면서 상단 타이틀 라인 맞춤 */
+#bo10 .page_title,#vi10 .page_title, #th10 .page_title, #ac10 .page_title{
+  position:relative;
+}
+#bo10 .page_state,#vi10 .page_state, #th10 .page_state,#ac10 .page_state{
+  position:absolute;
+  bottom:0;
+}
+/* 커버 이팩트 이미지 */
+.cover_artist {
+  bottom: 0px;
+}
+.cover_title {
+  top: 0;
+}
+.cover_img2,
+.cover_img3 {
+  /* background-position-y: top; */
+  height: inherit;
+}
+/* .cover_img3 {
+  background-size: 100% auto;
+} */
+/* 좌측메뉴 */
+.menu_main .over,
+.menu_main .over a,
+.menu_player .over,
+.menu_player .over a {
+  color: #6927ff;
+  font-weight: 400;
+}
+/* .menu_sub .over_s,
+.menu_sub .over_s a {
+  color: #ffdd00;
+  font-weight: 300;
+} */
+/* 네비 메뉴 축소 */
+.menu_player a {
+  height: 1px !important;
+}
+.menu_player li {
+  display: none;
+}
+/* track list */
+#ho02 {
+  background-color: /* 메인컬러 pM */ #ffdd00;
+}
+.list_albuminfo h2 {
+  color: #000;
+  font-weight: 600;
+  max-width:200px;
+}
+.list_artist {
+  font-weight: 100;
+}
+.list_albuminfo h3 {
+  color: #6b1ede;
+  font-weight: 400;
+}
+/* 트렉 리스트 */
+/* 플레이 화면 */
+#pl10 h1 {
+  font-weight: 600;
+  color: /* 서브컬러 */ #6927ff;
+}
+.pl_lyc_line dd.on{
+  color:#774cf4;
+  font-weight: 500;
+  font-size: 1.15em;
+  line-height: 1.3;
+}
+/* 통합앱 되면서 ui 임시 변경에 따른 클레스 명과 다른 css설정 
+기능이 기존.fl_right에 전체반복, 한곡반복 듣기 가 붙어 있어서 css이렇게 설정함*/
+.pl_m_ctr .fl_right{
+  float:left;
+}
+.pl_m_ctr .fl_left{
+  float:right;
+}
+/* 미니플레이어 */
+.m_pl_album{
+  background-position-x: center;
+}
+/* sub menu 상단색 */
+#review_txt h1 {
+  background-color:/* 메인컬러 pM */ #d6e2af;
+  background-image: url(../images/sub_img_title_img.png);
+  background-size: cover;
+  background-position-y: bottom;
+}
+#review_txt h1 {
+  padding: 17px 0 0;
+}
+/* sns */
+.sns h2 strong {
+  color: /* 메인컬러 pM */ #d6e2af;
+}
+/* 통합앱에서 안보이게 설정 한 것들 */
+.cover_txt {
+  display: none;
+}
+.review_info_btnbox {
+  display: none;
+}
+.review_content3 {
+  display: none;
+}
+.all_review_pop {
+  display: none;
+}
+/* 210402 추가된 화면 3개 앨범별로 들어감 */
+/* credit */
+/* 기본 reset기능 서버 적용 후 삭제 할 수 있음*/
+.credit {
+  margin: 0 0 10px;
+  background-color: #111;
+}
+#ac10 p>img{
+  margin:40px 0;
+  opacity: 0.1;
+}
+#ac10 .credit {
+  padding: 24px 10px 130px;
+}  
+#ac619,
+#aa619 {
+  background-color: #fff;
+}
+.credit_wrap_in {
+  margin-top: 24px;
+}
+#ac619 .page_title {
+  background-image: url("../images/ac_bg_title.png");
+  background-size: 100% auto;
+  width: 100%;
+  height: 140px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+#ac619 .page_title_wrap {
+  height: 140px;
+}
+#ab619 .page_title_wrap,
+#aa619 .page_title_wrap {
+  height: 54px;
+}
+.credit_tit_b {
+  display: block;
+  color: #9933ff;
+}
+.credit_wrap_in:last-child {
+  margin-bottom: 40px;
+}
+/* album 소개*/
+.page_title .pt_c {
+  color: #6927ff;
+}
+.page_title .pt_c_box {
+  background-color: #6927ff;
+}
+.album_title h3 {
+  color: #6927ff;
+}
+/* 211103 S 앨범소개에서 스크롤 효과로 추가된 부분 */
+#ab10.page_bg{
+  background-color: #181818;
+}
+.ab10_title{
+  position: fixed;
+  background: #000;
+  width: 100%;
+  z-index: 100;
+}
+.al_info_top_wrap {
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+}
+.al_info_top {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
+.intro_bg_box {
+  height: 100%;
+  transition: all 1.5s;
+}
+.album_title {
+  transform: translateY(-5%);
+}
+.intro_albumcover {
+  transform: translate(-20%, -30%);
+  background-position: center;
+  transition: all 1.5s;
+  background-size: 100%;
+  box-shadow: -0.5px 4px 0px rgb(66 66 66 / 40%);
+}
+.intro_albumcover_wrap {
+  height: 100%;
+}
+.intro_albumcover_wrap{
+  transition: all 1.5s;
+}
+/* 211103 E 앨범소개에서 스크롤 효과로 추가된 부분 */
+/* artist */
+.artist {
+  margin: 0 0 100px;
+}
+#al01 .page_title {
+  height: auto;
+}
+#aa619 .page_title {
+  background-color: #fff;
+}
+.artist_contants p {
+  margin: 24px 20px;
+}
+.artist_inbox p {
+  margin: 24px 0;
+}
+.artist_img00 img,
+.artist_img01 img,
+.artist_img04 img {
+  width: 100%;
+}
+.artist_img02 {
+  float: left;
+  width: 100px;
+  margin: 0 15px 0 20px;
+  padding-top: 10px;
+}
+.artist_img02 img:first-child {
+  margin-bottom: 5px;
+}
+.artist_img02 img {
+  width: 100%;
+}
+.aa_title {
+  z-index: 1111;
+}
+.artist_img04 {
+  margin: 24px 20px;
+}
+.aa_h3,
+.aa_h3 b {
+  color: #454545;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.aa_h3 b {
+  font-weight: 500;
+}
+.p_thin {
+  font-size: 0.9em;
+}
+
+/* artist 화면 애니메이션 */
+.aa_con00 {
+  animation: 1s ease 0.3s 1 normal both running rightFadeIn;
+}
+.aa_con01 {
+  animation: 1.2s ease 0.6s 1 normal both running rightFadeIn;
+}
+.aa_con02 {
+  animation: 1.4s ease 0.9s 1 normal both running rightFadeIn;
+}
+.aa_con03 {
+  animation: 1.6s ease 1.2s 1 normal both running rightFadeIn;
+}
+.aa_con04 {
+  animation: 1.8s ease 1.5s 1 normal both running rightFadeIn;
+}
+.aa_con05 {
+  animation: 2s ease 1.8s 1 normal both running rightFadeIn;
+}
+.aa_con06 {
+  animation: 2.2s ease 2.1s 1 normal both running rightFadeIn;
+}
+/* album화면 애니메이션 */
+@-webkit-keyframes shadow-drop-2-bottom {
+  0% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateY(-12px);
+    transform: translateZ(50px) translateY(-12px);
+    -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-bottom {
+  0% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateY(-10px);
+    transform: translateZ(50px) translateY(-10px);
+    -webkit-box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.35);
+  }
+}
+.intro_albumcover_wrap {
+  animation: 0.4s ease 0.3s 1 normal both running rightFadeIn;
+}
+.al_p01 {
+  animation: 0.5s ease 0.2s 1 normal both running rightFadeIn;
+}
+.al_p02 {
+  animation: 0.6s ease 0.3s 1 normal both running rightFadeIn;
+}
+.al_p03 {
+  animation: 0.7s ease 0.4s 1 normal both running rightFadeIn;
+}
+.al_p04 {
+  animation: 0.8s ease 0.5s 1 normal both running rightFadeIn;
+}
+.al_p05 {
+  animation: 0.9s ease 0.6s 1 normal both running rightFadeIn;
+}
+/* cradit화면 애니메이션 */
+.cr_top_img {
+  animation: 0.6s ease 0.4s 1 normal both running rightFadeIn;
+}
+.ac_con00 {
+  animation: 0.4s ease 0.2s 1 normal both running rightFadeIn;
+}
+.ac_con01 {
+  animation: 0.5s ease 0.3s 1 normal both running rightFadeIn;
+}
+.ac_con02 {
+  animation: 0.6s ease 0.4s 1 normal both running rightFadeIn;
+}
+.ac_con03 {
+  animation: 0.7s ease 0.5s 1 normal both running rightFadeIn;
+}
+.ac_con04 {
+  animation: 0.8s ease 0.6s 1 normal both running rightFadeIn;
+}
+.ac_con05 {
+  animation: 0.9s ease 0.7s 1 normal both running rightFadeIn;
+}
+.ac_con06 {
+  animation: 1s ease 0.8s 1 normal both running rightFadeIn;
+}
+/* 1차 수정시작 */
+/* 사이드메뉴 변경되는 부분모음 */
+.album_title.ab h2 {
+  color: #111;
+}
+.album_title.ab h3 {
+  color: #6b1ede;
+  font-weight: 400;
+}
+.schedule,
+.review_toolbar {
+  background-color: #6927ff;
+  font-weight: 100;
+}
+.sns h2{
+  color: #000;
+}
+.toolbar_select {
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+.sns_bar {
+  background-color: #6927ff;
+  color: #000;
+  font-weight: 100;
+}
+#sn03 .page_title {
+  overflow-x: hidden;
+}
+.sns .arrow_right {
+  position: relative;
+  width: 146px;
+  background: url(../images/sn10_top_icon.png)
+    no-repeat 116px;
+  background-size: 28px;
+  margin:0;
+  float: right;
+}
+.sns .arrow_right::before {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  content: "official website ▶";
+  line-height: 24px;
+}
+.sns_list {
+  /* width: 400px; */
+  margin: 0;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+}
+.sns_bar {
+  position: relative;
+  z-index: 100;
+}
+.sns_list,
+.sns_bar {
+  height: 66px;
+  line-height: 66px;
+}
+.sn_icon {
+  width: 60px !important;
+  margin-right: 18px;
+}
+.sn_icon img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 13px 18px 0 0;
+}
+.sns_bar {
+  padding: 0 15px;
+}
+.sns_bar_icon {
+  height: 100%;
+}
+.sns_bar_icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 13px 10px 0 0;
+}
+.sns_bar_icon,
+.sns_bar h3 {
+  display: inline-block;
+  float: left;
+}
+.sns_bar h3 {
+  font-weight: 400;
+  margin: 15px 0;
+}
+.sns_bar h3,
+.sns_bar h3 > span {
+  font-family: "Noto Sans KR";
+  color: #fff;
+  line-height: 1.2;
+}
+.sns_bar h3 > span {
+  font-weight: 100;
+}
+.sns_embed_wrap {
+  height: 100%;
+  background: #fff;
+}
+#sns_embed {
+  margin-top: -54px;
+}
+#sns_embed li {
+  position: relative;
+  width: calc(100% - 44px);
+  margin: 0 auto;
+}
+.sn_block {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  padding: 10px 0 0 0;
+}
+.sns_content_left {
+  position: absolute;
+  width: 45px;
+  padding: 10px 0;
+  z-index: 999;
+}
+.sns_content_right {
+  width: auto;
+  padding: 5px 0 12px 58px;
+  z-index: 0;
+}
+.sn_content_time {
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+.sn_content {
+  font-size: 0.9em;
+  margin: 4px 0;
+  letter-spacing: -0.5px;
+  width: 85%;
+}
+blockquote.timeline-Header {
+  display: none !important;
+}
+/* 땡스투 안에 to my fan 팝업 */
+.tmf-content {
+  background: rgb(251 254 244);
+}
+.tmf_profile {
+  float: right;
+  margin: 8px 15 0 15px;
+}
+/* talk화면 상단수정 */
+#review_txt .page_title {
+  background-size: 125%;
+  background-position: -65px top;
+}
+@media (min-height: 812px) and (max-height: 926px) {
+  /* 타이틀 배경이미지의 크기 및 높이를 변경하고 싶을때 */
+    #al10 .page_title,
+  #al02 .page_title {
+    height: 265px;
+  }
+    #ac10 .page_title,
+    #bo10 .page_title,
+    #th10 .page_title,
+    #vi10 .page_title {
+    height: 129px;
+  }
+    #rv10 .page_title,
+  #rv02 .page_title {
+    background-position: center top 10px;
+  }
+}
+@media (min-height: 846px) and (max-height: 850px) {
+  #rv10 .page_title {
+    background-position: center top 0px;
+  }
+}
+@media only screen and (max-height: 667px) {
+  /* 커버 */
+  .cover_title {
+    bottom: 150px;
+  }
+}
+@media only screen and (max-width: 325px) {
+  #al10 .page_title{
+    height: 220px;
+  }
+    #ac10 .page_title,
+    #bo10 .page_title,
+    #th10 .page_title,
+    #vi10 .page_title{
+    height: 120px;
+  }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+    #vd10 h1,
+    #ab10 h1
+  #review_txt h1,
+  #ab619 h1 {
+    padding: 36px 0 5px;
+  }
+  #sc10 h1,
+#sn10 h1,
+#rv10 h1,
+#review_txt h1 {
+  padding: 36px 20px 17px;
+}
+   #ab10 .page_title_wrap,
+   #ar10 .page_title_wrap,
+  #ab619 .page_title_wrap,
+  #ar619 .page_title_wrap {
+    height: 90px;
+  }
+  .cover_img3 {
+    bottom: 0px;
+  }
+   #rv10 .page_title {
+    height: 240px;
+  }
+}
+/* 700테스트 페이지용 css */
+#bo10 .page_title,
+#th10 .page_title,
+#vi10 .page_title {
+  background-size: 100% auto;
+  width: 100%;
+  /* height: 140px; */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+#sc10 h1,
+#sn10 h1,
+#rv10 h1,
+#review_txt h1 {
+  padding: 17px 20px 17px;
+  background-color: /* 메인컬러 pM */ #000;
+  margin:0;
+}
+#sn10 .page_title {
+  overflow-x: hidden;
+}
+#sc10 .page_title {
+  background: url(../images/server/bo10_img_01.png) no-repeat;
+  background-size: 100%;
+  background-position: center bottom -20px;
+}
+#sn10 .page_title {
+  background: url(../images/server/bo10_img_02.png) no-repeat;
+  background-size: 100%;
+  background-position: center bottom -10px;
+}
+#rv10 .page_title,
+#review_txt .page_title {
+  background: url(../images/server/bo10_img_03.png) no-repeat;
+  background-size: 100%;
+  background-position: center bottom -20px;
+}
+#sc10 .page_title,
+#sn10 .page_title,
+#sn10 .page_title,
+#vd10 .page_title,
+#review_txt .page_title {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  z-index: 100;
+}
+#sc10 .page_title,
+/* #sn10 .page_title, */
+#vd10 .page_title,
+/* #rv10 .page_title, */
+#review_txt .page_title {
+  height: 280px;
+}
+#sc10 .page_title,
+#sn10 .page_title,
+#rv10 .page_title{
+ height: 200px;
+}
+#al10 .page_title {
+  position: relative;
+  min-height: 240px;
+  overflow: hidden;
+}
+.cover_img2, .cover_img3, .cover_title ,.cover_artist  {
+  display: none;
+}
+/* 크레딧 */
+.cr10_709img{
+  height: 200px;
+    background-image: url(/disk01/tpl01/p0700/images/cr10_topimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* 커버이미지 움직임 임시추가 */
+#ho10{
+  overflow: hidden;
+}
+.cover_img1{
+  animation: grow 1 alternate cubic-bezier(0.39, 0.58, 0.57, 1) 1.8s;
+}
+@keyframes grow {
+  0% {
+     transform: scale(1.5);
+  }
+  100% {
+     transform: scale(1);
+ 
+  }
+}

@@ -1,0 +1,104 @@
+<div id="rv10" class="swiper-slide page_bg">
+  <div class="page_title">
+    <h1>
+      <span class="p_title_in">
+        <strong class="pt_c_wrap"><b class="pt_c_box">T</b>ALK</strong>
+      </span>
+      <!-- <img src="" alt="페이지타이틀" width="100%" /> -->
+    </h1>
+    <div class="page_state">
+      <p class="st_p">
+        <span class="st_txt">fandom community</span>
+        <i class="st_icon"></i>
+      </p>
+    </div>
+  </div>
+  <div class="review_info_btnbox">
+    <div class="review_info">
+      <img src="" class="review_info_btn" />
+    </div>
+  </div>
+  <!-- 여기부터 2차 개선 전으로 돌아감 -->
+  <div class="review_content3" style="bottom: 0%">
+    <div
+      class="swiper-container review_swiper"
+      style="width: 100%; height: 55%"
+    >
+      <div id="_review" class="swiper-wrapper"></div>
+      <div class="swiper-scrollbar review_scollbar hidden"></div>
+    </div>
+  </div>
+
+  <div class="rv_write_snb hidden" style="margin-top: 66px">
+    <a href="#"><img src="" style="height: 42px" /></a>
+  </div>
+  <div class="review_content4 hidden">
+    <textarea
+      placeholder="앨범에 대한 리뷰를 써 주세요"
+      class="rv_writebox"
+    ></textarea>
+  </div>
+  <div id="r_toolbar" class="review_toolbar">
+    <span id="recomm" class="toolbar_select">추천순</span>
+    <span id="newest">최신순</span>
+    <span class="toolbar_write"
+      ><img src="" class="toolbar_write_icon" />글쓰기</span
+    >
+  </div>
+  <div class="review_content2">
+    <!-- <div class="empty_rv">
+      <img src="disk01/tpl01/p0700/images/empty_review.png" alt="No schedule" />
+      <p>첫 댓글을 등록해주세요.</p>
+    </div> -->
+    <div
+      class="swiper-container reviewcomment_swiper"
+      style="width: 100%; height: 70%"
+    >
+      <div id="rclist" class="swiper-wrapper">
+
+        <!-- 임시덧글 -->
+        <!-- <li id="rc_li" class="swiper-slide swiper-slide-active" value="1" value2="65" role="group" aria-label="1 / 2" style="height: 78px;">
+          <div class="rv_block">
+            <div class="review_content_left">
+              <div class="profile" style="background-image: url(media/user/65/2021-10-06-1633503970.jpg)"></div>
+            </div>
+            <div class="review_content_right"><span class="rv_content_id">덧글임시만들기</span>
+              <span class="rv_content_time">2021-10-07 16:41:35</span>
+              <span class="rv_delete_btn">삭제</span>
+              <span class="rv_rmenu">
+                <c3-icon>
+                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" onclick="javascript:big_comment(833, 65)">
+                    <path d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z"></path>
+                  </svg>
+                </c3-icon>
+              </span>
+              <p class="rv_content" style="color:#000">임시 덧글</p>
+              <div class="rv_con">
+                <a href="#" id="rlike_a" value="833">
+                  <dd id="reviewCommentLikeCnt" class="no_like" value="833">
+                    <span value="833" class="off"></span>1
+                  </dd>
+                </a>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </li> -->
+        <!-- 임시덧글 -->
+      </div>
+      <!-- <div class="swiper-scrollbar reviewcomment_scollbar hidden"></div> -->
+    </div>
+  </div>
+  <!-- 2차 반영전 .review_content2위에 있었던 .review_write를 하래로 내림-->
+  <!-- <div class="review_write">
+    <button class="btn_photo"></button>
+    <input
+      id="rv_uploadImage"
+      name="rv_uploadImage"
+      type="file"
+      style="display: none"
+    />
+    <input id="contents" placeholder="댓글을 입력해 주세요." />
+    <button id="rvInputComment" class="btn_write" onclick=""></button>
+  </div> -->
+</div>

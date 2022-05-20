@@ -1,0 +1,279 @@
+/* CSS Document */
+#nc01_a,
+#nc01_b,
+#nc01_c,
+#nc01_d,
+#nc01_e {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+}
+.nfc_toparea {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+.nfc_imgarea {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -60px 0 0 -105px;
+  bottom: 0;
+  width: 210px;
+  height: 210px;
+  text-align: center;
+}
+.nfc_textarea {
+  z-index: 10;
+  width: 100%;
+}
+.nfc_btnarea {
+  z-index: 10;
+  text-align: center;
+  margin: 30px 40px 0 40px;
+  height: 48px;
+}
+.nfc_footer {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.nfc_title {
+  font-size: 48px;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Noto Sans KR Thin", Arial;
+  font-weight: 100;
+}
+.nfc_titlehan {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Noto Sans KR Medium", Arial;
+  font-weight: 500;
+}
+
+.nfc_textarea > p {
+  color: #666;
+  font-size: 1em;
+  text-align: center;
+  padding: 5px 12px;
+  line-height: 1.4em;
+}
+.nfc_textarea strong {
+  font-weight: 800;
+  font-family: "Noto Sans CJK KR Bold";
+}
+
+.nfc_strong {
+  font-size: 0.85em;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  font-family: "Noto Sans CJK KR Bold";
+  font-weight: 1000;
+  background: linear-gradient(to right, #c65bb1, #4cd1e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nfc_submit_btn {
+  border: 1px solid #ccc;
+  background-color: #dae3f3;
+  color: #000;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 21px;
+  margin: 5px 50px;
+}
+.nfc_login_btn {
+  border: 1px solid #ccc;
+  background-color: #dae3f3;
+  color: #000;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 21px;
+  margin: 5px 50px;
+}
+.nfc_find_btn {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 21px;
+  margin: 5px 50px;
+}
+.nfc_footer_logo {
+  height: 2rem;
+  margin-bottom: 8px;
+}
+.nfc_footer > p {
+  color: #999;
+  font-size: 10px;
+  text-align: center;
+}
+
+.nfc_btnarea button {
+  width: 48%;
+  margin: 0 auto;
+}
+.nfc_input {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.nfc_input input {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #8a23a0;
+  margin: 6px;
+  width: 60px;
+  border-radius: 3px;
+  font-size: 1.2em;
+}
+
+/* 앱접근 권한 알림 팝업용 */
+
+.popup_bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#access {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  width: 70%;
+  height: 400px;
+  padding: 5%;
+  word-break: keep-all;
+}
+#access .btn_bora {
+  width: 100%;
+}
+#access .nfc_btnarea {
+  padding: 0;
+}
+#access h2 {
+  padding: 6px 0;
+  color: #ce4ec4;
+  display: block;
+  width: 90%;
+  height: 40px;
+  line-height: 30px;
+  font-size: 1.2em;
+}
+.access_contents h3 {
+  font-size: 1em;
+  padding-left: 14px;
+}
+.access_contents p {
+  font-size: 0.9em;
+  padding-left: 14px;
+}
+
+.access_contents {
+  margin: 12px 0;
+  border-top: #999 solid 1px;
+  border-bottom: #999 solid 1px;
+  display: table;
+}
+.access_contents dd {
+  display: table-cell;
+}
+.access_contents dr {
+  display: block;
+  float: none;
+  margin: 12px 0;
+  width: 100%;
+}
+.access_info p {
+  font-size: 0.85em;
+  margin-bottom: 6px;
+}
+.access_contents .img_1 {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/ic_camera.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.access_contents .img_2 {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/ic_access.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* nfc 태깅 팝업창 안드로이드용 210105*/
+.overlay0 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 99;
+  overflow-x: hidden;
+  background-color: rgba(64, 72, 83, 0.6);
+}
+.nfc_popup_wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.nfc_popup {
+  box-sizing: border-box;
+  margin: auto;
+  width: 96%;
+  background-color: #fff;
+  border-radius: 30px;
+  z-index: 100;
+  text-align: center;
+  padding: 32px;
+}
+.nfc_popup_txt p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #666;
+}
+.nfc_popup_img_wrap {
+  padding: 30px 0;
+}
+.nfc_popup_img {
+  width: 130px;
+}
+.nfc_popup_btn {
+  width: 100%;
+  height: 50px;
+  background-color: #f1f1f1;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #888;
+}
+/* 세로 높이에 맞춰서 레이아웃 재정리 */
+@media only screen and (max-height: 667px) {
+  .nfc_footer {
+    margin-top: 25px;
+  }
+}

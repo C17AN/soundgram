@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html
+  lang="ko"
+  class="os_windows chrome pc version_75_0_3770_100 effect_enabled"
+>
+  <head>
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <link href="/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nfc_payment.css" />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="always" />
+    <title>SoundGram</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- 안드로이드 웹앱 용-->
+      <div id="nc01_a">
+        <div class="nfc_toparea">
+          <div class="nfc_imgarea">
+            <img
+              src="images/nc01_img_start.png"
+              alt=""
+              height="160px"
+              style="padding-top: 10px"
+            />
+          </div>
+        </div>
+        <div class="nfc_textarea">
+          <h1 class="nfc_title">start</h1>
+          <!-- 210105 수정 시작1 -->
+          <p>
+            사운드그램 칩디스크를<br />
+            스마트폰으로 태그 할 준비가 되셨나요?
+          </p>
+          <p>
+            <span class="nfc_strong"
+              >※ 시작하기 전, <strong>설정 > NFC > 기본 모드</strong>가</span
+            >
+            <br /><span class="nfc_strong">
+              체크되어 있는지 꼭 확인해주세요.</span
+            >
+          </p>
+        </div>
+        <div class="nfc_btnarea">
+          <!-- 해당버튼 누르면 아이폰에 기본 nfc안내창 같은 팝업창(아래에 만들어둠)이 뜨고 테깅할 수 있도록 -->
+          <button class="btn_bora">네!</button>
+        </div>
+        <!-- 210105 수정 끝1 -->
+        <div class="nfc_footer">
+          <img src="images/nc01_img_logo.png" class="nfc_footer_logo" />
+          <p>음반 인증 관련 문의 soundgram.info@soundgram.co.kr</p>
+        </div>
+      </div>
+      <!-- 210105 수정 시작2 -->
+      <!-- 스캔준비완료 팝업창 안드로이드용 -->
+      <div class="overlay0">
+        <!-- style="display: none" -->
+        <div class="nfc_popup_wrap">
+          <div class="nfc_popup">
+            <div class="nfc_popup_txt">
+              <p>스마트폰 중앙에 NFC 음반<br />키트를 태그해주세요.</p>
+              <div class="nfc_popup_img_wrap">
+                <img
+                  class="nfc_popup_img"
+                  src="images/nfc_tagging.png"
+                  alt="tag motion images"
+                />
+              </div>
+              <div class="nfc_popup_btn_wrap">
+                <button class="nfc_popup_btn">취소</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 210105 수정 끝1 -->
+      <!-- 아이폰 웹앱 용-->
+      <div id="nc01_a" class="hidden">
+        <div class="nfc_toparea">
+          <div class="nfc_imgarea">
+            <img
+              src="images/nc01_img_start.png"
+              alt=""
+              height="160px"
+              style="padding-top: 10px"
+            />
+          </div>
+        </div>
+        <div class="nfc_textarea">
+          <h1 class="nfc_title">start</h1>
+          <p>
+            <strong>칩디스크</strong>를 스마트폰으로 <br />태그할 준비가
+            되셨나요?
+          </p>
+          <p>
+            <span class="nfc_strong"
+              >※ 아이폰 X 이하 기종은 백그라운드 리딩이 안되니</span
+            ><br /><span class="nfc_strong">
+              시작 후, 제어 센터 > NFC 기능을 켜주세요.</span
+            >
+          </p>
+        </div>
+
+        <div class="nfc_btnarea">
+          <button class="btn_bora">시작!</button>
+        </div>
+
+        <div class="nfc_footer">
+          <img src="images/nc01_img_logo.png" class="nfc_footer_logo" />
+          <p>음반 인증 관련 문의 soundgram.info@soundgram.co.kr</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

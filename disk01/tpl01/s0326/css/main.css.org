@@ -1,0 +1,360 @@
+@charset "utf-8";
+/* Body */
+button, fieldset, img {border:0}
+blockquote, body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,select,td,textarea,th,ul{margin:0;padding:0}
+html, body {
+	font-family:  "Noto Sans CJK KR Light", 'AppleGothicNeoSD', 'Apple SD 산돌고딕 Neo', "sans-serif";	
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	color: #454545;
+	height: 100%;
+}
+a, hover, a:hover {color: #454545;
+	text-decoration: none;
+}
+button:hover {cursor: pointer}
+
+strong { 
+font-weight: 600;
+}
+*:focus {
+    outline: none;
+}
+h1 {font-family:"Noto Sans CJK KR Light"; font-weight: 400; letter-spacing: -1}
+
+/* 신현희김루트버전 제목 
+h1 {font-family:"대한"; font-weight: 400}
+*/
+h2, h3{	font-family:  "Noto Sans CJK KR Regular"; font-weight: 400}
+
+h4 {font-family:  "Noto Sans CJK KR Light";	line-height: 140%; font-size: 0.9em;
+	font-weight: 200; letter-spacing: 0}
+ul, li {list-style: none}
+hr {border: none}
+
+
+#no_network {margin-top: 15%; font-size:0.9em}
+#no_network p { text-align: center; margin-bottom: 6px; color: #666}
+
+.intro {width: 100%; height: 100%;
+	background-image: url("../images/sp01_bg_bg.png"); background-size: contain;  background-repeat: no-repeat; background-position: center;
+	position: relative;
+}
+.intro div { position: absolute; top:60%; left: 28%; z-index: 5; background-color: #ccc; height:4px;
+width: 44%; }
+.intro div .bar_on {background:linear-gradient(to right,  rgba(86, 198, 215, 1.0), rgba(181, 80, 158, 1.0)); height:4px!important; display:inline-block;
+}
+
+.hidden {display:none;}
+.m_r_20 {margin-right: 20px}
+.m_l_20 {margin-left: 20px}
+.m_t_20 {margin-top: 20px}
+.m_b_20 {margin-bottom: 20px}
+
+.txt_11 {font-size: 0.7em}
+.txt_12 {font-size: 0.8em}
+
+
+.container { position:relative; width: 100%; height: 100%;}
+
+
+header {}
+
+.close {
+	display: block;
+	background-image: url("../images/btn_close.png");
+	background-size: cover;
+	width: 40px; height: 40px;
+	position: absolute;
+	top: 0; right: 12px;
+	margin: 5px 0;
+	z-index: 10
+}
+.fl_left {float: left}
+.fl_right {float: right}
+
+header a, header a:hover {	color: #fff;}
+
+
+/* info 스탠다드 프리미엄공통 */
+#in01{}
+.si_toolbar{padding:5px; text-align:right;}
+.si_content{background-color:#ebebeb; height:100vh;}
+.si_logo_area{padding-top:7%; text-align:center;}
+.snsbtn_area{width:100%; margin:24px 0;height: 45px}
+.inner_snsbtn_area{ text-align: center; height: 45px}
+.youtube_btnCir, .instar_btnCir, .facebook_btnCir, .facebook_btnCir,.twiter_btnCir, .naver_btnCir {
+	width:45px; height:45px; border-radius:45px; overflow:hidden; background-size:45px; display: inline-block; margin:0 6px; cursor:pointer;}
+.youtube_btnCir {background-image: url("../images/in01_btn_yt.png"); }
+.instar_btnCir{background-image: url("../images/in01_btn_is.png"); }
+.facebook_btnCir{background-image: url("../images/in01_btn_fb.png");}
+.twiter_btnCir{background-image: url("../images/in01_btn_tw.png"); }
+.naver_btnCir{background-image: url("../images/in01_btn_nv.png"); }
+.si_btn_area{text-align:center;}
+.si_boraline_btn{
+	position:relative;
+    border: 0.5px solid #CE4EC4;
+    background-color: #fff;
+    color: #CE4EC4;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 17px;
+    text-align: center;
+	font-family: "Noto Sans CJK KR Regular";
+    height:54px;
+	line-height:54px;
+    margin: 0 48px 8px 48px;
+}
+.si_bora_btn{
+	position:relative;
+    border: 0.5px solid #CE4EC4;
+    background-color: #CE4EC4;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 17px;
+    text-align: center;
+	font-family: "Noto Sans CJK KR Regular";
+    height:54px;
+	line-height:54px;
+    margin: 0 48px 8px 48px;
+}
+.si_gray_btn{
+	position:relative;
+    border:0.5px solid #737373;
+    background-color: #ebebeb;
+    color: #737373;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 17px;
+    text-align: center;
+	font-family: "Noto Sans CJK KR Regular";
+    height:54px;
+	line-height:54px;
+    margin: 0 48px 8px 48px;
+}
+.si_btnimg_s{width:18px; height:18px; margin-left:2px;}
+.si_footer{margin-top:32px;}
+.si_footer > p{font-family: "Noto Sans CJK KR Regular"; font-size:16px; color:#737373; text-align:center;}
+
+
+
+/* 하단 네비게이션 메뉴 부분 */
+#tb01{ background: #f2f2f2; width: 100%; height: 60px;
+	text-align: center;
+	position: fixed;
+	bottom: 0; left: 0;
+	z-index: 100; }
+.tb_menu {margin: 7px 5%; width: 90%; height: 40px;}
+.tb_menu li {list-style: none; display: inline-block; margin:0 4%}
+.tb_ho_off, .tb_al_off, .tb_ga_off, .tb_pl_off, .tb_st_off, .tb_ing_off, .tb_ho_on, .tb_al_on, .tb_ga_on, .tb_pl_on, .tb_st_on, .tb_ing_on{
+	width: 40px; height: 40px;}
+.tb_ho_off{background-image: url("../images/tb01_btn_home_off_3@.png"); background-size: cover; margin-left: 0!important}
+.tb_al_off{background-image: url("../images/tb01_btn_list_off_3@.png"); background-size: cover;}
+.tb_ga_off{background-image: url("../images/tb01_btn_gal_off_3@.png"); background-size: cover;}
+.tb_pl_off{background-image: url("../images/tb01_btn_play_off_3@.png"); background-size: cover;}
+.tb_st_off{background-image: url("../images/tb01_btn_story_off_3@.png"); background-size: cover; margin-right: 0!important}
+.tb_ing_off{background-image: url("../images/tb01_btn_play_ing_off_3@.png"); background-size: cover;}
+
+.tb_ho_on{background-image: url("../images/tb01_btn_home_on_3@.png"); background-size: cover; margin-left: 0!important}
+.tb_al_on{background-image: url("../images/tb01_btn_list_on_3@.png"); background-size: cover;}
+.tb_ga_on{background-image: url("../images/tb01_btn_gal_on_3@.png"); background-size: cover;}
+.tb_pl_on{background-image: url("../images/tb01_btn_play_on_3@.png"); background-size: cover;}
+.tb_st_on{background-image: url("../images/tb01_btn_story_on_3@.png"); background-size: cover; margin-right: 0!important}
+.tb_ing_on{background-image: url("../images/tb01_btn_play_ing_on_3@.png"); background-size: cover;}
+
+
+
+	
+/* 인덱스(커버) 부분 */
+#ho01{background: #f2f2f2;
+	width: 100%; height:100%; overflow:hidden;
+padding: 0 0 0 0;
+}
+
+.cover_img, .cover_effect  { display: block; background-size: cover; width: 100%; height: 354px;}
+.cover_effect { display: block; background-image: url("../images/ho01_img_effect.png"); margin: auto}
+.cover_txt { background-color: #f2f2f2; opacity: 0.85; display: block; background-image: url("../images/ho01_bg_home.png"); background-position: top; background-repeat: repeat-x; width: 100%;  text-align: center;
+	height : 100%; overflow:hidden; position:absolute;
+	margin:0}
+
+.cover_txt p { position: absolute; top:155px; left: 0; width: 100%; height: 100px;
+	display: block; background-image: url("../images/ho01_bg_info.png"); background-position: top; background-repeat: no-repeat; }
+#ho01 .cv_title{ font-size: 2.4em;  color:#000000; height:68px; line-height:68px; margin-top: 8px;}
+#ho01 .cv_artist{  font-weight:100!important; background: #000000; color: #f2f2f2; font-size: 1.0em; padding:3px 12px; margin:0 auto;  display: inline-block;}
+#ho01 .cv_album{color:#000000; margin: 7px; }
+.btn_info {width: 40px; height: 40px; background-color: #f2f2f2; opacity: 0.85; display: block; background-image: url("../images/ho01_btn_info.png"); background-size:cover; border-radius: 40px; margin: 18px auto 0 auto  }
+
+
+/* 곡목록 페이지 */
+.page_title {position: fixed; top:0; left: 0; width: 100%; z-index: 10; background: #f2f2f2; 
+	}
+.page_title h1 {font-weight: 100;  letter-spacing: 10px; 
+	height: 120px; width: 100%; text-align: center; line-height: 60px; font-size: 1.0em; }
+.list_albumcover {
+	padding: 0;
+	width: 135px;
+	height: 128px;
+	float: left;
+	margin: 0 14px 0 0;
+	background-size: cover;
+}
+.list_albuminfo {display: table; height: 128px; margin: 0; padding: 0}
+.list_albuminfo div {display:table-cell; vertical-align:middle;}
+.list_albuminfo h2 {margin-bottom: 4px} 
+.list_albuminfo h3 {font-weight: 200; margin:6px 0;font-size: 1.0em  }
+.list_info { font-size: 0.8em }
+
+#al01 {background: #f2f2f2;}
+.no_like {height: 60px; padding: 16px 14px 0 0; width: 15%; text-align: center; float:left; font-size: 0.8em}
+#al01 .page_title {	height:248px; }
+#al01 .page_title h1 {	background-image: url("../images/al01_bg_title.png"); background-position:bottom; background-repeat:repeat-x; }
+.songlist {position:absolute; top:210px; left: 0; padding: 50px 0; width: 100%; background: #ffffff;}
+.songlist a, .songlist a:hover { color: #111}
+.song_no, .song_song { float: left}
+.song_no {height: 60px; line-height: 60px; width: 15%; text-align:center; font-family:"Noto Sans CJK KR Thin"; font-size: 1.4em; font-style: italic; }
+.titlebox { background:url("../images/al01_ic_title.png"); background-size: contain; width:30px; height: 12px; text-align: center; margin-right: 8px; display: inline-block}
+.no_like .on, .no_like .off {display:block; margin: 0 auto;  width: 18px; height: 18px }
+.no_like .on {background-image: url("../images/al01_btn_like_on.png"); background-size: cover;}
+.no_like .off {background-image: url("../images/al01_btn_like_off.png"); background-size: cover;}
+.songlist li {display: table; width: 90%; margin: 5px auto  }
+.song_song {height: 50px; padding-top: 13px; display: inline-block; width: 60%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.song_song h4 {color: #666}
+
+
+/* 곡재생 페이지 */
+#pl01 {background: #f2f2f2;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.like_heart {
+	position: absolute;
+	top:10%;
+	left:20%;
+	width: 60%;
+	height: auto;
+	z-index: 100;
+}
+.like_heart img {
+	width: 100%;
+	height: auto;
+}
+#pl01 button {background-color: rgba(255,255,255, 0)}
+#pl01 h1 {padding-top: 20px}
+#pl01 h4{margin:10px auto 20px auto}
+.play_eq {background-image: url("../images/pl01_bg_album.png"); background-position: center; background-repeat: repeat-x;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:380px;
+	
+}
+.play_img {
+	background-size:cover; background-repeat: no-repeat; background-position: top;
+	height:280px; width:280px; margin: auto; border-radius: 500px}
+
+.play_control { display: table;
+	width: 100%;
+}
+
+.play_btn {display: table-cell;
+	vertical-align:middle;
+	width: 100%;;
+}
+.play_btn dl {margin:5% 14px; }
+.play_btn dd {display: inline-block; margin-bottom: 14px}
+.play_btn .no_like {height: 18px; padding:7px 0; float: none; width: 100%; margin: auto; text-align: center}
+.play_btn .no_like span {width: 18px; height: 18px;}
+.pl_pre, .pl_nex, .pl_play, .pl_lyc, .pl_rep, .pl_repone, .pl_repoff { background-size:cover; background-repeat: no-repeat; }
+.pl_pre, .pl_nex, .pl_play { width: 60px; height: 60px}
+.pl_lyc, .pl_repon, .pl_repoff, .pl_repone {width: 40px; height: 40px}
+.pl_pre { background-image: url("../images/pl01_btn_prev.png"); margin-right: 24px }
+.pl_play { background-image: url("../images/pl01_btn_play.png"); }
+.pl_pause { background-image: url("../images/pl01_btn_pause.png"); }
+.pl_nex { background-image: url("../images/pl01_btn_next.png"); margin-left: 24px }
+.pl_lyc { background-image: url("../images/pl01_btn_lyric.png"); }
+.pl_repon { background-image: url("../images/pl01_btn_repeat_on.png");}
+.pl_repoff { background-image: url("../images/pl01_btn_repeat_off.png"); }
+.pl_repone { background-image: url("../images/pl01_btn_repeat_one.png"); }
+.pl_random { background-image: url("../images/pl01_btn_random.png"); }
+
+.playbar {width: 100%; height: 2px; background-color: #ccc; margin:0 0 6px 0; position: relative }
+.bar_on {background-color: #454545; height: 2px; position: absolute; left: 0}
+.bar {font-size: 0.8em; position: relative}
+.bar_btn {position: absolute; top:-6px; width: 12px; height: 12px; border-radius: 10px; border: thin #454545 solid; background-color: #fff }
+
+/* 갤러리  페이지 */
+#ga01 {background: #f2f2f2;}
+#ga01 .page_title {	height:120px; }
+#ga01 .page_title h1 {	background-image: url("../images/ga01_bg_title.png"); background-position:bottom; background-repeat:repeat-x; }
+.gallary {position: absolute; top:120px; padding-bottom: 60px; text-align: center}
+.gallary h3 {line-height: 50px; margin: auto 14px}
+.booklet, .video {
+	width:100%; 
+	margin:0 0 20px 0 ;
+}
+.video_box {width:100%; height: 210px; background-size: cover; text-align: center; display: table}
+.btn_videoplay { display: table-cell; vertical-align: middle}
+.btn_videoplay img {width: 74px; height: 74px; margin: auto }
+.booklet img {
+	width: 100%;
+	display: block;
+}
+
+/* 땡스투 페이지 */
+#st01 {background: #ffffff;}
+#st01 .page_title {	 height:240px; background-image: url("../images/st01_bg_title.png"); background-position:bottom; background-repeat:repeat-x; }
+#st01 .page_title h1 { clear:both;  height: 120px; width:100%;}
+.thanks_profile { width:200px ; height:200px; border-radius: 500px; margin:-30px auto 0 auto; background-size:cover; }
+
+.thanks_contants { position: absolute; top:300px; padding-bottom: 60px; margin: auto 30px }
+.thanks_contants h3 {display: inline-block; font-weight: 400; font-family: "Noto Sans CJK KR Medium"; margin: 20px 0 }
+.thanks_contants p { display: block; line-height: 140%; font-size: 0.9em;  }
+
+@media (max-width: 320px)
+{
+#tb01{ height: 50px;}
+.tb_menu {width: 100%}
+.tb_menu li { margin:0 3%}
+.tb_ho_on, .tb_ho_off { margin-left:-8%!important}
+.cover_img  {height: 280px}	
+.play_eq {height: 340px}
+.play_img {width: 240px; height: 240px; }
+.play_btn dl {margin: 2% 14px}
+}
+
+
+
+
+@media (min-height: 720px)
+{
+#tb01{ height: 80px;}
+#ho01 {padding:50px 0 0 0;}
+.play_eq {height: 440px; }
+.play_img {width: 320px; height: 320px}	
+.play_btn dl {margin: 4% 14px}
+}
+
+@media (min-height: 812px)
+{
+#tb01{ height: 80px;}
+#ho01 {padding:50px 0 0 0;}
+.play_eq {height: 480px; }
+.play_img {width: 320px; height: 320px}	
+.play_btn dl {margin: 6% 14px}
+}
+@media (min-height:1024px)
+{
+.cover_img, .cover_effect  { height: 720px;}
+.cover_txt { background-repeat: repeat-x}
+#tb01{ height: 80px; padding-top:0.5%}
+#ho01{padding:0 0 0 0;}
+.play_eq {height: 600px; padding-top: 100px; margin-bottom: -100px}
+.play_img {width: 400px; height: 400px; }
+	.play_btn dl {margin: 8% 50px}
+}

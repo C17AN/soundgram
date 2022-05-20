@@ -1,0 +1,401 @@
+@charset "utf-8";
+
+button,
+fieldset,
+img {
+  border: 0;
+}
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Noto Sans KR", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo",
+    "sans-serif";
+  background-color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #454545;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -ms-touch-action: none;
+  /* 화면을 길게 누르고 있을때 뜨는 팝업이나 액션시트를 제어 */
+  -webkit-touch-callout: none;
+  /* 텍스트나 이미지를 선택할 수 있게 하는 여부를 제어 */
+  -webkit-user-select: none;
+  /* 링크를 터치했을때 나오는 기본 영역의 색상을 제어 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a,
+a:hover {
+  color: #454545;
+  text-decoration: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+strong {
+  font-weight: 600;
+}
+*:focus {
+  outline: none;
+}
+h1,
+h2,
+h3 {
+  /* font-weight: 400; */
+  letter-spacing: -1px;
+  line-height: 120%;
+}
+/* h1 {
+  font-weight: 100;
+} */
+h4 {
+  line-height: 140%;
+  font-size: 0.9em;
+  font-weight: 200;
+  letter-spacing: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+hr {
+  border: none;
+}
+.nfc_container,
+.container {
+  position: relative;
+  background: #fff;
+  height: 100%;
+}
+.splash_container {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 100%;
+}
+.btn_bora {
+  background: #ce4ec4;
+  color: #fff;
+  display: block;
+  padding: 14px 0;
+  width: 100%;
+  border: thin solid #ce4ec4;
+}
+#nc01_a,
+#nc01_b,
+#nc01_c,
+#nc01_d,
+#nc01_e {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+}
+.nfc_toparea {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+.nfc_imgarea {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -60px 0 0 -105px;
+  bottom: 0;
+  width: 210px;
+  height: 210px;
+  text-align: center;
+}
+.nfc_textarea {
+  z-index: 10;
+  width: 100%;
+}
+.nfc_textarea h1 {
+  font-weight: 100 !important;
+}
+.nfc_btnarea {
+  z-index: 10;
+  text-align: center;
+  /* margin: 30px 40px 0 40px; */
+  margin: 5px 40px 0 40px;
+  height: 48px !important;
+}
+.nfc_footer {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+.nfc_title {
+  font-size: 48px !important;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Noto Sans KR", Arial !important;
+  font-weight: 100 !important;
+}
+.nfc_titlehan {
+  font-size: 24px !important;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Noto Sans KR", Arial !important;
+  font-weight: 500 !important;
+}
+.nfc_textarea > p {
+  color: #666 !important;
+  font-size: 1em !important;
+  text-align: center;
+  padding: 5px 12px;
+  line-height: 1.4em !important;
+  font-weight: 400 !important;
+}
+.nfc_textarea strong {
+  font-family: "Noto Sans KR" !important;
+  font-weight: 800 !important;
+}
+
+.nfc_strong {
+  font-size: 0.85em !important;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  font-family: "Noto Sans KR" !important;
+  font-weight: 400;
+  /* background: linear-gradient(to right, #c65bb1, #4cd1e4); */
+  background: #999;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nfc_submit_btn {
+  border: 1px solid #ccc;
+  background-color: #dae3f3;
+  color: #000;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 14px !important;
+  text-align: center;
+  padding: 8px 21px;
+  margin: 5px 50px;
+}
+.nfc_login_btn {
+  border: 1px solid #ccc;
+  background-color: #dae3f3;
+  color: #000;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 14px !important;
+  text-align: center;
+  padding: 8px 21px;
+  margin: 5px 50px;
+}
+.nfc_find_btn {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 14px !important;
+  text-align: center;
+  padding: 8px 21px;
+  margin: 5px 50px;
+}
+.nfc_footer_logo {
+  height: 2rem;
+  margin-bottom: 8px;
+}
+.nfc_footer > p {
+  color: #999;
+  font-size: 10px !important;
+  text-align: center;
+}
+
+.nfc_btnarea button {
+  width: 48%;
+  margin: 0 auto;
+  font-size: 1em !important;
+}
+.btn_bora,
+.btn_boraline {
+  padding: 14px 0;
+  border: thin solid #ce4ec4;
+}
+.btn_boraline {
+  background: #fff;
+  color: #ce4ec4;
+}
+.nfc_input {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.nfc_input input {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #8a23a0;
+  margin: 6px;
+  width: 60px;
+  border-radius: 3px;
+  font-size: 1.2em;
+}
+
+/* 앱접근 권한 알림 팝업용 */
+
+.popup_bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#access {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  width: 70%;
+  height: 400px;
+  padding: 5%;
+  word-break: keep-all;
+}
+#access .btn_bora {
+  width: 100%;
+}
+#access .nfc_btnarea {
+  padding: 0;
+}
+#access h2 {
+  padding: 6px 0;
+  color: #ce4ec4;
+  display: block;
+  width: 90%;
+  height: 40px;
+  line-height: 30px;
+  font-size: 1.2em !important;
+}
+.access_contents h3 {
+  font-size: 1em !important;
+  padding-left: 14px;
+}
+.access_contents p {
+  font-size: 0.9em !important;
+  padding-left: 14px;
+}
+
+.access_contents {
+  margin: 12px 0;
+  border-top: #999 solid 1px;
+  border-bottom: #999 solid 1px;
+  display: table;
+}
+.access_contents dd {
+  display: table-cell;
+}
+.access_contents dr {
+  display: block;
+  float: none;
+  margin: 12px 0;
+  width: 100%;
+}
+.access_info p {
+  font-size: 0.85em !important;
+  margin-bottom: 6px;
+}
+.access_contents .img_1 {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/ic_camera.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.access_contents .img_2 {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/ic_access.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* 세로 높이에 맞춰서 레이아웃 재정리 */
+@media only screen and (max-height: 667px) {
+  .nfc_footer {
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-height: 610px) {
+  .nfc_title {
+    margin: 0px 0 20px;
+  }
+}
+/* #6b1ede 색이외에 추가, 변경되는 부분 */
+/* nfc통합앱 부분 수정 */
+#nc10_a, #nc10_b, #nc10_c, #nc10_d, #nc10_e {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;}
+.si_toolbar {
+  justify-content: space-between;
+  padding: 22px 12px 5px;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+}
+.si_toolbar_in01 {
+  display: flex;
+  align-items: center;
+}
+.si_toolbar h1 b {
+  font-weight: 500;
+}
+.nc_top_icon {
+  width: 40px;
+}

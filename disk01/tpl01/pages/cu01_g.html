@@ -1,0 +1,32 @@
+<div id='cu01_g' class='hidden' style='padding:12% 0 0 0'>
+	<div class='profile' style='' >
+	<button id='camera' class='btn_boraone'><img src='' alt=''/></button>
+	<input id='uploadImage' name='uploadImage' type='file' style='display:none' onchange='changeValue(this, "profile", "")'/>
+	</div>
+	<div class='mb_content'>
+	<ul class='mb_profile'>
+	<li id='profile_name'></li>
+	<li id='profile_id'></li>
+	<li class='nick'>
+	<span>닉네임</span>
+	<input id='profile_nick' class='input_style' type='text' name='text' placeholder=''>
+	<button id='changenick' class='btn_boraone'><img src='' alt=''/></button>
+	</li>
+	<li class='nick'>
+	<span>휴대폰</span>
+	<input id='profile_tel' class='input_style' type='tel' name='phone' placeholder='' oninput='this.value = this.value.replace(/[^0-9.]/g, "").replace(/(\..*)\./g, "$1");' maxlength=11>
+	<button id='changetel' class='btn_boraone'><img src='' alt=''/></button>
+	</li>
+	<li id='profile_regdate'></li>
+	</ul>
+	<button id='changepass' class='btn_bora'>
+	비밀번호 변경 <img src='' alt=''/>
+	</button>
+	<button id='logout' class='btn_boraline'>
+	로그아웃 <img src='' alt=''/>
+	</button>
+	<button class='btn_grayline'>
+	회원 탈퇴
+	</button>
+	</div>
+</div>

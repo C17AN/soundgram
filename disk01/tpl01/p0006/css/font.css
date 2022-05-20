@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* 템플릿 vol.01 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+html,
+body {
+  font-family: "Noto Sans KR", "AppleGothic NeoSD", "Apple SD 산돌고딕 Neo",
+    "sans-serif";
+  font-style: normal;
+  line-height: 120%;
+  color: #454545;
+  font-size: 1em;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+h1 {
+  font-size: 1.3em;
+}
+h2 {
+  font-size: 1.3em;
+  color: #191919;
+  line-height: 150%;
+}
+h3 {
+  display: inline-block;
+  font-size: 0.95em;
+  font-weight: 400;
+  color: #191919;
+  letter-spacing: 0px;
+}
+h3 > span,
+h4,
+p {
+  color: #666;
+  font-size: 0.9em;
+}
+h3 > span {
+  font-family: "Noto Sans KR" !important;
+  font-weight: 300 !important;
+}
+.thanks_contants span {
+  font-style: italic;
+}
+h4 {
+  font-weight: 300;
+}
+h5 {
+  font-size: 0.85em;
+  font-weight: 400;
+}
+p {
+  line-height: 170%;
+}
+
+/* navigation */
+.navClass h4 {
+  color: #fff;
+}
+.menu_main li {
+  font-size: 1em;
+  color: #fff;
+}
+.menu_sub li {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #fff;
+}
+.menu_main .over,
+.menu_main .over a {
+  font-size: 1.1em;
+}
+.cd_home {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+/* track list */
+/* 미니 플레이어 */
+.m_pl_artist {
+  font-size: 0.95em;
+  color: #191919;
+}
+/* 앨범소개 */
+.ali_title {
+  word-break: break-word;
+}
+/* 가사보기 */
+.lyr_title {
+  text-align: center;
+}
+/* THANKS TO */
+.thanks_contants h4 {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 0.95em;
+  color: #191919;
+}
+.thanks_contants h4 span {
+  color: #666;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0;
+  font-size: 0.9em;
+}
+/* schedule, sns, review */
+.schedule {
+  text-align: center;
+}
+.sns {
+  text-align: right;
+}
+.schedule h2,
+.sns h2 {
+  color: #fff;
+  font-weight: 300 !important;
+}
+.sns h2 strong,
+.schedule h2 strong {
+  font-weight: 400;
+}
+.schedule h2 strong {
+  font-size: 1.4em;
+}
+.sns h2,
+.review h2 {
+  text-align: left;
+  letter-spacing: 0;
+}
+/* .review_write input,
+.review_write textarea {
+  font-size: 1em;
+} */
+/* 스케줄 */
+.dayday strong {
+  font-size: 1.4em !important;
+}
+.dayday span {
+  font-size: 0.9em;
+}
+.day_red .dayday {
+  color: #f96f6c;
+}
+.day_blue .dayday {
+  color: #4ba2c6;
+}
+.day_gray .dayday {
+  color: #4b555f;
+}
+.dayinfo h3 {
+  font-family: "Noto Sans KR";
+  letter-spacing: -1px;
+}
+.dayinfo p {
+  font-weight: 300;
+  line-height: 150%;
+  max-width: 150px;
+  word-break: keep-all;
+}
+.day_cate {
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+}
+/* font 최소사이즈 공통 */
+/* track list */
+.list_info,
+.no_view,
+.no_comment,
+.no_like,
+.bar,
+.rv_content_id,
+.rv_content_time,
+.empty p,
+.empty_rv p {
+  font-size: 0.8em;
+}
+.list_info strong,
+.list_info span,
+.no_view,
+.no_comment,
+.no_like,
+.bar,
+.rv_content_time,
+.rv_content,
+.empty p,
+.empty_rv p {
+  font-weight: 300;
+}
+.no_view,
+.no_comment,
+.no_like {
+  letter-spacing: 0.09px;
+  line-height: 25px;
+}
+.no_view,
+.no_comment,
+.no_like,
+.bar,
+.empty p,
+.empty_rv p {
+  color: #777;
+}
+.rv_content_time {
+  color: #999;
+}
+.rv_content {
+  letter-spacing: -0.5px;
+}
+.empty p,
+.empty_rv p {
+  letter-spacing: 0.09px;
+}
+/* 아티스트, 크레딧, 앨범 추가된 페이지 */
+.aa_h3,
+.aa_h3 b,
+.album_txt b {
+  color: #454545;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.aa_h3 b,
+.album_txt b {
+  font-weight: 500;
+}
+.p_thin {
+  font-size: 0.9em;
+}
+@media only screen and (max-width: 325px) {
+  h1,
+  h2 {
+    font-size: 1.1em;
+  }
+  h3 {
+    font-size: 0.8em;
+  }
+
+  .list_info,
+  .no_view,
+  .no_comment,
+  .no_like,
+  .bar,
+  .rv_content_id,
+  .rv_content_time,
+  .empty p,
+  .empty_rv p {
+    font-size: 0.7em;
+  }
+  h3 > span,
+  h4,
+  p {
+    font-size: 0.75em;
+  }
+  h5 {
+    font-size: 0.7em;
+  }
+  .menu_main li {
+    font-size: 0.95em;
+  }
+  .menu_sub li {
+    font-size: 0.8em;
+  }
+  .menu_main .over,
+  .menu_main .over a {
+    font-size: 1em;
+  }
+}

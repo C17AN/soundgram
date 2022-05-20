@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+/* Body  크라잉넛 - 25주년 베스트 앨범  CSS */
+/* 인트로 배경색 */
+.intro_bg {
+  width: 100%;
+  height: 100%;
+  background-color: #082656;
+  z-index: 1000000;
+  color: #fff;
+  text-align: center;
+  line-height: 40;
+}
+/* 앨범 커버 */
+.cover_img1,
+.cover_img2,
+.cover_img3,
+.cover_title,
+.cover_artist,
+.cover_txt {
+  position: absolute;
+  left: 0;
+  color: /* 서브컬러 */ #222;
+}
+/* 타이틀 배경이미지의 크기 및 높이를 변경하고 싶을때 */
+.scroll .booklet_img,
+.scroll .video,
+.scroll .thanks {
+  margin-top: 0;
+}
+.scroll .page_title {
+  background-size: cover !important;
+  background-position: bottom;
+  height: 160px;
+  /* position: fixed; */
+  top: 0;
+}
+#bo02 .page_title,
+#th02 .page_title,
+#vi02 .page_title,
+#cr02 .page_title {
+  background-size: 100% auto;
+  width: 100%; /* 수정 */
+  height: 140px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+/* 좌측메뉴 */
+#me02 nav {
+  position: fixed;
+  left: -240;
+  width: 240px;
+  text-align: center;
+  background-color: /* 메인컬러 pM */ #082656;
+  padding: 14px;
+  height: -webkit-calc(100% - 28px);
+  height: -moz-calc(100% - 28px);
+  height: calc(100% - 28px);
+}
+.menu_main .over,
+.menu_main .over a {
+  color: #eeb301;
+}
+.menu_sub .over_s,
+.menu_sub .over_s a {
+  color: #eeb301;
+}
+/* track list */
+#ho02 {
+  background-color: /* 메인컬러 pM */ #082656;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.list_albumcover {
+  background-image: url(../images/al02_img_title.jpg);
+  border-radius: 300px;
+  width: 150px;
+  height: 150px;
+  border-bottom: thin solid #082656;
+  float: left;
+  margin: 0 14px auto 20px;
+  background-size: cover;
+}
+.list_albuminfo h2 {
+  color: #fff;
+}
+.list_info span {
+  display: inline-block;
+  background:/* 서브컬러 */ #fff;
+  border: thin solid /* 서브컬러 */ #fff;
+  color: #222;
+  padding: 0 10px;
+}
+.list_info strong {
+  display: inline-block;
+  background: #222;
+  padding: 0 10px;
+  border: thin solid /* 서브컬러 */ #fff;
+  color:/* 서브컬러 */ #fff;
+}
+/* 플레이 화면 */
+#pl02 h1 {
+  color: /* 서브컬러 */ #082656;
+}
+/* cradit */
+.credit_txt_wrap {
+  text-align: center;
+}
+.credit_tit_b > b,
+.credit_wrap_in li > b {
+  color: #333;
+  font-weight: 400;
+}
+.thin,
+.credit_wrap_in li {
+  font-weight: 100;
+}
+.credit_wrap_in li {
+  color: #454545;
+}
+.credit_wrap_in {
+  line-height: 1.5rem;
+}
+.credit_wrap_in {
+  margin-top: 24px;
+}
+#cr619 .page_title {
+  background-image: url("../images/cr_bg_title.png");
+  background-size: 100% auto;
+  width: 100%;
+  height: 140px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+#cr619 .page_title_wrap {
+  height: 140px;
+}
+#ab619 .page_title_wrap,
+#ar619 .page_title_wrap {
+  height: 54px;
+}
+#cr619 .page_title,
+#ab619 .page_title,
+#ar619 .page_title {
+  position: fixed;
+}
+.credit_tit_b {
+  display: block;
+  color: #663399;
+}
+.credit_wrap_in:last-child {
+  margin-bottom: 40px;
+}
+/* album 소개*/
+.ab619_container {
+  background-image: url("../images/ab_bg_title02.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#ab619 h1 {
+  background-image: url("../images/ab_bg_title.png");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 54px;
+}
+#ab02 .page_title {
+  height: 420px;
+}
+.album_txt_img {
+  padding-top: 25px;
+  width: 240px;
+}
+/* artist */
+#ar619 .page_title {
+  height: auto;
+}
+#ar619 .page_title {
+  background-color: #fff;
+}
+.artist_contants p {
+  margin: 24px 20px;
+}
+.artist_inbox p {
+  margin: 24px 0;
+}
+.artist_img00 img,
+.artist_img01 img,
+.artist_img04 img {
+  width: 100%;
+}
+.artist_img02 {
+  float: left;
+  width: 100px;
+  margin: 0 15px 0 20px;
+  padding-top: 10px;
+}
+.artist_img02 img:first-child {
+  margin-bottom: 5px;
+}
+.artist_img02 img {
+  width: 100%;
+}
+.ar_title {
+  z-index: 1111;
+}
+.artist_img04 {
+  margin: 24px 20px;
+}
+.ar_h3,
+.ar_h3 b {
+  color: #454545;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.ar_h3 b {
+  font-weight: 500;
+}
+.p_thin {
+  font-size: 0.9em;
+}
+/* sub menu 상단색 */
+#sc02 h1,
+#sn02 h1,
+#vd02 h1,
+#rv02 h1,
+#review_txt h1 {
+  background-color:/* 메인컬러 pM */ #082656;
+  height: 54px;
+}
+/* sns */
+.sns h2 strong {
+  color: /* 메인컬러 pM */ #eeb301;
+  font-weight: 400;
+}
+
+/* 크라잉넛 25주년 베스트  앱에서 안보이게 설정 한 것들 */
+.cover_txt {
+  display: none;
+}
+.review_info_btnbox {
+  display: none;
+}
+.review_content3 {
+  display: none;
+}
+
+@media only screen and (max-height: 667px) {
+  /* 커버 */
+  .cover_title {
+    bottom: 150px;
+  }
+  .cover_artist {
+    bottom: 90px;
+  }
+  .cover_img2 {
+    background: url(../images/ho02_img_effect_1.png) no-repeat 0 80px;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+  }
+}
+/* 1차 추가 기프트 앨범 추가건으로 임시확인용 */
+.album_title h2 {
+  color: #663399;
+}
+.album_title h3 {
+  color: #717171;
+  font-weight: 300;
+}
+.schedule,
+.review_toolbar {
+  background-color: #7641ac;
+  color: #fff;
+  font-weight: 100;
+}
+.toolbar_select {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  color: #fff;
+  font-weight: 400;
+}
+.toolbar_write {
+  color: #fff;
+}
+#sc02 .page_title {
+  background: url(../images/server/bo02_img_05.jpg) no-repeat;
+  background-size: 135%;
+  background-position: center top;
+}
+/* 210513 sns 수정 */
+#sn02 .page_title {
+  background: url(../images/server/bo02_img_03.jpg) no-repeat;
+  background-size: 135%;
+  background-position: center 15px;
+}
+.sns .sns_home {
+  background-color: rgba(118, 65, 172, 0.85);
+}
+.sns_bar {
+  background-color: #7641ac;
+  color: #fff;
+  font-weight: 100;
+}

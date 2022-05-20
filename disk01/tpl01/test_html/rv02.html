@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html
+  lang="ko"
+  class="os_windows chrome pc version_75_0_3770_100 effect_enabled"
+>
+  <head>
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <link href="/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/nfc_payment.css" />
+    <link rel="stylesheet" href="css/album.css" />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="always" />
+    <title>SoundGram</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+  </head>
+  <body>
+    <!-- main.css 수정함 -->
+    <!-- 서버에 올리는 부분(올리기전 이미지경로 변경해야함)start -->
+    <div
+      id="rv02"
+      class="swiper-slide swiper-slide-active"
+      role="group"
+      aria-label="2 / 2"
+      value="143"
+      style="width: 380px"
+    >
+    <!-- 210512 덧글창 올라올때 높이를 상단 타이틀 끝에 맞춰서 넣어 주세요.
+        바로 아래에 div style height 조정 부탁드립니다.  -->
+      <div class="page_title" style="opacity: 1; ">
+        <h1 class="">
+          <!-- src="disk01/tpl01/p0006/images/rv02_img_title.png" -->
+          <img
+            src="images/rv02_img_title.png"
+            alt="페이지타이틀"
+            width="100%"
+          />
+        </h1>
+        <div class="review" style="height: 51%; margin-top: 66px">
+          <div class="rv_deco">
+            <!-- 210512 삭제할 부분 start -->
+            <!-- <h2>크라잉넛<br />팬 리뷰 페이지</h2> -->
+            <!-- 210512 삭제할 부분 end -->
+            <div class="rv_signimg2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="review_info_btnbox">
+        <div class="review_info">
+          <img
+            src="disk01/tpl01/p0006/images/rv02_btn_more.png"
+            class="review_info_btn"
+          />
+        </div>
+      </div>
+      <div class="review_content3 hidden" style="bottom: 100%">
+        <div
+          class="swiper-container review_swiper"
+          style="width: 100%; height: 70%"
+        >
+          <div id="_review" class="swiper-wrapper"></div>
+          <div class="swiper-scrollbar review_scollbar hidden"></div>
+        </div>
+      </div>
+      <div class="rv_write_snb hidden" style="margin-top: 66px">
+        <a href="#"
+          ><img
+            src="disk01/tpl01/p0006/images/rv02_btn_close.png"
+            style="height: 42px"
+        /></a>
+      </div>
+      <div class="review_content4 hidden">
+        <textarea
+          placeholder="앨범에 대한 리뷰를 써 주세요"
+          class="rv_writebox"
+        ></textarea>
+      </div>
+      <h5 id="r_toolbar" class="review_toolbar">
+        <span id="recomm" class="">추천순</span>
+        <span id="newest" class="toolbar_select">최신순</span>
+        <!-- 210512 수정됨 start-->
+        <span class="toolbar_write">내글 보기</span>
+        <!-- 210512 수정됨 end-->
+      </h5>
+      <!-- 210512 수정시작 start -->
+      <div class="review_write">
+        <button class="btn_photo"></button>
+          <input
+            id="rv_uploadImage"
+            name="rv_uploadImage"
+            type="file"
+            style="display: none"
+          />
+        <input id="contents" placeholder="댓글을 입력해 주세요." />
+        <button
+            id="inputComment"
+            class="btn_write"
+            onclick='javascript:changeValue(this, "review", "143");'
+          >
+            등록
+        </button>
+      </div>
+      <!-- 210512 수정시작 end -->
+      <div class="review_content2" style="overflow-y:scroll;">
+        <div
+          class="swiper-container reviewcomment_swiper swiper-container-initialized swiper-container-vertical swiper-container-free-mode"
+          style="width: 100%; height: 80%"
+        >
+          <div
+            id="rclist"
+            class="swiper-wrapper"
+            aria-live="polite"
+            style="transform: translate3d(0px, 0px, 0px); "
+          >
+            <li
+              id="rc_li"
+              class="swiper-slide swiper-slide-active"
+              value="0"
+              role="group"
+              aria-label="1 / 16"
+            >
+              <div class="rv_block">
+                <div class="review_content_left">
+                  <div
+                    class="profile"
+                    style="
+                      background-image: url(http://k.kakaocdn.net/dn/bTEiKo/btqOlea2MIw/bjjz4lB9OoJYwv5WNaAnKk/img_110x110.jpg);
+                    "
+                  ></div>
+                </div>
+                <!-- 220422 수정시작 start -->
+                <div class="review_content_right">
+                  <span class="rv_content_id">조성일</span>
+                  <span class="rv_rmenu">
+                    <c3-icon>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        width="24"
+                      >
+                        <path
+                          d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z"
+                        ></path>
+                      </svg>
+                    </c3-icon>
+                  </span>
+                  <p class="rv_content" style="color: #000">
+                    너무 좋네요. 25주년 축하해요~
+                    <div class="re_att_img">
+                      <img src="images/rv02_reply_img01.jpg" alt="경록절이미지">
+                    </div>
+                  </p>
+                  <!-- 글쓴날짜 위치가 아래로 변경되었습니다. -->
+                  <span class="rv_content_time">2021-03-13 10:44:10</span>
+                  <!-- 답글버튼으로 누르면 .r_rv_block 부분이 열리고 닫히고 할 수 있게-->
+                  <span class="rv_reply">답글 <span class="r_rv_count">1</span></span>
+                  <div class="rv_con">
+                    <a href="#" id="rlike_a" value="777"
+                      ><dd
+                        id="reviewCommentLikeCnt"
+                        class="no_like"
+                        value="777"
+                      >
+                        <span value="777" class="off"></span>0
+                      </dd></a
+                    >
+                  </div>
+                </div>
+                <!-- 220422 수정시작 end -->
+                <div class="clear"></div>
+              </div>
+              <!-- 220422 Start수정 -->
+              <div class="r_rv_block">
+                <input class="r_contents" placeholder="답글을 입력해 주세요." />
+                <!-- 220427 답글 등록버튼 -->
+                <button class="btn_write">등록</button>
+                <div class="review_content_left">
+                  <div
+                    class="profile"
+                    style="
+                      background-image: url(media/user/162/2021-03-26-1616739669.jpeg);
+                    "
+                  ></div>
+                </div>
+                <div class="review_content_right">
+                  <span class="rv_content_id">크라잉너트</span>
+                  <span class="rv_rmenu">
+                    <c3-icon>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        width="24"
+                      >
+                        <path
+                          d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z"
+                        ></path>
+                      </svg>
+                    </c3-icon>
+                  </span>
+                  <p class="rv_content" style="color: #000">
+                     정말 전곡 모두 너무 좋아여! 계속 계속 듣고 있습니다.
+                  </p>
+                  <span class="rv_content_time">2021-04-13 22:20:02</span>
+                  <div class="rv_con">
+                    <a href="#" id="rlike_a" value="755"
+                      ><dd
+                        id="reviewCommentLikeCnt"
+                        class="no_like"
+                        value="755"
+                      >
+                        <span value="755" class="off"></span>5
+                      </dd></a
+                    >
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- 220422 End수정 -->
+            </li>
+            <li
+              id="rc_li"
+              class="swiper-slide swiper-slide-next"
+              value="5"
+              role="group"
+              aria-label="2 / 16"
+            >
+              <div class="rv_block">
+                <div class="review_content_left">
+                  <div
+                    class="profile"
+                    style="
+                      background-image: url(media/user/260/2021-02-14-1613229554.jpeg);
+                    "
+                  ></div>
+                </div>
+                <div class="review_content_right">
+                  <span class="rv_content_id">물수능 </span>
+                  <span class="rv_rmenu">
+                    <c3-icon>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        width="24"
+                      >
+                        <path
+                          d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z"
+                        ></path>
+                      </svg>
+                    </c3-icon>
+                  </span>
+                  <p class="rv_content" style="color: #000">
+                    35주년도 기대할게요!!
+                    <div class="re_att_img">
+                      <img src="images/rv02_reply_img02.jpg" alt="화이팅">
+                    </div>
+                  </p>
+                  <span class="rv_content_time">2021-02-14 00:23:56</span>
+                  <span class="rv_reply">답글 작성 <span class="r_rv_count"></span></span>
+                  <div class="rv_con">
+                    <a href="#" id="rlike_a" value="757"
+                      ><dd
+                        id="reviewCommentLikeCnt"
+                        class="no_like"
+                        value="757"
+                      >
+                        <span value="757" class="off"></span>5
+                      </dd></a
+                    >
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="r_rv_block">
+                <input class="r_contents" placeholder="답글을 입력해 주세요." />
+                <!-- 220427 답글 등록버튼 -->
+                <button class="btn_write">등록</button>
+              </div> 
+            </li>
+            <li
+              id="rc_li"
+              class="swiper-slide"
+              value="5"
+              role="group"
+              aria-label="3 / 16"
+              style="height: 90px"
+            >
+              <div class="rv_block">
+                <div class="review_content_left">
+                  <div
+                    class="profile"
+                    style="
+                      background-image: url(media/user/162/2021-03-26-1616739669.jpeg);
+                    "
+                  ></div>
+                </div>
+                <div class="review_content_right">
+                  <span class="rv_content_id">조하</span>
+                  <span class="rv_rmenu">
+                    <c3-icon>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        width="24"
+                      >
+                        <path
+                          d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z"
+                        ></path>
+                      </svg>
+                    </c3-icon>
+                  </span>
+                  <p class="rv_content" style="color: #000">
+                    다 아는 노래라 너무 좋아요~!
+                  </p>
+                  <span class="rv_content_time">2021-02-13 22:20:02</span>
+                  <span class="rv_reply">답글 작성 <span class="r_rv_count"></span></span>
+                  <div class="rv_con">
+                    <a href="#" id="rlike_a" value="755"
+                      ><dd
+                        id="reviewCommentLikeCnt"
+                        class="no_like"
+                        value="755"
+                      >
+                        <span value="755" class="off"></span>5
+                      </dd></a
+                    >
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </div>
+          <div
+            class="swiper-scrollbar reviewcomment_scollbar"
+            style="opacity: 0; transition-duration: 400ms"
+          >
+            <div
+              class="swiper-scrollbar-drag"
+              style="transform: translate3d(0px, 0px, 0px); height: 259.556px"
+            ></div>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+      </div>
+      <!--210512 부가기능버튼 팝업버튼창(다른사람 덧글) start -->
+      <div id="addtionmenu" class="amenu-container" style="display: none">
+        <ul class="amenu-content">
+          <!-- 220503 삭제되는 부분 -->
+          <!-- <li>
+            <button class="amenu-item-button">댓글 답글 쓰기</button>
+          </li> -->
+          <li>
+            <button class="amenu-item-button amenu_report">신고</button>
+          </li>
+          <li>
+            <button class="amenu-item-button amenu_cancel">취소</button>
+          </li>
+        </ul>
+        <c3-overlay class="overlay_btn"
+          ><button class="hidden_amenu" aria-label="amenu_close"></button
+        ></c3-overlay>
+      </div>
+      <!-- 부가기능버튼 팝업버튼창(다른사람 덧글) end -->
+      <!-- 210512 부가기능버튼 팝업버튼창(내 덧글) start -->
+      <div id="addtionmenu" class="amenu-container" style="display: none">
+        <ul class="amenu-content">
+          <!-- 220503 삭제되는 부분 -->
+          <!-- <li>
+            <button class="amenu-item-button">수정</button>
+          </li> -->
+          <li>
+            <button class="amenu-item-button amenu_report">삭제</button>
+          </li>
+          <li>
+            <button class="amenu-item-button amenu_cancel">취소</button>
+          </li>
+        </ul>
+        <c3-overlay class="overlay_btn"
+          ><button class="hidden_amenu" aria-label="amenu_close"></button
+        ></c3-overlay>
+      </div>
+      <!-- 부가기능버튼 팝업버튼창(내 덧글) end -->
+      <!-- 210512 신고눌렀을때 뜨는 팝업창 start-->
+      <div class="overlay-container_wrap" style="display: none;">
+        <div id="overlaytmenu" class="overlay-container">
+          <div class="overlay-content">
+            <h2>신고하기</h2>
+            <p class="report_mp">욕설 및 비방, 음란성 글 등</br>
+              서비스에 부적합한 댓글로</br>
+              신고하시겠습니까?</br>
+            </p>
+            <div class="report_btns">
+              <button class="report_btn_c">취소</button>
+              <button class="report_btn_r">신고하기</button>
+            </div>
+            <p class="report_line"></p>
+            <p class="report_lastp">신고 글은 관리자 접수 후, 삭제 타당성</br> 여부를 확인한 뒤 삭제 진행됩니다.
+            </p>
+          </div>
+          <c3-overlay
+            ><button class="hidden-button" aria-label="close"></button
+          ></c3-overlay>
+        </div>
+      </div>
+      <!-- 신고눌렀을때 뜨는 팝업창 end-->
+    </div>
+    <!-- 서버에 올리는 부분 end -->
+  </body>
+  <script>
+    // 220422 답글버튼 닫히고 열리게(스크립트 모아두시는 곳에 같이 넣어주세요!!!!)
+    $(".rv_reply").on("click", function(){
+      // debugger;
+      $(this).parent().parent().parent().toggleClass("r_block");
+    });
+  </script>
+</html>

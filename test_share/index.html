@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>칩디스크 앨범, 어플리케이션</title>
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/share.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      function getParameterByName(name) {
+          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+          var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+              results = regex.exec(location.search);
+          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+    <script type="text/javascript">
+      var album_id = getParameterByName("album_id");
+
+      $(document).ready(function() {
+        
+      });
+
+      $(window).load(function() {
+        var value = jQuery.param({"album_id":album_id});
+        $.ajax({
+          type : "POST",
+          url : "/api/share_info.php",
+          data : value,
+          dataType: "json",
+		        success: function(data) {
+              $("p#share_title").text(""+data[0].share_title);
+              $("h1#album_name").html("<span>칩디스크</span> "+data[0].album_name);
+              $("div#shop_url > a").attr("href", data[0].shop_url);
+              $("li#google_url > a").attr("href", data[0].google_url);
+              $("li#apple_url > a").attr("href", data[0].apple_url);
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <header>
+        <div>
+          <img
+            src="images/top_txt.png"
+            alt="SOUNDGRAM CHIPDISC & APPLICATION"
+          />
+        </div>
+        <p id="share_title"></p>
+        <h1 id="album_name"></h1>
+      </header>
+      <section class="main_con">
+        <div><img src="images/share.png" alt="" /></div>
+        <div class="main_in">
+          <p>
+            ※ <b>칩디스크</b>란 새로운 형태의 <b>굿즈</b> +
+            <b>어플리케이션 앨범</b>입니다.
+          </p>
+          <div id="shop_url">
+            <a
+              href=""
+              ><p>자세히보기</p></a
+            >
+          </div>
+          <ul id="mtos">
+            <li id="google_url">
+              <a
+                href=""
+              >
+                <img src="images/store_btn01.png" alt="google play button" />
+              </a>
+            </li>
+            <li id="apple_url">
+              <a href="">
+                <img src="images/store_btn02.png" alt="app store button" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

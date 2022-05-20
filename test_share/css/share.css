@@ -1,0 +1,102 @@
+@charset "utf-8";
+body {
+  background-color: #f8f8f8;
+  height: 100vh;
+  font-size: 20px;
+}
+body > div {
+  width: 100%;
+  height: 100vh;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 0 2.25rem 0;
+}
+header {
+  padding: 2.25rem 1.3rem 1.5rem;
+}
+header > div,
+header > div > img,
+.main_con > div,
+.main_con > div > img {
+  width: 100%;
+}
+header > p {
+  font-size: 1.1rem;
+  line-height: 100%;
+  padding: 1.5rem 0 0.6rem;
+}
+header > h1 {
+  font-size: 1.7rem;
+  line-height: 100%;
+}
+header > h1 > span {
+  display: inline-block;
+  width: 5.25rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  background: #7e51a1;
+  vertical-align: 0.15rem;
+}
+.main_con > div.main_in > p {
+  width: 100%;
+  font-size: 0.85rem;
+  font-weight: 300;
+  padding: 1rem 0 1.5rem;
+  letter-spacing: -0.05rem;
+}
+.main_con > div.main_in > p > b {
+  font-weight: 500;
+}
+.main_con > div.main_in {
+  background-color: #fff;
+  padding: 0 1.3rem;
+}
+.main_con > div.main_in > div {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 0.35rem;
+  background: #7e51a1;
+  text-align: center;
+  margin: 0 0 1.25rem 0;
+}
+.main_con > div.main_in > div > a {
+  width: 100%;
+  height: 3rem;
+  display: inline-block;
+  font-size: 1.05rem;
+  color: #fff;
+  font-weight: 300;
+}
+.main_con > div.main_in > div > a > p::after {
+  content: "";
+  display: inline-block;
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0 0 0 0.7rem;
+  border: 0.05rem solid #fff;
+  border-radius: 50%;
+  background: url(../images/arrow.png) no-repeat center;
+  background-size: 0.65rem auto;
+  vertical-align: -0.25rem;
+}
+.main_con > div.main_in > ul {
+  display: flex;
+  width: 100%;
+}
+.main_con > div.main_in > ul > li {
+  flex: 1;
+  max-width: 214px;
+}
+.main_con > div.main_in > ul > li > a > img {
+  width: 100%;
+}
+.main_con > div.main_in > ul > li:nth-child(1) {
+  margin: 0 20px 0 0;
+}

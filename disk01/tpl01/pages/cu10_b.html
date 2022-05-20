@@ -1,0 +1,67 @@
+<!-- 1차 수정 추가 부분 해당페이지에 1개 있습니다.
+  주석 검색어 : 추가부분01 -->
+<!-- 서버에 올리는 부분 start -->
+<div id="cu10_b" class="cu10">
+  <div class="mb_title">
+    <h1>회원 로그인</h1>
+    <h4>
+      <strong>서비스 이용</strong>을 위해<br />사용자 로그인이 필요합니다.
+    </h4>
+  </div>
+  <div class="mb_content">
+    <div class="mb_form">
+      <input
+        id="loginid"
+        class="input_style"
+        type="text"
+        name="id"
+        placeholder="ID (6~20자 영문+숫자)"
+      />
+      <div id="loginidalert" class="alert hidden">
+        아이디는 공백 없이 영문 소문자, <br />숫자 6~20자로 입력하세요.
+      </div>
+      <input
+        id="loginpassword"
+        class="input_style"
+        type="password"
+        name="password"
+        placeholder="Password (8~16자 영문+숫자+특수문자)"
+      />
+      <div id="loginpassalert" class="alert hidden">
+        비밀번호는 영문 소문자, <br />숫자를 조합하여 8~16자로 입력하세요.
+      </div>
+    </div>
+    <button class="btn_bora">
+      회원 로그인 <img src="images/cu10_ic_login_white.png" alt=""/>
+    </button>
+    <button id="srhidpass" class="btn_boraline">아이디 / 비밀번호 찾기</button>
+    
+    <ul class="mb_sns">
+      <li>
+        <a id="kakao" href="#">
+          <span class="kakao"></span>
+        </a>
+      </li>
+      <li id="naverIdLogin">
+        <a
+          id="naverIdLogin_loginButton"
+          href="https://nid.naver.com/oauth2.0/authorize?response_type=code&amp;client_id=jqs6fMhdlwDS46pHx3D2&amp;redirect_uri=http%3A%2F%2Fdisk.soundgram.co.kr%3A10080%2Fdev%2Flogin_popup.php%3Flogintype%3Dnaver%26albumid%3D619%26device_id%3D1101%26uuid%3D9646eb8d-b560-857f-e5bc-412f0f4e5402%26isiplayer%3Dfalse&amp;state=72a7291d4cde850569e1b8cf6a8f759d"
+        >
+          <span class="naver"></span>
+        </a>
+      </li>
+      <li id="li-apple">
+        <a id="apple" href="#">
+          <span class="apple"></span>
+        </a>
+      </li>
+    </ul>
+    <p>
+      간편 로그인 및 회원가입 시, <br />본 서비스의
+      <strong id="accessterms">이용약관 및 개인정보처리방침</strong>에
+      <br />따라 정보가 관리됩니다.
+    </p>
+    <button id="join" class="btn_boraline2">빠른 회원가입  <img src="images/cu10_ic_join.png" alt=""/></button>
+  </div>
+</div>
+<!-- 서버에 올리는 부분 end -->

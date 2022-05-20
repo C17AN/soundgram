@@ -1,0 +1,41 @@
+<!-- cu01_h는 새로 추가된 페이지입니다. -->
+<!-- commen.css 수정함 -->
+<!-- 서버에 올리는 부분 start -->
+<div id="cu01_h" class='hidden' style='padding:20% 0 0 0'>
+  <div class="mb_title">
+    <h1>거의 끝났어요!</h1>
+    <h4></h4>
+  </div>
+  <div class="mb_content">
+    <div id="sns_input" class="mb_form">
+      <h4 class="mb_in_tit1">댓글 쓸 때 사용 할 닉네임은?</h4>
+      <input
+        id="nick_sns"
+        class="input_style"
+        type="text"
+        name="nick"
+        placeholder="닉네임"
+      />
+      <div class="alert hidden">
+        한글 1~10자, 영문 2~20자, 숫자를 입력하세요. (조합 가능)
+      </div>
+      <h4 class="mb_in_tit2">
+        아이디 / 비밀번호 찾기에 사용 할 휴대폰 번호는?
+      </h4>
+      <input
+        id="tel_sns"
+        class="input_style"
+        type="tel"
+        name="phone"
+        placeholder="- 없이 휴대폰 번호 입력"
+        oninput='this.value = this.value.replace(/[^0-9.]/g, "").replace(/(\..*)\./g, "$1");' 
+        maxlength=11
+      />
+      <div id="tel_alert" class="alert hidden"></div>
+    </div>
+    <button id="goJoin" class="btn_bora">
+      회원 가입 <img src="images/cu01_ic_write.png" alt="" />
+    </button>
+  </div>
+</div>
+<!-- 서버에 올리는 부분 end -->

@@ -1,0 +1,1034 @@
+@charset "utf-8";
+/* 앱 공통부분 css */
+button,
+fieldset,
+img {
+  border: 0;
+}
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+html,
+body {
+  font-family: "Noto Sans KR", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo",
+    "sans-serif";
+  background-color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #454545;
+  font-size: 1em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -ms-touch-action: none;
+  /* 화면을 길게 누르고 있을때 뜨는 팝업이나 액션시트를 제어 */
+  -webkit-touch-callout: none;
+  /* 텍스트나 이미지를 선택할 수 있게 하는 여부를 제어 */
+  -webkit-user-select: none;
+  /* 링크를 터치했을때 나오는 기본 영역의 색상을 제어 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a,
+a:hover {
+  color: #454545;
+  text-decoration: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+*:focus {
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+hr {
+  border: none;
+}
+#no_network {
+  margin-top: 15%;
+}
+#no_network p {
+  text-align: center;
+  margin-bottom: 6px;
+  color: #666;
+}
+
+.intro {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/splash.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.intro div {
+  position: absolute;
+  top: 60%;
+  left: 28%;
+  z-index: 5;
+  background-color: #ccc;
+  height: 4px;
+  width: 44%;
+}
+.intro div .bar_on {
+  background: linear-gradient(
+    to right,
+    rgba(86, 198, 215, 1),
+    rgba(181, 80, 158, 1)
+  );
+  height: 4px !important;
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+.m_r_20 {
+  margin-right: 20px;
+}
+.m_l_20 {
+  margin-left: 20px;
+}
+.m_t_20 {
+  margin-top: 20px;
+}
+.m_b_20 {
+  margin-bottom: 20px;
+}
+
+.txt_11 {
+  font-size: 0.7em;
+}
+.txt_12 {
+  font-size: 0.8em;
+}
+
+.container {
+  position: relative;
+  background: #fff;
+  height: 100%;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 201;
+}
+
+.close {
+  display: block;
+  background-image: url("../images/cu01_btn_close.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  z-index: 10;
+}
+.pclose {
+  display: block;
+  background-image: url("../images/pl02_btn_arrowbottom.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 12px;
+  z-index: 10;
+}
+.fl_left {
+  float: left;
+}
+.fl_right {
+  float: right;
+}
+
+/* 회원가입 로그인 관련 */
+.container_popup {
+  background: #ebebeb;
+  height: 100%;
+  width: 100%;
+}
+#pop_top {
+  background: #fff;
+  width: 100%;
+  clear: both;
+  position: fixed;
+}
+
+#cu01_a,
+#cu01_c,
+#cu01_b,
+#cu01_f,
+#cu01_e,
+#cu01_d,
+#cu01_g {
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+#cu01_a .mb_title,
+#cu01_b .mb_title {
+  background-image: url("../images/cu01_img_member_1.png");
+}
+#cu01_c .mb_title,
+#cu01_f .mb_title {
+  background-image: url("../images/cu01_img_member_2.png");
+  background-position: right bottom !important;
+}
+
+.mb_title {
+  /* width: -webkit-calc(100% - 44px);
+  width: -moz-calc(100% - 44px);
+  width: calc(100% - 44px); */
+  height: 70px;
+  margin-left: 0px !important;
+  margin: auto !important;
+  background-size: contain;
+  background-position: right bottom !important;
+  background-repeat: no-repeat;
+}
+.mb_title h1 {
+  font-size: 2em !important;
+  font-weight: 200;
+  font-family: "Noto Sans KR";
+  padding-top: 14px;
+}
+#cu01_b .mb_title h1,
+#cu01_f .mb_title h1 {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+#cu01_e .mb_title,
+#cu01_g .mb_title,
+#cu01_d .mb_title {
+  height: 20px;
+}
+#cu01_e h2,
+#cu01_g h2,
+#cu01_d h2 {
+  font-weight: 200;
+  margin: 20px 0;
+}
+#cu01_e h2 {
+  margin: 40px 0;
+  font-weight: 200;
+}
+#cu01_e > div:first-child > h2 {
+  margin: 20px 0 !important;
+}
+
+#cu01_d {
+  height: 100%;
+  overflow-y: scroll;
+}
+.mb_title h4 {
+  font-size: 0.9em !important;
+}
+.mb_title h4 strong,
+.mb_content p strong {
+  color: #ce4ec4;
+}
+.mb_sns {
+  display: flex;
+  justify-content: center;
+  clear: both;
+}
+.mb_sns,
+.mb_form {
+  margin: 20px auto;
+}
+.mb_sns li {
+  /* background: #fff;
+  border: thin #ccc solid; */
+  padding: 12px 12px 12px 54px;
+  height: 20px;
+  margin-bottom: 6px;
+  font-size: 1em;
+  position: relative;
+  float: left;
+}
+.mb_sns li span {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+.kakao {
+  background: #ffe800 url("../images/cu01_ic_kakao.png") no-repeat center;
+  border: 1px solid #ffe800;
+}
+.naver {
+  background: #2cb400 url("../images/cu01_ic_naver.png") no-repeat center;
+}
+.facebook {
+  background: #2e4e99 url("../images/cu01_ic_fb.png") no-repeat center;
+}
+.twitter {
+  background: #33ccff url("../images/cu01_ic_twt.png") no-repeat center;
+}
+.apple {
+  background: #000 url("../images/cu01_ic_apple.png") no-repeat center;
+}
+.kakao,
+.naver,
+.facebook,
+.twitter,
+.apple {
+  background-size: 20px 20px;
+}
+
+.mb_content {
+  width: -webkit-calc(100% - 44px);
+  width: -moz-calc(100% - 44px);
+  width: calc(100% - 44px);
+  margin: 14px auto;
+}
+.mb_content p {
+  margin: 12px auto;
+  font-size: 0.9em !important;
+  text-align: center;
+}
+#cu01_e .mb_form {
+  margin-bottom: 6px !important;
+}
+
+.mb_text {
+  border: thin solid #ccc;
+  background: #fff;
+  padding: 14px;
+  height: 150px;
+  overflow-y: scroll;
+  font-size: 0.8em;
+}
+
+.btn_bora {
+  background: #ce4ec4;
+  color: #fff;
+}
+.btn_boraline,
+.btn_boraline2 {
+  margin: 10px 0 8px;
+}
+.btn_boraline,
+.btn_boraline2 {
+  color: #ce4ec4;
+  float: left;
+}
+.btn_boraline2 {
+  font-weight: 600;
+  color: #333;
+  float: right;
+}
+#srhidpass {
+  border: none;
+  float: left;
+  width: 150px;
+  font-size: 0.8em;
+  margin: 12px 0;
+  padding: 0;
+  text-align: left;
+}
+.btn_bora {
+  font-size: 1em;
+  display: block;
+  padding: 14px 0;
+  width: 100%;
+  border: thin solid #ce4ec4;
+}
+.btn_grayline {
+  font-size: 1em;
+  display: block;
+  padding: 14px 0;
+  width: 100%;
+  border: thin solid #ccc;
+  color: #666;
+  background-color: rgba(0, 0, 0, 0);
+}
+.container_popup button img {
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+}
+
+.input_style {
+  background: #fff;
+  padding: 10px;
+  width: -webkit-calc(100% - 20px);
+  width: -moz-calc(100% - 20px);
+  width: calc(100% - 20px);
+  border: thin solid #ccc;
+  margin-bottom: 6px;
+  font-size: 1em;
+}
+.nick .input_style {
+  display: inline-block;
+  background-color: #ebebeb;
+  padding: 10px 0;
+  width: -webkit-calc(80% - 45px);
+  width: -moz-calc(80% - 45px);
+  width: calc(80% - 45px);
+  border: none;
+  border-bottom: solid #ce4ec4 thin;
+  margin-bottom: 6px;
+  font-size: 1em;
+  border-radius: 0px;
+}
+.input_style::-webkit-input-placeholder {
+  color: #999;
+  font-size: 0.9em;
+}
+.input_style:-ms-input-placeholder {
+  color: #999;
+  font-size: 0.9em;
+}
+.input_style:-moz-placeholder {
+  color: #999;
+  font-size: 0.9em;
+}
+.input_style::-moz-placeholder {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.nick .input_style::-webkit-input-placeholder {
+  color: #333;
+  font-size: 1em;
+}
+.nick .input_style:-ms-input-placeholder {
+  color: #333;
+  font-size: 1em;
+}
+.nick .input_style:-moz-placeholder {
+  color: #333;
+  font-size: 1em;
+}
+.nick .input_style::-moz-placeholder {
+  color: #333;
+  font-size: 1em;
+}
+
+.alert {
+  color: #ce4ec4;
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 8px;
+}
+
+.form-checkbox {
+  margin-top: 1px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.loginpw_box .form-checkbox {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+.form-checkbox .checkmark {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border: 1px solid #555555;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 3px;
+  height: 8px;
+  border: 1px solid #ce4fc4;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: none;
+}
+.form-checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+.form-checkbox p {
+  margin-left: 34px;
+  padding-top: 0;
+  color: #333;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+.form-checkbox .text {
+  font-weight: 700;
+  color: #ce4fc4;
+}
+
+#cu01_g .profile {
+  width: 100px;
+  height: 100px;
+  margin: 24px auto;
+  position: relative;
+  border: 0.5px solid #fff;
+}
+
+.mb_profile {
+  margin: -20px 0 12px 0;
+}
+.mb_profile li {
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+}
+.mb_profile li span {
+  display: inline-block;
+  width: 20%;
+}
+.profile .btn_boraone {
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+}
+.nick {
+  position: relative;
+}
+.nick .btn_boraone {
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  width: 36px;
+  height: 36px;
+}
+.nick a {
+  display: inline-block;
+  border-bottom: solid #ce4ec4 thin;
+  width: -webkit-calc(80% - 45px);
+  width: -moz-calc(80% - 45px);
+  width: calc(80% - 45px);
+  color: #ce4ec4;
+}
+.btn_boraone {
+  border-radius: 25px;
+  background: #ce4ec4;
+  width: 45px;
+  height: 45px;
+}
+.btn_boraone img {
+  margin-left: 0 !important;
+}
+
+#cu01_g button {
+  margin-bottom: 8px;
+}
+
+.popup_layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 9998;
+}
+.outer_popup {
+  width: -webkit-calc(100% - 40px);
+  width: -moz-calc(100% - 40px);
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+.inner_popup {
+  position: absolute;
+  background-color: #fff;
+  width: 90%;
+  height: 586px;
+  z-index: 9999;
+  top: 50%;
+  margin-top: -293px;
+}
+.popup_imgarea {
+  width: 100%;
+  height: 550px;
+}
+.popup_toolbar {
+  width: 100%;
+  height: 37px;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Noto Sans KR Regular";
+  color: #454545;
+}
+.pop_toolbar_L {
+  float: left;
+  width: 65%;
+  height: 100%;
+  line-height: 36px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.pop_toolbar_R {
+  float: right;
+  width: 35%;
+  height: 100%;
+  line-height: 36px;
+  text-align: center;
+}
+
+/* info 스탠다드 프리미엄공통 */
+#in01 {
+  position: relative;
+  z-index: 101;
+}
+.si_toolbar {
+  text-align: right;
+  background-color: #fff;
+}
+.si_content {
+  background-color: #ebebeb;
+  height: 100vh;
+}
+.si_logo_area {
+  padding-top: 7%;
+  text-align: center;
+}
+.snsbtn_area {
+  width: 100%;
+  margin: 24px 0;
+  height: 45px;
+}
+.inner_snsbtn_area {
+  text-align: center;
+  height: 45px;
+}
+.youtube_btnCir,
+.instar_btnCir,
+.facebook_btnCir,
+.facebook_btnCir,
+.twiter_btnCir,
+.naver_btnCir {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  overflow: hidden;
+  background-size: 45px;
+  display: inline-block;
+  margin: 0 6px;
+  cursor: pointer;
+}
+.youtube_btnCir {
+  background-image: url("../images/in01_btn_yt.png");
+}
+.instar_btnCir {
+  background-image: url("../images/in01_btn_is.png");
+}
+.facebook_btnCir {
+  background-image: url("../images/in01_btn_fb.png");
+}
+.twiter_btnCir {
+  background-image: url("../images/in01_btn_tw.png");
+}
+.naver_btnCir {
+  background-image: url("../images/in01_btn_nv.png");
+}
+.si_btn_area {
+  text-align: center;
+}
+.si_boraline_btn {
+  position: relative;
+  border: 0.5px solid #ce4ec4;
+  background-color: #fff;
+  color: #ce4ec4;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 17px;
+  text-align: center;
+  font-family: "Noto Sans KR Regular";
+  height: 54px;
+  line-height: 54px;
+  margin: 0 48px 8px 48px;
+}
+.si_bora_btn {
+  position: relative;
+  border: 0.5px solid #ce4ec4;
+  background-color: #ce4ec4;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 17px;
+  text-align: center;
+  font-family: "Noto Sans KR Regular";
+  height: 54px;
+  line-height: 54px;
+  margin: 0 48px 8px 48px;
+}
+.si_gray_btn {
+  position: relative;
+  border: 0.5px solid #737373;
+  background-color: #ebebeb;
+  color: #737373;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 17px;
+  text-align: center;
+  font-family: "Noto Sans KR Regular";
+  height: 54px;
+  line-height: 54px;
+  margin: 0 48px 8px 48px;
+}
+.si_btnimg_s {
+  width: 18px;
+  height: 18px;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+.si_footer {
+  margin-top: 32px;
+}
+.si_footer > p {
+  font-family: "Noto Sans KR Regular";
+  font-size: 16px;
+  color: #737373;
+  text-align: center;
+}
+/* 공통화면 상단 ui에 따라 높이 변동되는 버튼, 제목 등 */
+.si_toolbar {
+  padding: 22px 12px 5px;
+}
+#pop_top {
+  height: 72px;
+}
+.close {
+  margin: 22px 0 0;
+}
+#cu01_a,
+#cu01_c,
+#cu01_b,
+#cu01_f,
+#cu01_e,
+#cu01_d,
+#cu01_g {
+  padding: 25% 0 0 0 !important;
+}
+@media only screen and (max-width: 325px) {
+  .mb_title h4 {
+    font-size: 0.8em !important;
+  }
+  #cu01_a .mb_title h1,
+  #cu01_c .mb_title h1 {
+    padding-top: 20px !important;
+  }
+  .mb_title h1 {
+    font-size: 1.8em !important;
+  }
+}
+/* 가이드 메뉴 2개로 만들기 위해서 가린부분 */
+.intro_m03,
+.intro_menu .intro_m02::after {
+  display: none;
+}
+/* 통합앱 가이드화면 */
+/* 211208 common_tot.css에 들어갈 내용 */
+.overlay_tot {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 200;
+  overflow-x: hidden;
+  background-color: rgb(0 0 0 / 70%);
+}
+.guide_wrap p {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #c9c9c9;
+  line-height: 150%;
+}
+.guide_wrap p b {
+  color: #fff;
+  font-weight: 400;
+}
+.guide_buttom_wrap,
+.guide_tot01_wrap,
+.guide_tot02_wrap,
+.guide_tot04_wrap {
+  display: flex;
+}
+.guide_tot01_wrap {
+  padding: 18px 7px;
+  align-items: center;
+}
+.guide_tot02_wrap {
+  flex-direction: column;
+  align-items: center;
+}
+.guide_tot04_wrap {
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  padding: 6px 9px;
+}
+.guide_tot05_wrap {
+  padding: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 70px;
+  /* 메뉴3개 되면 아래 css 사용해서 가이드변경 */
+  /* margin-left: 140px; */
+}
+.guide_tot05_wrap p {
+  text-align: center;
+  /* 메뉴3개 되면 아래 css 사용해서 가이드변경 */
+  /* padding-left: 40px; */
+}
+.guide_tot06_wrap {
+  padding: 4px 0;
+  margin-left: 15px;
+}
+.guide_buttom_wrap .guide_circle {
+  margin-top: 5px;
+}
+.guide_tot07_wrap {
+  position: absolute;
+  padding: 5px 10px;
+  right: 0px;
+  bottom: 0;
+}
+.guide_tot07_wrap p {
+  position: absolute;
+  top: -80px;
+  right: 15px;
+  width: 65px;
+  text-align: right;
+}
+.guide_buttom_wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+}
+.guide_tot01_circle {
+  top: -60px;
+  left: -60px;
+}
+.guide_tot01_img,
+.guide_tot01_img {
+  margin-bottom: 10px;
+}
+.guide_tot02_wrap {
+  margin: 15px;
+  padding-right: 70px;
+  /* 메뉴3개 되면 아래 css 사용해서 가이드변경 */
+  /* padding-right: 140px; */
+}
+.guide_tot05_1_wrap,
+.guide_tot03_wrap {
+  width: 100%;
+  text-align: center;
+  margin: 100px 0 0;
+}
+.guide_circle {
+  /* position:relative; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background-color: #6b1ede; */
+  background-color: #651fff;
+  opacity: 0.6;
+  z-index: -1;
+}
+.guide_tot01_circle {
+  margin-right: 10px;
+}
+.guide_tot05_circle,
+.guide_tot02_circle {
+  margin-bottom: 10px;
+}
+.guide_tot04_circle {
+  margin-top: 10px;
+}
+.guide_tot03_img img {
+  width: 70px;
+}
+.guide_tot05_img img {
+  width: 170px;
+}
+.guide_tot01_circle::after {
+  background: url(../images/ct10_info_btn_g.png) no-repeat;
+}
+.guide_tot02_circle::after {
+  background: url(../images/ct10_hv_btn_g.png) no-repeat;
+}
+.guide_tot04_circle::after {
+  background: url(../images/cb10_chip_btn_g.png) no-repeat;
+}
+.guide_tot05_circle::after {
+  background: url(../images/ct10_main_btn_g.png) no-repeat;
+}
+.guide_tot06_circle::after {
+  background: url(../images/cb10_home_btn.png) no-repeat;
+}
+.guide_tot07_circle::after {
+  background: url(../images/cb10_marker_btn_g.png) no-repeat;
+}
+.guide_circle:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-size: cover;
+}
+.guide_tot_next {
+  display: block;
+  padding: 10px 0;
+  background-color: #6b1ede;
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 0.9em;
+  border-radius: 2px;
+}
+.guide_tot05_1_wrap p,
+.guide_tot03_wrap p {
+  margin: 15px 0 50px;
+}
+/* 갤럭시 S21 2021년 최신폰 높은해상도에서 */
+@media only screen and (min-width: 325px) and (min-height: 812px) {
+  .guide_tot04_wrap {
+    padding: 6px 9px 14px;
+  }
+  .guide_tot05_1_wrap {
+    margin: 180px 0 0;
+  }
+  .guide_tot03_wrap {
+    margin: 213px 0 0;
+  }
+  .guide_tot06_wrap {
+    padding: 15px 0;
+  }
+  .guide_tot07_wrap {
+    padding: 5px 10px 13px;
+  }
+}
+/* 아이폰 높이 */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .guide_tot01_wrap {
+    padding: 18px 7px 18px;
+  }
+  .guide_tot04_wrap {
+    padding: 6px 9px 25px;
+  }
+  .guide_tot03_wrap {
+    margin: 130px 0 0;
+  }
+  .guide_tot05_wrap {
+    padding: 100px 0 0 0;
+  }
+  .guide_tot06_wrap {
+    padding: 14px 0 24px;
+  }
+  .guide_tot07_wrap {
+    padding: 14px 10px 23px;
+  }
+  .guide_tot06_wrap {
+    margin-left: 12px;
+  }
+  .intro_menu_bt {
+    height: 80px !important;
+  }
+  .intro_top_wrap {
+    padding: 22px 0 0 !important;
+  }
+}
+/* 높은폰 */
+/* iphone12 등*/
+@media (min-height: 812px) and (max-height: 926px) {
+  .guide_tot05_1_wrap {
+    margin: 120px 0 0;
+  }
+  .guide_tot03_wrap {
+    margin: 148px 0 0;
+  }
+}
+/* 짧은폰 */
+@media only screen and (max-height: 667px) {
+  .guide_tot05_1_wrap {
+    margin: 40px 0 0;
+  }
+  .guide_tot03_wrap {
+    margin: 65px 0 0;
+  }
+  .guide_tot03_wrap p,
+  .guide_tot05_1_wrap p {
+    margin: 15px 0 30px;
+  }
+}
+@media (min-height: 360px) and (max-height: 640px) {
+}

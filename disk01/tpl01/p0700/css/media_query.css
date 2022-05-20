@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* 템플릿 vol.02 */
+/* 세로 높이에 맞춰서 레이아웃 재정리 */
+/* iPhone 12 Mini, iPhone 11 Pro, iPhone Xs 및 iPhone X */
+/* iPhone 11 및 iPhone XR */
+/* iPhone 11 Pro Max 및 iPhone Xs Max */
+/* iPhone 12 및 iPhone 12 Pro */
+/* iPhone 12 Pro max */
+ /* iphone X , XS, 11 Pro, 12 Mini */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  /* 공통화면 상단 ui에 따라 높이 변동 되는 버튼 24px씩  내림 */
+  .si_toolbar {
+    padding: 46px 12px 5px;
+  }
+  #pop_top {
+    height: 96px;
+  }
+  .close {
+    margin: 46px 0 0;
+  }
+  #member_close {
+    margin: 46px 0 0;
+  }
+  #cu10_a, #cu10_c, #cu10_b, #cu10_f, #cu10_e, #cu10_d, #cu10_g, #cu01_a, #cu01_c, #cu01_b, #cu01_f, #cu01_e, #cu01_d, #cu01_g {
+    padding: 30% 0 0 0 !important;
+  }
+  /* 앨범 내부 상단 ui에 따라 높이 변동되는 버튼, 제목 등 24px씩 내림*/
+  .cover_cd_home,
+  .menu {
+    margin: 46px 12px 12px;
+  }
+  .page_title h1 {
+    padding: 36px 0 5px;
+  }
+  .ali_toolbar {
+    padding: 46px 0 0;
+  }
+  .lyr_toolbar {
+    padding: 46px 0 0px;
+  }
+  .pclose {
+    margin: 46px 0 0;
+  }
+  .vc_toolbar {
+    padding: 46px 0 0;
+  }
+  .bok_toolbar {
+    padding: 46px 0 2px;
+  }
+  #review_txt h1 {
+    padding: 36px 0 0;
+  }
+  /* 상단 타이틀 영역 내림 */
+  #rv10 .page_title {
+    height: 260px;
+  }
+  /* navigation */
+  .logo {
+    bottom: 40px;
+  }
+  /* cover */
+  .cover_img3 {
+    bottom: 30px;
+  }
+  #mini_play_eq {
+    height: 80px !important;
+  }
+  /* 이용약관 개인보호정책 창 */
+  .mb_text {
+    height: 220px !important;
+  }
+  /* 하단영역 올림 */
+  .review_write {
+    padding-bottom: 12px;
+  }
+   /* 재생화면 */
+   .play_btn .pl_m_ctr{
+    margin: 2% 14px 5%;
+   }
+   .play_btn {
+    bottom: 60px;
+    height: 32%;
+  }
+}
+@media (min-height: 812px) and (max-height: 926px) {
+  /* 타이틀 배경이미지의 크기 및 높이를 변경하고 싶을때 */
+    #ac10 .page_title,
+    #bo10 .page_title,
+    #th10 .page_title,
+    #vi10 .page_title {
+    height: 129px;
+  }
+}
+/* 작은크기 디바이스 */
+/* 갤럭시 노트5 */
+@media only screen and (max-width: 424px) and (max-height: 753px) {
+  .play_eq {
+    top: 60px;
+  }
+  .play_btn {
+    bottom: 100px;
+  }
+  /* 211103 메뉴 상단 타이틀 영역 높이 */
+  #ac10 .page_title,
+  #bo10 .page_title,
+  #th10 .page_title,
+  #vi10 .page_title{
+  height: 106px;
+  }
+}
+@media only screen and (max-height: 667px) {
+  /* 211103 메뉴 상단 타이틀 영역 높이 */
+  #ac10 .page_title,
+  #bo10 .page_title,
+  #th10 .page_title,
+  #vi10 .page_title{
+  height: 106px;
+  }
+  /* 커버 */
+  .cover_title {
+    bottom: 150px;
+  }
+  .cover_artist {
+    bottom: 90px;
+  }
+  /* 좌측 메뉴 */
+  #me10 .profile {
+    margin: 20px auto 6px auto;
+  }
+  .menu_main li {
+    margin: 18px;
+    font-size: 1em;
+  }
+  .menu_main .over,
+  .menu_main .over a {
+    font-size: 1.1em;
+  }
+  .menu_player a {
+    height: 50px;
+  }
+  .menu_player li {
+    margin: 16px;
+  }
+  .cd_home {
+    bottom: 20px;
+}
+.menu_player a {
+  height: 55px !important;
+}
+  /* 곡목록 */
+  h2 {
+    font-size: 1.25em;
+  }
+  /* 재생화면 */
+  .play_eq_on {
+    bottom: 26%;
+  }
+  .play_btn dl {
+    margin: 1% 14px;
+  }
+  .bar {
+    padding-top: 0;
+  }
+  .play_eq {
+    top: 40px
+  }
+  .pl_tit_art {
+    margin: 0 15PX 50px;
+  }
+  .play_btn {
+    height: auto;
+      bottom: 14px;
+  }
+  /* sns와 덧글 */
+  .style_a {
+    padding: 14px 14px 16px;
+  }
+  /* 이용약관 개인보호정책 창 */
+  .mb_text {
+    height: 150px !important;
+  }
+  /* 통합앱 곡 목록슬라이드 */
+  .chip_slide-wrap .chip_slide-slider .slider-item > .chip_slide-desc-list > .chip_slide-desc-tt {
+    font-size: 1.1rem;
+ }
+}
+@media only screen and (max-width: 325px) {
+  .songlist li {
+    height: 72px;
+  }
+  .song_song {
+    white-space: wrap;
+    overflow: visible;
+    width: 70%;
+  }
+  .style_a {
+    padding: 14px;
+  }
+  /* .list_albumcover {
+    width: 130px;
+    height: 130px;
+  } */
+  .sns h2 {
+    margin: 28px 10px 20px 22px;
+  }
+  .al_info_top_wrap {
+    height: 300px !important;
+  }
+  .page_title .pt_c_box {
+    font-size: inherit !important;
+}
+.intro_albumcover {
+  left: -28%;
+  width: 150px;
+  height: 150px;
+}
+.pl_pre{
+  margin-right: 0;
+}
+.pl_nex {
+  margin-left: 0;
+}
+.play_btn .no_like {
+  margin: 0 auto 10px;
+}
+}
+/* 갤럭시 S21 2021년 최신폰 높은해상도에서 */
+@media only screen and (min-width: 325px) and (min-height: 812px){
+  .page_title h1, #sc02 h1, #sn02 h1, #sn03 h1, #vd02 h1, #rv02 h1, #review_txt h1 {
+    padding: 25px 0 10px;
+}
+.cover_cd_home,
+.menu {
+  margin: 36px 12px 12px;
+}
+#mini_play_eq {
+  height: 70px !important;
+}
+ /* 재생화면 */
+ .play_btn .pl_m_ctr{
+  margin: 2% 14px 5%;
+ }
+ .play_btn {
+  bottom: 60px;
+  height: 32%;
+}
+}

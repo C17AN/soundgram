@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* 세로 높이에 맞춰서 레이아웃 재정리 */
+@media only screen and (max-height: 667px) {
+  /* 커버 */
+  /* 좌측 메뉴 */
+  .menu_main li {
+    margin: 24px;
+    font-size: 1em;
+  }
+  .menu_main .over,
+  .menu_main .over a {
+    font-size: 1.1em;
+  }
+  /* 곡목록 */
+  h2 {
+    font-size: 1.25em;
+  }
+  .song_song h4 {
+    font-weight: 100;
+    color: #777;
+  }
+  /* 재생화면 */
+  .play_eq_on {
+    bottom: 26%;
+  }
+  .play_btn dl {
+    margin: 1% 14px;
+  }
+  .bar {
+    padding-top: 0;
+  }
+  /* sns와 덧글 */
+  .snsinfo h3,
+  .rv_content {
+    font-size: 0.9em !important;
+  }
+  .style_a {
+    padding: 14px 14px 16px;
+  }
+  /* thanks to */
+  #toggle_text,
+  #toggle_text1 {
+    font-size: 0.85em;
+    line-height: 160%;
+  }
+}

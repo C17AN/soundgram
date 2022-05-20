@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* 포카칩 세팅용 임시 css */
+#cr10 {
+    background-image: url(../images/ct10_bg.jpg);
+}
+#cl10,#cs10{
+    background-image: url(../images/ct10_bg02.jpg);
+    /* background: linear-gradient(#cecece, #f3f3f3); */
+}
+.info_btn a {
+    background-image: url(../images/ct10_info_btn.png);
+}
+.cb10_bt_wrap .cb10_m02{
+    display: none;
+}
+.ct10_menu .ct10_m03, .ct10_menu .ct10_m02::after{
+    display: block;
+}
+.ct10_menu .ct10_m01 a.on,
+.ct10_menu .ct10_m01 a {
+    background-image: url(../images/ct10_hv_btn_off.png);
+}
+.ct10_menu .ct10_m03 a.on, 
+.ct10_menu .ct10_m03 a {
+    background-image: url(../images/ct10_sp_btn_off.png);
+}
+.ct10_menu .ct10_m02 a,
+.ct10_menu .ct10_m02 a.on {
+    background-image: url(../images/ct10_main_btn_on.png);
+}
+.cb10_menu .cb10_m01 a {
+    background-image: url(../images/cb10_chip_btn.png);
+}
+.cb10_menu .cb10_m03 a {
+    background-image: url(../images/cb10_marker_btn.png);
+}
+.ct10_menu li::after {
+    background-color:rgba(0, 0, 0, 0.1);
+    width:2px;
+}
+.slick-counter,
+.slick-counter .current {
+    color: #000;
+  }
+  .chip_slide-wrap
+  .chip_slide-slider
+  .slider-item
+  > .chip_slide-desc-list
+  > .chip_slide-desc {
+  color: #49ff9a;
+  }
+  .cb10_menu {
+    background-image: url(../images/cb10_bg.jpg);
+    background-size: cover;
+}
+.cb10_menu .cb10_m01 a {
+    background-image: url(../images/cb10_chip_btn.png);
+}
+.con_option {
+    display: none;
+}
+/* 슬라이드 위치 잡기 */
+.chip_slide-wrap .chip_slide-slider .slick-center .slider-item .img-box > img {
+    transform: scale(1.1);
+}
+.chip_slide-wrap .chip_slide-slider {
+    padding: 30px 0 0;
+  }
+.chip_slide-wrap .chip_slide-slider .slick-list {
+    height: 565px !important;
+}
+.chip_slide-wrap .chip_slide-slider .slider-item {
+    padding: 30px 0 0;
+}
+.chip_slide-wrap .chip_slide-slider .slider-item > .chip_slide-desc-list {
+    margin-top: -80px;
+    padding:0;
+}
+.chip_slide-wrap {
+    top: 55%;
+}
+.chip_get_li {
+    width: 31%;
+    height: 186px;
+    overflow: hidden;
+    border-radius: 14px;
+}
+/* 카드목록 전체 높이조절 */
+.chip_get_scr, .chip_get_wrap {
+    height: 120%;
+}

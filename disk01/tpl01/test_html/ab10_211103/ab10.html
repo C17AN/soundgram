@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ok">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="media_query.css" />
+    <link rel="stylesheet" href="album.css" />
+    <script type="text/javascript" src="scroll_event.js" defer></script>
+    <title>스트롤 이벤트</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Maven Pro", sans-serif;
+        color: #fff;
+        background-color: #000;
+      }
+      
+      .intro_albumcover {
+        background-image: url(al10_img_title.jpg);
+      }
+      /*효과 들어가면서 추가되는 부분 */
+      .ab10_title{
+        position: fixed;
+        background: #000;
+        width: 100%;
+        z-index: 100;
+      }
+      .al_info_top_wrap {
+        height: 370px;
+      }
+      .intro_bg_box {
+        height: 100%;
+        transition: all 1.5s;
+      }
+      .album_title {
+        transform: translateY(-5%);
+      }
+      .intro_albumcover {
+        transform: translate(-20%, -30%);
+        background-position: center;
+        transition: all 1.5s;
+        background-size: 100%;
+      }
+      .opacity, .c_tp{
+        transition: all 1.5s;
+      }
+      /* 작은폰 미디어 쿼리 잡을곳 */
+      /* .al_info_top_wrap {
+        height: 320px;
+      }
+      .album_title {
+        top:45%;
+      }
+      .intro_albumcover {
+        transform: translate(-20%, -40%);
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="ab10" class="swiper-slide page_bg">
+      <div class="page_title ab10_title">
+        <h1 style="display: block">
+          <span class="p_title_in">
+            <span class="pt_light">ALBUM </span>
+            <strong class="pt_c_wrap"
+              ><b class="pt_c_box">I</b>NFO<b class="pt_c">.</b>
+            </strong>
+          </span>
+        </h1>
+        <!-- 여기가 원래 위치 -->
+      </div>
+      <!-- id="banner" -->
+      <div class="al_info_scr">
+        <div class="al_info_top_wrap">
+          <div class="al_info_top parallax 30">
+            <div class="intro_albumcover_wrap">
+              <div class="intro_bg_box opacity">
+                  <div class="intro_albumcover"></div>
+                <div class="album_dt_r">
+                  <span
+                    >발매일
+                    <b></b>
+                  </span>
+                </div>
+              </div>
+              <div class="album_title ab c_tp">
+                <span class="list_info">
+                  <span id="albuminfo"
+                    >[<span id="albuminfo_p">정규</span>]</span
+                  >
+                </span>
+                <h2 class="list_title">Butter</h2>
+                <h3 class="list_artist">방탄소년단 (BTS)</h3>
+              </div>
+              <div class="album_dt">
+                <div class="album_dt_l">
+                  <span
+                    >장르
+                    <b></b>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div id="image1" class="parallax 30">
+          <h1>test</h1>
+          <h1>test</h1>
+          <h1>test</h1>
+        </div> -->
+          <!-- 	<div id="image2" class="crop parallax 30"></div> -->
+        </div>
+        <div class="album">
+          <div class="album_contants">
+            <div class="album_txt">
+              <!-- <div id="content"> -->
+                <p><p><strong>방탄소년단의 서머송,</strong> 새 디지털 싱글 &lt;Butter&gt;</p>
+
+                <p><strong>청량한 댄스 팝 &lt;Butter&gt;</strong>, 마음을 흔드는 방탄소년단의 귀여운 고백&nbsp;</p>
+                
+                <p>버터처럼 부드럽게 스며드는 방탄소년단의 독보적인 매력!&nbsp;</p>
+                
+                <p>그룹 방탄소년단이 5월 21일 신나고 경쾌한 서머송(Summer Song)으로 돌아왔다. 새 디지털 싱글 &lt;Butter&gt;는 중독성 강한 댄스 팝 장르로, 도입부부터 귀를 사로잡는 베이스 라인과 청량한 신스(Synth) 사운드가 특징이다. 2020년 8월 21일 발매와 동시에 전 세계를 강타한 디지털 싱글 'Dynamite'에 이은 방탄소년단의 두 번째 영어 곡.&nbsp;</p>
+                
+                <p>&lt;Butter&gt;에는 버터처럼 부드럽게 녹아들어 너를 사로잡겠다는, 방탄소년단의 귀여운 고백이 담겨 있다. <strong>작사·작곡에 Rob Grimaldi, Stephen Kirk, Ron Perry, Jenna Andrews, Alex Bilowitz, Sebastian Garcia 등 여러 뮤지션들이 참여</strong>했고, <strong>리더 RM도 곡 작업에 동참</strong>해 방탄소년단만의 진한 향기를 가미했다.&nbsp; &nbsp;</p>
+                
+                <p>시련과 두려움 등 마음 깊숙이 자리한 진솔한 이야기부터 전 세계를 향한 응원과 위로에 이르기까지, 발표하는 음악마다 모두가 공감할 수 있는 메시지를 담아내는 <strong>방탄소년단은 미국 최고 권위의 음악 시상식인 제63회 그래미 어워드(GRAMMY AWARDS)에서 한국 대중 가수 최초로 수상 후보에 오른</strong> 데 이어 단독 공연까지 펼치며 세계 대중음악사에 역사적인 이정표를 세웠다. 방탄소년단의 걸음이 닿는 곳, 이들이 만들어 가는 상징적인 매 순간에 전 세계인들이 주목하고 있다.&nbsp;&nbsp;</p>
+                
+                <p>방탄소년단은 &lt;Butter&gt;를 통해 자신들만의 독보적인 멋을 과시하는 동시에 일곱 멤버의 다채로운 매력까지 선보이며 또다시 대중들의 마음을 사로잡을 태세다.</p>
+                
+                <p>"Smooth like butter"&nbsp;</p>
+                
+                <p>따라 할 수 없는 방탄소년단의 독보적인 멋!</p>
+                
+                <p>방탄소년단은 <strong>그 누구도 대체할 수 없는, 자신들만의 독보적인 멋을 &lt;Butter&gt;에 고스란히 녹였다. </strong>때로는 부드럽게, 때로는 강렬하게 방탄소년단의 상반된 매력이 동시에 느껴진다.</p>
+                
+                <p>&lt;Butter&gt; 가사 속 "너의 마음속으로 들어갈 거야(Breakin’ into your heart)", "너의 심장을 두 개로 녹일 거야(I’ll melt your heart into 2)"는 저돌적이지만, "버터처럼 부드럽게(Smooth like butter)", "나는 슈퍼스타처럼 빛나니까(I got that superstar glow)", "내 멋진 모습 다 우리 엄마 덕분이지(Cool shade stunner / I owe it all to my mother)"처럼 뒤에 덧붙는 노랫말은 대조적으로 귀여운 매력을 뿜는다.&nbsp;</p>
+                
+                <p>방탄소년단의 독보적인 멋을 재치 있게 풀어낸 &lt;Butter&gt;가 울려 퍼지는 순간, 듣는 이들의 일상에도 긍정적이고 신선한 활력이 샘솟는다.&nbsp;</p>
+                
+                <p>"Steal your heart"</p>
+                
+                <p>거부할 수 없는 매혹적인 일곱 남자의 쿨한 퍼포먼스&nbsp;</p>
+                
+                <p>무대 위에서 늘 상상 그 이상의 시너지를 발휘하는 방탄소년단은 &lt;Butter&gt;에서도 가사 내용을 극대화하는 역동적인 퍼포먼스를 준비했다. 모두 함께 어울려 노는 듯한 안무 구성으로 귀여운 악동을, 거울을 보며 능글맞게 멋 부리는 포인트 안무로는 매혹적인 남자의 모습을 표현한다. 따로 또 같이 퍼포먼스를 펼치는 일곱 멤버의 움직임 하나하나가 눈부시게 빛난다.&nbsp;&nbsp;</p>
+                
+                <p>멤버들끼리의 빈틈없는 호흡이 돋보이는 군무와 쿨한 매력에 초점을 맞춘 유닛별 안무에도 심혈을 기울였다. 일렉기타를 연주하는 듯한 느낌으로 다이내믹하게 시작되는 댄스브레이크. 이어 슬로우 동작의 반전을 통해 방탄소년단의 매혹적인 모습이 은은하게 드러난다. 머리카락을 쓸어올리는 동작으로 시작되는 군무에서는 손 키스 동작, 발끝으로 걷는 스텝 등이 포인트.&nbsp;</p>
+                
+                <p>&lt;Butter&gt;의 뮤직비디오에서도 방탄소년단의 매혹적인 퍼포먼스가 돋보인다. 흑백과 컬러, 슈트와 운동복, 화려한 조명의 웅장한 무대와 체육관 등 상이한 연출 방식과 구성에 지루함을 느낄 틈이 없다. 카리스마 넘치는 표정으로 등장한 방탄소년단은 유연하면서도 파워풀한 안무를 선보인다. 엘리베이터를 배경으로 이어지는 일곱 멤버의 각기 다른 독무 장면과 화려한 조명을 받으며 웅장한 무대 위에서 펼치는 군무도 압권이다.&nbsp;&nbsp;</p>
+                </p>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

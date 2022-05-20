@@ -1,0 +1,40 @@
+<div id='pl02' class='hidden'>
+	<span id='play_close' class='pclose'></span>
+	<div class='play_eq'>
+	<div class='player_swiper swiper-container' style='width:100%'>
+	<!-- <div class='play_eq1 hidden'></div>
+	<div class='play_eq2 hidden'></div> -->
+	<div class='play_eq_ing hidden'></div>
+	<!-- <canvas id="equalizer" class="hidden" style="height: 37%; width: 100%; position:fixed; top:100px; left:0; z-index:1000"></canvas> -->
+	<div id='p_swipe' class='swiper-wrapper'>
+	</div>
+	<div class='player_pagination swiper-pagination'></div>
+	</div>
+	<h1 class='play_title'></h1>
+	<h4 class='play_artist'></h4>
+	</div>
+	<div class='play_btn'>
+	<dl>
+	<dd><button class='pl_pre'></button></dd>
+	<dd><button id='plpa_btn' class='pl_play'></button></dd>
+	<dd><button class='pl_nex'></button></dd>
+	</dl>
+	<dl>
+	<dd class='pl_lyc_wrap'><button class='pl_lyc'>가사보기</button></dd>
+	<dd id='songlike_play' class="fl_left"></dd>
+	<dd class='fl_right'><button class='pl_repon'></button></dd>
+	</dl>
+	<dl class='bar'>
+	<div class='playbar progress col-12 mb-3'>
+	<dd id='playerbar' class='bar_on' style='width: 0%'></dd>
+	</div>
+	<dd id='currTime' class='play_on fl_left'>00:00</dd>
+	<dd id='endTime' class='fl_right'>00:00</dd>
+	</dl>
+	<div style='width:0;height:0'>
+	<audio id='playMusic' preload='metadata' onended='playend()'>
+	<source id='audiofile' type='audio/mpeg' />
+	</audio>
+	</div>
+	</div>
+</div>

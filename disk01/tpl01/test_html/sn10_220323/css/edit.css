@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* 앨범 인트로화면 */
+/* 기존에 album.css화면에 기존에 있던 내용 삭제해야함 */
+/* main.css에 추가될 내용(정해진템플린안에서 변하지 않는것)*/
+.sns_embed_insta {
+  width: 100%;
+  height: 70%;
+  overflow-y: scroll;
+}
+.instafeed_li {
+  /* width: 100px; */
+  overflow: hidden;
+  float: left;
+}
+.square {
+  display: inline-block;
+  width: 32.4%;
+  position: relative;
+  margin: 0.4%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.square img {
+  width: 100%;
+}
+.instafeed_li .inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* font.css에 추가될 내용 */
+
+/* album.css에 추가될 내용(앨범별 변하는 내용) */

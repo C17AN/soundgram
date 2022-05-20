@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* 앱 공통부분 css */
+button,
+fieldset,
+img {
+  border: 0;
+}
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+html,
+body {
+  font-family: "Noto Sans KR", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo",
+    "sans-serif";
+  background-color: #ebebeb;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #454545;
+  font-size: 1em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* overflow-y: scroll; */
+  -ms-touch-action: none;
+  /* 화면을 길게 누르고 있을때 뜨는 팝업이나 액션시트를 제어 */
+  -webkit-touch-callout: none;
+  /* 텍스트나 이미지를 선택할 수 있게 하는 여부를 제어 */
+  -webkit-user-select: none;
+  /* 링크를 터치했을때 나오는 기본 영역의 색상을 제어 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a,
+a:hover {
+  color: #454545;
+  text-decoration: none;
+}
+button:hover {
+  cursor: pointer;
+}
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+*:focus {
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+}
+/* ci10부분만 뗀 버전 */
+.ci_container {
+  position: relative;
+  background: #000;
+  height: 100%;
+}
+#ci10 {
+  width: 100%;
+  background-color: #000;
+  background-image: url(../images/ct10_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+.chip_slide-div {
+  height: 100vh;
+}
+.chip_slide-wrap {
+  font-size: 25px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ci10_loading {
+  text-align: center;
+}
+.ci10_chip {
+  position: absolute;
+  /* display: none; */
+}
+.ci10_loading img {
+  width: 100%;
+}

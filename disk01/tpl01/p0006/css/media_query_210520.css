@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* 템플릿 vol.01 */
+/* 세로 높이에 맞춰서 레이아웃 재정리 */
+/* iPhone 12 Mini, iPhone 11 Pro, iPhone Xs 및 iPhone X */
+/* iPhone 11 및 iPhone XR */
+/* iPhone 11 Pro Max 및 iPhone Xs Max */
+/* iPhone 12 및 iPhone 12 Pro */
+/* iPhone 12 Pro max */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2),
+  screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3),
+  screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  /* 공통화면 상단 ui에 따라 높이 변동 되는 버튼 24px씩  내림 */
+  .si_toolbar {
+    padding: 46px 12px 5px;
+  }
+  #pop_top {
+    height: 96px;
+  }
+  .close {
+    margin: 46px 0 0;
+  }
+  #member_close {
+    margin: 46px 0 0;
+  }
+  #cu01_a,
+  #cu01_c,
+  #cu01_b,
+  #cu01_f,
+  #cu01_e,
+  #cu01_d,
+  #cu01_g {
+    padding: 30% 0 0 0 !important;
+  }
+  /* 앨범 내부 상단 ui에 따라 높이 변동되는 버튼, 제목 등 24px씩 내림*/
+  .menu {
+    margin: 46px 12px 12px;
+  }
+  .page_title h1 {
+    padding: 36px 0 0;
+  }
+  .ali_toolbar {
+    padding: 46px 0 0;
+  }
+  .lyr_toolbar {
+    padding: 46px 0 0px;
+  }
+  .pclose {
+    margin: 46px 0 0;
+  }
+  #me02 .close {
+    margin: 46px 0;
+  }
+  #me02 .profile {
+    margin: 80px auto 6px auto;
+  }
+  .vc_toolbar {
+    padding: 46px 0 0;
+  }
+  .bok_toolbar {
+    padding: 46px 0 2px;
+  }
+  #sc02 h1,
+  #sn02 h1,
+  #vd02 h1,
+  #rv02 h1,
+  #review_txt h1 {
+    padding: 36px 0 0;
+  }
+  /* 상단 타이틀 영역 내림 */
+  #sc02 .page_title,
+  #sn02 .page_title,
+  #vd02 .page_title,
+  #review_txt .page_title {
+    height: 310px;
+  }
+  #rv02 .page_title {
+    height: 260px;
+  }
+  /* navigation */
+  .logo {
+    bottom: 40px;
+  }
+  /* cover */
+  /* .cover_img2 {
+    background: url(../images/ho02_img_effect_1.png) no-repeat 0 150px;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+  } */
+  .cover_img3 {
+    bottom: 30px;
+  }
+  #mini_play_eq {
+    height: 80px !important;
+  }
+  /* 이용약관 개인보호정책 창 */
+  .mb_text {
+    height: 220px !important;
+  }
+  /* 하단영역 올림 */
+  .review_write {
+    padding-bottom: 12px;
+  }
+}
+
+@media only screen and (max-height: 667px) {
+  /* 커버 */
+  .cover_title {
+    bottom: 150px;
+  }
+  .cover_artist {
+    bottom: 90px;
+  }
+  /* .cover_img2 {
+    background: url(../images/ho02_img_effect_1.png) no-repeat 0 80px;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+  } */
+  /* 좌측 메뉴 */
+  #me02 .profile {
+    margin: 40px auto 6px auto;
+  }
+  .menu_main li {
+    margin: 18px;
+    font-size: 1em;
+  }
+  .menu_main .over,
+  .menu_main .over a {
+    font-size: 1.1em;
+  }
+  .menu_player a {
+    height: 50px;
+  }
+  .menu_player li {
+    margin: 16px;
+  }
+  /* 곡목록 */
+  h2 {
+    font-size: 1.25em;
+  }
+  /* 재생화면 */
+  .play_eq_on {
+    bottom: 26%;
+  }
+  .play_btn dl {
+    margin: 1% 14px;
+  }
+  .bar {
+    padding-top: 0;
+  }
+  /* sns와 덧글 */
+  .style_a {
+    padding: 14px 14px 16px;
+  }
+  /* 이용약관 개인보호정책 창 */
+  .mb_text {
+    height: 150px !important;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .songlist li {
+    height: 72px;
+  }
+  .song_song {
+    white-space: wrap;
+    overflow: visible;
+    width: 70%;
+  }
+  .style_a {
+    padding: 14px;
+  }
+  .list_albumcover {
+    width: 130px;
+    height: 130px;
+  }
+  .sns h2 {
+    margin: 28px 10px 20px 22px;
+  }
+}

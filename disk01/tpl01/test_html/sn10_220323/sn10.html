@@ -1,0 +1,142 @@
+<html
+  lang="ko"
+  class="os_windows chrome pc version_75_0_3770_100 effect_enabled"
+>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/common_tot.css" />
+    <link rel="stylesheet" type="text/css" href="css/nfc_main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/media_query.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/album.css" />
+    <link rel="stylesheet" type="text/css" href="css/edit.css" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="always" />
+    <title>SoundGram</title>
+
+    <link rel="shortcut icon" href="#" />
+
+    <link rel="stylesheet" type="text/css" href="css/swiper.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/toast.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/instafeed.min.js"></script>
+  </head>
+  <body>
+    <div id="sn10" class="swiper-slide page_bg">
+      <div class="page_title" pst="twt" tst="">
+        <h1>
+          <span class="p_title_in">
+            <strong class="pt_c_wrap"><b class="pt_c_box">S</b>NS</strong>
+          </span>
+          <!-- <img src="" alt="페이지타이틀" width="100%" /> -->
+        </h1>
+        <div class="sns">
+          <!-- <a class="sns_home" href="https://www.facebook.com/koz.entofficial">
+        <h2></h2>
+      </a> -->
+          <button type="button" class="arrow_right" onclick=""></button>
+        </div>
+        <div class="sns_list" st="">
+          <!-- <div class="swiper-container snicon_swiper"> -->
+          <div class="swiper-container sns_horizontal swiper-container_sns">
+            <div id="snslist" class="swiper-wrapper">
+              <!-- 화면 보기 위해 만든 부분(원래는 불러오는 부분) -->
+              <div class="swiper-container snicon_swiper">
+                <div class="swiper-wrapper">
+                  <span class="sn_icon swiper-slide">
+                    <div class="sns_twt">
+                      <a href="https://twitter.com/BTS_twt"></a>
+                    </div>
+                  </span>
+                  <span class="sn_icon swiper-slide">
+                    <div class="sns_fb">
+                      <a href="https://www.facebook.com/bangtan.official"></a>
+                    </div>
+                  </span>
+                  <span class="sn_icon swiper-slide">
+                    <div class="sns_yt">
+                      <a href="https://www.youtube.com/BANGTANTV"></a>
+                    </div>
+                  </span>
+                  <span class="sn_icon swiper-slide">
+                    <div class="sns_tt">
+                      <a
+                        href="https://www.tiktok.com/@bts_official_bighit?"
+                      ></a>
+                    </div>
+                  </span>
+                  <span class="sn_icon swiper-slide">
+                    <div class="sns_vl">
+                      <a href="https://www.vlive.tv/channel/FE619"></a>
+                    </div>
+                  </span>
+                  <span class="sn_icon swiper-slide">
+                    <div class="sns_vl">
+                      <a href="https://www.vlive.tv/channel/FE619"></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+
+              <!-- 화면 보기 위해 만든 부분 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sns_bar">
+        <div class="sns_bar_icon">
+          <img src="disk01/tpl01/p0700/images/sn02_ic_twt_1.png" alt="트위터" />
+        </div>
+        <h3>
+          방탄소년단 (BTS)의 공식 트위터<br /><span
+            >실시간 소식을 확인하세요!</span
+          >
+        </h3>
+      </div>
+      <div class="sns_embed_wrap">
+        <!-- 추가되는 부분01 Start-->
+        <div class="sns_embed_insta">
+          <ul id="instafeed_embed"></ul>
+        </div>
+        <!-- 추가되는 부분01 End-->
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var feed = new Instafeed({
+        target: "instafeed_embed",
+        limit: 50,
+        template:
+          '<li class="instafeed_li square"><a href="{{link}}" class=""><img title="{{caption}}" src="{{image}}" class="inner"/></a></li>',
+        accessToken:
+          "IGQVJVLVJzU0ZAXN0pJQTNGaDFCNXVQaGpBR3VURmxMV013SEs4SFpYWEx6Yk9Vbkt3Y19TLU8zZA3hrZAUk2eF9aZAkZAiU0gwck1zX3pnTkN6bzVBckp1cldfTXZAra1EwTmxzTTM2WURJQWNKZAGtMQ0x2UQZDZD",
+        transform: function (item) {
+          console.dir(item);
+          //Transform receives each item as its argument
+          // Over-write the original timestamp
+          item.timestamp = new Date(item.timestamp).toLocaleString("en-AU", {
+            weekday: "short",
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          });
+
+          // return the modified item
+          return item;
+        },
+      });
+      feed.run();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+<html
+  lang="ko"
+  class="os_windows chrome pc version_75_0_3770_100 effect_enabled"
+>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/nfc_main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/media_query.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/album.css" />
+    <link rel="stylesheet" type="text/css" href="css/intro.css" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="always" />
+    <title>SoundGram</title>
+
+    <link rel="shortcut icon" href="#" />
+
+    <link rel="stylesheet" type="text/css" href="css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-comm.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/nfc_payment.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/toast.css" />
+    <link rel="stylesheet" type="text/css" href="css/add_220418.css" />
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/swiper/swiper-bundle.min.js"
+    ></script>
+    <script type="text/javascript" src="js/swiper-setting.js"></script>
+    <script type="text/javascript" src="js/SoundgramApi.js"></script>
+    <script type="text/javascript" src="js/Soundgram.js"></script>
+    <script type="text/javascript" src="js/loadingView.js"></script>
+    <script type="text/javascript" src="js/EventGather.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/common_pages.js"></script>
+    <script type="text/javascript" src="js/component.js"></script>
+    <script type="text/javascript" src="js/sha256.min.js"></script>
+    <!-- <script type="text/javascript" src="js/YTPlayer.js"></script> -->
+    <!-- <script type="text/javascript" src="js/directive.js?v=1"></script> -->
+    <script
+      type="text/javascript"
+      src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://developers.kakao.com/sdk/js/kakao.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
+    ></script>
+    <!-- <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script> -->
+    <!-- 통합앱 슬라이드 및 효과 -->
+    <!-- 제이쿼리 불러오기 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- slick 불러오기 -->
+    <script src="js/slick.min.js"></script>
+    <link rel="stylesheet" href="css/slick-theme.min.css" />
+    <link rel="stylesheet" href="css/slick.min.css" />
+    <!-- AOS 플러그인 -->
+    <link href="css/aos.css" rel="stylesheet" />
+    <script src="js/aos.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/slide.css" /> -->
+    <script defer src="js/slide.js"></script>
+  </head>
+  <body>
+
+
+
+
+    <!-- 211209 튜토리얼 가이드 1page strart -->
+    <div class="overlay_tot" style="display:none">
+      <div class="guide_wrap">
+        <div class="guide_tot01_wrap">
+          <div class="guide_tot01_circle guide_circle"></div>
+          <p><b>로그인</b>이나 <b>도움</b>이 필요할 때 눌러주세요!</p>
+        </div>
+        <div class="guide_tot02_wrap">
+          <div class="guide_tot02_circle guide_circle"></div>
+          <p>인증한 <b>앨범 목록</b>을</br> 한 눈에 확인하세요!</p>
+        </div>
+        <div class="guide_tot03_wrap">
+          <div class="guide_tot03_img">
+            <img
+              src="images/cr10_touch_m.png"
+              alt=""
+              class="guide_img03"
+            />
+          </div>
+          <p>
+            <b>앨범을 인증</b>하면<br />
+            이곳에 <b>등록</b>됩니다.
+          </p>
+          <div class="guide_tot_btn">
+            <!-- 해당버튼 누르면 cr10_guide02.html 가이드가 다음으로 나옴 -->
+            <button class="guide_tot_next">
+              다음으로..
+            </button>
+          </div>
+        </div>
+        <div class="guide_tot04_wrap">
+          <p>구매한 <b>칩디스크</b>를</br>바로<b>인증</b>해요!</p>
+          <div class="guide_tot04_circle guide_circle"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 211209 튜토리얼 가이드 1page end -->
+
+    <!-- 220418 New Collection 축하 팝업 start-->
+    <div class="overlay_tot inform_tot">
+      <div class="inform_tot_wrap">
+        <div class="inform_tot_txt">
+          <img src="images/inform_tot_txt01.png" alt="New Collection">
+        </div>
+      </div>
+    </div>  
+    <!-- 220418 New Collection 축하 팝업 end-->
+
+    <!-- end intro_top_wrap  -->
+    <div id="cp01" class="swiper-slide chip">
+      <!-- 210812 하나씩 보이는 화면 -start-->
+      <div class="intro_top_wrap">
+        <!-- 210818 S 공통앱 상단 메뉴같은부분  -->
+        <div class="intro_top_common">
+          <div class="info_btn"></div>
+          <div class="intro_top_meun">
+            <div class="intro_title">
+              <img src="images/intro_chipdisc_txt.png" alt="chipdisc" />
+            </div>
+            <ul class="intro_menu">
+              <li class="intro_m01">
+                <a href="cp02.html"></a>
+              </li>
+              <li class="intro_m02">
+                <a href="cp01.html" class="on"></a>
+              </li>
+              <li class="intro_m03">
+                <a href="cp03.html"></a>
+              </li>
+            </ul>
+            <ul class="intro_menu_bt">
+              <li class="intro_bt_m01">
+                <a href=""></a>
+              </li>
+              <li class="intro_bt_m02">
+                <a href=""></a>
+              </li>
+              <li class="intro_bt_m03">
+                <a href=""></a>
+              </li>
+            </ul>
+            <!-- 210818 E 공통앱 상단 메뉴같은 부분  -->
+          </div>
+          <!-- end intro_top_meun  -->
+        </div>
+        <!--end intro_top_common -->
+      </div>
+      <div class="chip_slide-div">
+        <div class="chip_slide-wrap">
+          <div class="chip_slide-slider" data-aos="fade-up">
+            <div class="slider-item">
+              <a href="#" class="block">
+                <div class="img-box block">
+                  <img src="images/intro_chipdisc01.png" alt="" />
+                </div>
+              </a>
+              <div class="chip_slide-desc-list">
+                <h1 class="chip_slide-desc-tt">Butter</h1>
+                <p class="chip_slide-desc">BTS</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <a href="#" class="block">
+                <div class="img-box">
+                  <img src="images/intro_chipdisc02.png" alt="" />
+                </div>
+              </a>
+              <div class="chip_slide-desc-list">
+                <h1 class="chip_slide-desc-tt">사랑의 불시착</h1>
+                <p class="chip_slide-desc">아티스트명</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <a href="#" class="block">
+                <div class="img-box">
+                  <img src="images/intro_chipdisc03.png" alt="" />
+                </div>
+              </a>
+              <div class="chip_slide-desc-list">
+                <h1 class="chip_slide-desc-tt">여신강림</h1>
+                <p class="chip_slide-desc">아티스트명</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <a href="#" class="block">
+                <div class="img-box">
+                  <img src="images/intro_chipdisc04.png" alt="" />
+                </div>
+              </a>
+              <div class="chip_slide-desc-list">
+                <h1 class="chip_slide-desc-tt">칩디스트명</h1>
+                <p class="chip_slide-desc">아티스트명</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <a href="#" class="block">
+                <div class="img-box">
+                  <img src="images/intro_chipdisc05.png" alt="" />
+                </div>
+              </a>
+              <div class="chip_slide-desc-list">
+                <h1 class="chip_slide-desc-tt">SAMSUNG WITHIN</h1>
+                <p class="chip_slide-desc">아티스트</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <a href="#" class="block">
+                <div class="img-box">
+                  <img src="images/intro_chipdisc06.png" alt="" />
+                </div>
+              </a>
+              <div class="chip_slide-desc-list">
+                <h1 class="chip_slide-desc-tt">건강</h1>
+                <p class="chip_slide-desc">아티스트</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="intro01_cst">
+        <img src="images/intro_cassette.png" alt="" />
+      </div>
+    </div>
+    <!-- 210812 하나씩 보이는 화면 -end-->
+  </body>
+</html>

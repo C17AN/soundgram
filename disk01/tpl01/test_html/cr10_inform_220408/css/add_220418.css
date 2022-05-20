@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* common_tot.css 들어갈 내용__220408*/
+/* 통합앱 칩디스크 추가 알림 팝업 */
+.inform_tot_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 96%;
+}
+.inform_tot_txt {
+  width: 64%;
+}
+.inform_tot_txt img {
+  width: 100%;
+}
+.inform_tot.off .inform_tot_txt {
+  transition: all 0.5s linear;
+  transform: scale(0.4);
+}
+.chip_slide-wrap .chip_slide-slider .slick-center .slider-item .img-box > img {
+  transform: scale(0.2);
+  opacity: 0;
+}
+.chip_slide-wrap
+  .chip_slide-slider
+  .slick-slide.on
+  .slider-item
+  .img-box
+  > img {
+  transform: scale(0.88);
+  opacity: 1;
+}
+.chip_slide-wrap
+  .chip_slide-slider
+  .slick-center.on
+  .slider-item
+  .img-box
+  > img {
+  transform: scale(1.2);
+  transition: transform 0.5s linear;
+}
+.chip_slide-wrap
+  .chip_slide-slider
+  .slick-center.new.on
+  .slider-item
+  .img-box
+  > img {
+  transition: all 1.2s linear;
+  transform: scale(1.2);
+  opacity: 1;
+}

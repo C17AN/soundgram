@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* Body */
+button, fieldset, img {border:0}
+blockquote, body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,select,td,textarea,th,ul{margin:0;padding:0}
+html, body {
+	font-family:  "Noto Sans CJK KR Light", 'AppleGothicNeoSD', 'Apple SD 산돌고딕 Neo', "sans-serif";
+	background-color: #ffffff;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	color: #454545;
+	width: 360px;
+	height: 100%;
+}
+a, hover, a:hover {color: #454545;
+	text-decoration: none;
+}
+button:hover {cursor: pointer}
+
+strong { 
+font-weight: 600;
+}
+*:focus {
+    outline: none;
+}
+h1, h2, h3{	font-family:  "Noto Sans CJK KR Medium";	
+	font-weight: 400;
+	letter-spacing: -1px;
+	line-height: 120%;
+}
+h4 {font-family:  "Noto Sans CJK KR Light";	line-height: 140%; font-size: 0.9em;
+	font-weight: 200; letter-spacing: 0}
+ul, li {list-style: none}
+hr {border: none}
+
+.hidden {display:none;}
+
+.txt_11 {font-size: 0.7em}
+.txt_12 {font-size: 0.8em}
+
+.container {
+	position: relative;
+	background: #fff;
+	height: 100%;
+
+}
+
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: block;
+	width: 40px; height: 40px;
+	margin: 12px;
+	background-image: url("../images/zico/left_mn_side.png");
+	background-size: cover;
+}
+.close {
+	display: block;
+	background-image: url("../images/base/left_btn_close.png");
+	background-size: cover;
+	width: 40px; height: 40px;
+	position: absolute;
+	top: 0; left: 12px;
+	margin: 12px 0;
+	z-index: 10
+}
+.fl_left {float: left}
+.fl_right {float: right}
+
+header a, header a:hover {	color: #fff;}
+
+#left_menu .close {
+	display: block;
+	background-image: url("../images/base/left_btn_close.png");
+	background-size: cover;
+	width: 40px; height: 40px;
+	position: absolute;
+	top: 0;left:220px;
+	margin: 12px 0;
+}
+
+#left_menu {
+	background-color: rgba( 0, 0, 0, 0.7 );
+	width: 100%;
+height: 100%;
+	color: #ffffff;
+}
+#left_menu nav {
+	width: 240px;
+	text-align: center;
+	background-color: rgba( 249,118,115, 1.0);
+	padding: 14px;
+	height: -webkit-calc(100% - 28px);
+  height: -moz-calc(100% - 28px);
+  height: calc(100% - 28px);
+}
+
+.profile {border-radius: 120px;}
+#left_menu .profile {
+	width: 60px;
+	height: 60px;
+	border: 0.5px solid #fff;
+	margin: 50px auto 6px auto;
+	background-image: url("../images/zico/profile_empty.png");
+	background-size: cover;
+}
+
+#left_menu hr {
+	border-bottom: solid thin #ffffff;
+	margin: 20px 0;
+}
+.menu_main {
+	color: #ffffff;
+}
+.menu_main li {
+	margin: 30px;
+	font-size: 1.1em;
+}
+
+.menu_main .over, .menu_main .over a  {
+	color: #333;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.menu_sub li { float: left; width: 33.3%; font-size: 0.9em; letter-spacing: 1px; padding-top: 32px;
+background-size: 24px 24px; background-position: top center; }
+.sub_01 {background-image: url("../images/base/left_mn_schedule.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.sub_02 {background-image: url("../images/base/left_mn_sns.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.sub_03 {background-image: url("../images/base/left_mn_review.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.logo {background-image: url("../images/base/left_logo.png");
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 25px;
+	width: 240px;
+	clear: both;
+	position: absolute;
+	bottom:20px;
+	
+}
+#index {
+	background-color: #f97673;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.cover_img1, .cover_img2, .cover_img3, .cover_title, .cover_artist, .cover_txt {
+	position: absolute;
+	left: 0;
+}
+.cover_img1 {top: 0; 
+	background-image: url("../images/zico/cover_bg_main.jpg");
+	background-size:cover; background-repeat: no-repeat; background-position: top;
+	height: 100%; width: 100%}
+.cover_img2, .cover_img3 {bottom: 0}
+.cover_img2 {background-image: url("../images/zico/cover_bg1.png"); background-size: cover; width: 100%; height:576px}
+.cover_img3 {background-image: url("../images/zico/cover_bg2.png"); background-size: cover; width: 100%; height:450px}
+.cover_title {	bottom: 200px}
+.cover_artist {	bottom: 130px}
+
+#index p {text-align: center; bottom:60px; width: 100%}
+
+
+#play {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+#play button {background-color: rgba(255,255,255, 0)}
+#play h1 {color: #f97673}
+.play_eq {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60%;
+}
+.play_img {
+	background-size:cover; background-repeat: no-repeat; background-position: top;
+	height: 100%; width: 100%}
+.play_eq1, .play_eq2 { 
+	background-size:cover; background-repeat:repeat-x; background-position: bottom;
+	height: 300px; width: 100%;
+	position: absolute;	bottom: 0; left: 0}
+.play_eq1, .play_eq2 { background-image: url("../images/zico/play_eq_01.png"); }
+.play_eq2 { background-image: url("../images/zico/play_eq_02.png"); }
+
+.play_btn {position: absolute;
+	bottom:14px;
+	left: 0;
+	width: 100%;
+	height: 26%;
+}
+.play_btn dl {margin:1% 14px}
+.play_btn dd {display: inline-block; margin-bottom: 14px}
+.play_btn .no_like {height: 18px; padding:7px 0; float: none; width: 100%; margin: auto; text-align: center}
+.play_btn .no_like span {width: 18px; height: 18px;}
+.pl_pre, .pl_nex, .pl_play, .pl_lyc, .pl_rep { background-size:cover; background-repeat: no-repeat; }
+.pl_pre, .pl_nex, .pl_play { width: 60px; height: 60px}
+.pl_lyc, .pl_rep, .pl_repoff, .pl_repone {width: 40px; height: 40px}
+.pl_pre { background-image: url("../images/zico/play_btn_prevplay.png"); margin-right: 24px }
+.pl_play { background-image: url("../images/zico/play_btn_play.png"); }
+.pl_pause { background-image: url("../images/zico/play_btn_pause.png"); }
+.pl_nex { background-image: url("../images/zico/play_btn_nextplay.png"); margin-left: 24px }
+.pl_lyc { background-image: url("../images/zico/play_btn_lyrics.png"); }
+.pl_rep { background-image: url("../images/zico/play_btn_repeatall.png");}
+.pl_repoff { background-image: url("../images/zico/play_btn_repeatoff.png"); }
+.pl_repone { background-image: url("../images/zico/play_btn_repeatone.png"); }
+
+
+.playbar {width: 100%; height: 2px; background-color: #ccc; margin:0 0 6px 0; position: relative }
+.bar_on {background-color: #454545; height: 2px; position: absolute; left: 0}
+.bar {font-size: 0.8em; position: relative}
+.bar_btn {position: absolute; top:-6px; width: 12px; height: 12px; border-radius: 10px; border: thin #454545 solid; background-color: #fff }
+
+#playlist {}
+#playlist .no_like {height: 48px; padding: 24px 14px 0 0; width: 34px; text-align: center; float:left}
+#playlist .no_like span {display:block; margin: 0 auto;  }
+#playlist .page_title {	background-image: url("../images/zico/songlist_titlebg.png"); background-size: cover; width: 100%; height:320px}
+.songlist a, .songlist a:hover { color: #111}
+.song_no, .song_song {float: left;  }
+.song_no {height: 72px; line-height: 72px; width: 24px; text-align:right; font-family:"Noto Sans CJK KR Thin"; font-size: 1.4em; font-style: italic; }
+
+.no_like .on {background-image: url("../images/zico/btn_like_on.png"); background-size: cover;}
+.no_like .off {background-image: url("../images/zico/btn_like_off.png"); background-size: cover;}
+.songlist li {display: table; width: 316px; margin: auto }
+.song_song {height: 56px; padding-top: 16px; display: inline-block; width: 220px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.song_song h4 {color: #666}
+#booklet .page_title {
+	background-image: url("../images/zico/booklet_titlebg.png"); background-size: cover; width: 100%; height:204px
+}
+#thanks .page_title {
+	background-image: url("../images/zico/thanks_titlebg.png"); background-size: cover; width: 100%; height:204px
+}
+#video .page_title {
+	background-image: url("../images/zico/video_titlebg.png"); background-size: cover; width: 100%; height:204px
+}
+.page_title h1 {padding-top: 12px; height: 40px; width: 100%}
+
+.list_albumcover {
+	border-radius: 300px;
+	width: 150px;
+	height: 150px;
+	border-bottom: thin solid #fff;
+	float: left;
+	margin: 14px 14px auto 20px;
+	background-size: cover;
+}
+.list_albuminfo {display: table; height: 150px; margin:14px 14px 0 0}
+.list_albuminfo div {display:table-cell;vertical-align:middle;}
+.list_albuminfo h2 {color: #fff; margin-bottom: 4px} 
+.list_albuminfo h3 {margin:6px 0}
+.list_info { font-size: 0.8em }
+.list_info span {display:inline-block; background: #373c51; border: thin solid #373c51; color: #fff; padding: 0 10px}
+.list_info strong {display:inline-block; padding: 0 10px; border: thin solid #373c51; color:#373c51;}
+
+.booklet_img {
+	width: 316px;
+	margin:0 auto;
+}
+.booklet_img img {
+	border-radius: 10px;
+	width: 316px;
+	height: auto;
+	margin: 6px 0;
+}
+
+.videolist { display: table; width: 316px; margin: auto auto 24px auto; }
+.no_view {float: left; margin-right: 14px; font-size: 0.8em; line-height: 18px}
+.no_comment, .no_like {float: right; margin-left: 14px; font-size: 0.8em; line-height: 18px}
+.no_like span, .no_comment span {display: inline-block;  vertical-align:middle;}
+
+.no_like span {display: inline-block; width: 14px; height: 14px; margin-right: 6px; line-height: 14px; vertical-align:middle; }
+
+
+
+.video_thumbnail {background-size: cover; width: 100%; height: 170px; margin: 10px 0;  background-position: center}
+
+#thanks .profile {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border: none;
+	margin: 0;
+	margin-right: 6px;
+	background-color: rgba(0,0,0, 0.2);
+	background-image: url("../images/zico/profile_empty.png");
+	background-size: cover;
+	vertical-align: middle;
+	
+}
+#thanks .more { float: right; margin: -14px 10px auto auto;
+	background-size: cover; width: 36px; height: 36px; background-image: url("../images/zico/Thanks_btn_more.png")
+}
+.thanks_contants { padding: 0 20px 40px 20px}
+.thanks_contants h4 {display: inline-block; font-weight: 400; font-family: "Noto Sans CJK KR Medium" }
+.thanks_contants h4 span {color: #999; font-style: italic; font-weight: 200; font-family: "Noto Sans CJK KR Light"; letter-spacing: 0 }
+.thanks_contants p { display: block; margin: 10px; line-height: 140%; font-size: 0.9em;  }
+
+
+
+
+
+
+

@@ -1,0 +1,182 @@
+<html
+  lang="ko"
+  class="os_windows chrome pc version_75_0_3770_100 effect_enabled"
+>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/nfc_main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="disk01/tpl01/p0007/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="disk01/tpl01/p0007/css/media_query.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="disk01/tpl01/p0007/css/font.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="disk01/tpl01/p0007/css/album.css"
+    />
+
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="always" />
+    <title>SoundGram</title>
+
+    <link rel="shortcut icon" href="#" />
+
+    <link rel="stylesheet" type="text/css" href="css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-comm.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/nfc_payment.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/toast.css" />
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/swiper/swiper-bundle.min.js"
+    ></script>
+    <script type="text/javascript" src="js/swiper-setting.js"></script>
+    <script type="text/javascript" src="js/SoundgramApi.js"></script>
+    <script type="text/javascript" src="js/Soundgram.js"></script>
+    <script type="text/javascript" src="js/loadingView.js"></script>
+    <script type="text/javascript" src="js/EventGather.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/common_pages.js"></script>
+    <script type="text/javascript" src="js/component.js"></script>
+    <script type="text/javascript" src="js/sha256.min.js"></script>
+    <!-- <script type="text/javascript" src="js/YTPlayer.js"></script> -->
+    <!-- <script type="text/javascript" src="js/directive.js?v=1"></script> -->
+    <script
+      type="text/javascript"
+      src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://developers.kakao.com/sdk/js/kakao.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
+    ></script>
+    <!-- <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script> -->
+  </head>
+  <body>
+    <!-- 210402 여기부터 새로 만들어낸 부분 -start-->
+    <div
+      id="ac_619"
+      class="swiper-slide"
+      style="
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+      "
+    >
+      <div class="page_title_wrap">
+        <div class="page_title">
+          <h1>
+            <img
+              src="images/ac_img_title.png"
+              alt="페이지타이틀"
+              width="100%"
+            />
+          </h1>
+        </div>
+      </div>
+      <div class="credit">
+        <div
+          class="credit_contants"
+          style="width: calc(100% - 40px); margin: 0 20px"
+        >
+          <div class="credit_txt_wrap">
+            <div class="credit_wrap_in">
+              <h3 class="credit_tit_b">
+                Executive Producer <span class="thin">/</span> <b>나성식</b>
+              </h3>
+              <h3 class="credit_tit_b">
+                Producer <span class="thin">/</span> <b>GIFT</b>
+              </h3>
+            </div>
+            <div class="credit_wrap_in">
+              <h3 class="credit_tit_b">GIFT</h3>
+              <ul>
+                <li>Vocals & Acoustic Guitar <b>이주혁</b></li>
+                <li>Bass <b>김형우</b></li>
+                <li>Drum <b>정휘겸</b></li>
+              </ul>
+            </div>
+            <div class="credit_wrap_in">
+              <h3 class="credit_tit_b">RECORDING SESSION</h3>
+              <ul>
+                <li>Piano <b>박현서</b> (Track 4 - 좋은 꿈일 것 같아)</li>
+                <li>Cello <b>박찬영</b> (Track 4 - 좋은 꿈일 것 같아)</li>
+              </ul>
+            </div>
+            <div class="credit_wrap_in">
+              <h3 class="credit_tit_b">RECORDING & MASTERING</h3>
+              <ul>
+                <li>Recorded @TUNE UP Studio & TONE Studio</li>
+                <li>Recorded by <b>곽동준, 남동훈</b>@TUNE UP Studio &</li>
+                <li><b>고도현, 안영길, 노찬우</b>@TONE Studio</li>
+                <li>Mixed & Mastered by <b>정태준</b></li>
+              </ul>
+            </div>
+            <div class="credit_wrap_in">
+              <h3 class="credit_tit_b">ROXTAMUZIK&LIVE</h3>
+              <ul>
+                <li>Management Director <b>김경찬</b></li>
+                <li>A&R Director MABBIT</li>
+                <li>TEAM ROXTA <b>박은화, 배태영, 이은정</b></li>
+              </ul>
+            </div>
+            <div class="credit_wrap_in">
+              <h3 class="credit_tit_b">PRODUCTION</h3>
+              <ul>
+                <li>Illustrations by <b>류영봉</b></li>
+                <li>Artworks by <b>MABBIT</b></li>
+                <li>Production Assistant by <b>김형주</b></li>
+                <li>Production Support by <b>CJ Cultural Foundation</b></li>
+              </ul>
+            </div>
+            <div class="credit_wrap_in">
+              <h4>
+                <a href="http://www.roxtamuzik.com/gift/"
+                  >www.roxtamuzik.com/gift</a
+                >
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 210402 여기부터 새로 만들어낸 부분 -start-->
+  </body>
+</html>
